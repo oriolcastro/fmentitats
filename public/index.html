@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="/styles.css" rel="stylesheet" />
+    <title>Festa Major d'Entitats 2021</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Compra les teves entrades per la FME 2021" />
+    <meta itemprop="name" content="Festa Major d'Entitats 2021" />
+    <meta itemprop="description" content="Compra les teves entrades per la FME 2021" />
+    <meta itemprop="image" content="https://fme.cat/images/cartell.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="96x96" href="/images/favicon-96x96.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <meta property="og:title" content="Festa Major d'Entitats 2021" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://fme.cat" />
+    <meta property="og:description" content="Compra les teves entrades per la FME 2021" />
+    <meta property="og:image" content="https://fme.cat/images/cartell.png" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@fmentitats" />
+    <meta name="twitter:creator" content="@fmentitats" />
+    <meta property="og:url" content="https://fme.cat" />
+    <meta property="og:title" content="Festa Major d'Entitats 2021" />
+    <meta property="og:description" content="Compra les teves entrades per la FME 2021" />
+    <meta property="og:image" content="https://fme.cat/images/cartell.png" />
+  </head>
+  <body>
+    <header class="fixed w-full lg:px-16 px-6 bg-white flex flex-wrap items-center lg:py-0 py-2 z-10 shadow-md">
+      <div class="flex-1 flex justify-between items-center">
+        <a href="#">
+          <img src="images/logo.png" class="rounded-full" width="48" height="48" alt="Logo Festa Major d'Entitats" />
+        </a>
+      </div>
+
+      <button onclick="toggleMenu()" class="pointer-cursor lg:hidden block">
+        <svg
+          class="fill-current text-gray-900"
+          xmlns="http://www.w3.org/2000/svg"
+          width="20"
+          height="20"
+          viewBox="0 0 20 20"
+        >
+          <title>menu</title>
+          <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+        </svg>
+      </button>
+      <div class="hidden lg:flex lg:items-center lg:w-auto w-full" id="menu">
+        <nav>
+          <ul class="lg:flex items-center justify-between text-base text-gray-700 pt-4 lg:pt-0">
+            <li>
+              <a
+                class="lg:p-4 py-3 px-0 block border-b-2 border-transparent hover:border-indigo-400"
+                href="#quisom"
+                onclick="toggleMenu()"
+                >Qui som?</a
+              >
+            </li>
+            <li>
+              <a
+                class="lg:p-4 py-3 px-0 block border-b-2 border-transparent hover:border-indigo-400"
+                href="#artistes"
+                onclick="toggleMenu()"
+                >Artistes</a
+              >
+            </li>
+            <li>
+              <a
+                class="lg:p-4 py-3 px-0 block border-b-2 border-transparent hover:border-indigo-400"
+                href="#faqs"
+                onclick="toggleMenu()"
+                >FAQs</a
+              >
+            </li>
+            <li>
+              <a
+                class="lg:p-4 py-3 px-0 block border-b-2 border-transparent hover:border-indigo-400 lg:mb-0 mb-2"
+                onclick="toggleMenu()"
+                href="#contacte"
+                >Contacte</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <section class="bg-tiquets-section bg-no-repeat bg-cover bg-top h-screen">
+      <div class="flex flex-col items-center justify-center p-12 h-full">
+        <a
+          href="https://www.weezevent.com/fme2021"
+          target="_blank"
+          class="text-xl px-6 py-4 text-black bg-white rounded no-underline cursor-pointer"
+          >Compra la teva entrada</a
+        >
+      </div>
+    </section>
+    <section id="quisom" class="px-4 my-10 max-w-5xl m-auto">
+      <h2 class="text-center text-3xl my-2 uppercase">Festa Major d'Entitats</h2>
+      <p class="text-center text-xl my-4 italic">Qui som?</p>
+      <div class="flex flex-wrap gap-8 flex-col-reverse mb-6 lg:flex-nowrap lg:flex-row">
+        <img
+          src="images/logo.png"
+          class="rounded-full flex-1 max-w-xs m-auto"
+          alt="Photo of Me"
+          width="500"
+          height="500"
+          alt="Logo Festa Major d'Entitats"
+        />
+        <p class="text-justify flex-1">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+          magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+          est laborum.
+        </p>
+      </div>
+      <p class="font-bold mb-4 text-center">Entitats organitzadores</p>
+      <div class="flex justify-center gap-2 lg:gap-8">
+        <a href="https://www.instagram.com/launiovilanovina/" target="_blank"
+          ><img src="images/unio.jpg" class="opacity-75 max-w-[75px] lg:max-w-[120px] hover:opacity-100" alt="log_unio"
+        /></a>
+        <a href="https://www.instagram.com/diablesvng/" target="_blank"
+          ><img
+            src="images/diables.jpg"
+            class="opacity-75 max-w-[75px] lg:max-w-[120px] hover:opacity-100"
+            alt="log_diables"
+        /></a>
+        <a href="https://www.instagram.com/festuc_vng/" target="_blank"
+          ><img
+            src="images/festuc.jpg"
+            class="opacity-75 max-w-[75px] lg:max-w-[120px] hover:opacity-100"
+            alt="log_festuc"
+        /></a>
+        <a href="https://www.instagram.com/apollovng/" target="_blank"
+          ><img
+            src="images/apollo.jpg"
+            class="opacity-75 max-w-[75px] lg:max-w-[120px] hover:opacity-100"
+            alt="log_apol·lo"
+        /></a>
+      </div>
+    </section>
+    <div
+      class="
+        bg-fixed bg-center bg-no-repeat bg-cover bg-divider-1 bg-gray-400
+        backdrop-opacity-30
+        bg-blend-multiply
+        relative
+        h-[500px]
+        lg:bg-scroll
+      "
+    ></div>
+    <section id="artistes" class="px-4 my-10 max-w-5xl m-auto">
+      <h2 class="text-center text-3xl my-2 uppercase">Cartell 2021</h2>
+      <p class="text-center text-xl my-4 italic">lorem impsum artistes etc</p>
+      <div class="grid grid-cols-2 gap-4 lg:grid-cols-3 lg:gap-6">
+        <a
+          href="https://open.spotify.com/artist/0LweECx5LKm6I3gIcWMdpB"
+          target="_blank"
+          class="transform hover:scale-110 duration-300 transition-transform"
+          ><img src="images/31fam.jpeg"
+        /></a>
+        <a
+          href="https://open.spotify.com/artist/0OVfimlbekXaMrP8IoCzHJ"
+          target="_blank"
+          class="transform hover:scale-110 duration-300 transition-transform"
+          ><img src="images/ELS_PETS.jpg"
+        /></a>
+        <a
+          href="https://open.spotify.com/artist/3hi1Ewhqpzl1jO2GemGmv6"
+          target="_blank"
+          class="transform hover:scale-110 duration-300 transition-transform"
+          ><img src="images/ginesta.jpg"
+        /></a>
+        <a
+          href="https://open.spotify.com/artist/5ra24fdFLZoDjlJiebjJku"
+          target="_blank"
+          class="transform hover:scale-110 duration-300 transition-transform"
+          ><img src="images/maretabufona.jpg"
+        /></a>
+        <a
+          href="https://open.spotify.com/artist/7Eyd1SVCVJGC9uqmpg4QAY"
+          target="_blank"
+          class="transform hover:scale-110 duration-300 transition-transform"
+          ><img src="images/ptas.jpg"
+        /></a>
+        <a
+          href="https://open.spotify.com/artist/5UN0rzL594mWY2RbOtZqIN"
+          target="_blank"
+          class="transform hover:scale-110 duration-300 transition-transform"
+          ><img src="images/ptzt.jpg"
+        /></a>
+        <a
+          href="https://open.spotify.com/artist/75vabMROpVyiTX4wv3iHFH"
+          target="_blank"
+          class="transform hover:scale-110 duration-300 transition-transform"
+          ><img src="images/santasalut.jpg"
+        /></a>
+      </div>
+    </section>
+    <div
+      class="
+        bg-fixed bg-center bg-no-repeat bg-cover bg-divider-2 bg-gray-400 bg-blend-multiply
+        relative
+        h-[500px]
+        lg:bg-scroll
+      "
+    ></div>
+    <section id="faqs" class="px-4 my-10 max-w-5xl m-auto">
+      <h2 class="text-center text-3xl my-2 uppercase">Preguntes Frequents</h2>
+      <p class="text-center text-xl my-4 italic">lorem impsum faqs etc</p>
+    </section>
+  </body>
+
+  <script>
+    function toggleMenu() {
+      const element = document.getElementById('menu');
+      element.classList.toggle('hidden');
+    }
+  </script>
+</html>
