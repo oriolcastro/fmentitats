@@ -27,7 +27,7 @@
     <meta property="og:image" content="https://fme.cat/images/cartell.png" />
   </head>
   <body>
-    <header class="fixed w-full lg:px-16 px-6 bg-white flex flex-wrap items-center lg:py-0 py-2 z-10 shadow-md">
+    <header class="sticky top-0 w-full lg:px-16 px-6 bg-white flex flex-wrap items-center lg:py-0 py-2 z-10 shadow-md">
       <div class="flex-1 flex justify-between items-center">
         <a href="#">
           <img src="images/logo.png" class="rounded-full" width="48" height="48" alt="Logo Festa Major d'Entitats" />
@@ -85,18 +85,112 @@
         </nav>
       </div>
     </header>
-    <section class="bg-tiquets-section bg-no-repeat bg-cover bg-top h-screen">
-      <div class="flex flex-col items-center justify-center p-12 h-full">
+    <section class="h-screen flex flex-col gap-8 lg:flex-row lg:bg-fme-black">
+      <div class="lg:flex-1">
+        <video width="720" height="406" autoplay muted loop class="m-auto lg:hidden">
+          <source src="/images/video.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+        <div class="w-full">
+          <img
+            src="images/cartell.png"
+            width="1080"
+            height="1350"
+            lazy
+            class="hidden w-full h-auto lg:block"
+            alt="log_unio"
+          />
+        </div>
+      </div>
+      <div class="relative h-full flex flex-col justify-center items-center lg:flex-1">
+        <div
+          class="
+            absolute
+            top-24
+            -left-4
+            w-72
+            h-72
+            md:top-20
+            md:left-24
+            md:w-96
+            md:h-96
+            lg:top-32
+            bg-fme-red
+            rounded-full
+            mix-blend-multiply
+            filter
+            blur-xl
+            opacity-70
+            animate-blob
+            lg:hidden
+          "
+        ></div>
+        <div
+          class="
+            absolute
+            top-20
+            -right-4
+            w-72
+            h-72
+            md:top-20
+            md:right-20
+            md:w-96
+            md:h-96
+            lg:top-36
+            bg-fme-yellow
+            rounded-full
+            mix-blend-multiply
+            filter
+            blur-xl
+            opacity-70
+            animate-blob
+            animation-delay-2000
+            lg:hidden
+          "
+        ></div>
+        <div
+          class="
+            absolute
+            bottom-20
+            left-20
+            w-72
+            h-72
+            md:-bottom-8
+            md:left-32
+            md:w-96
+            md:h-96
+            lg:bottom-32
+            bg-fme-green
+            rounded-full
+            mix-blend-multiply
+            filter
+            blur-xl
+            opacity-70
+            animate-blob
+            animation-delay-4000
+            lg:hidden
+          "
+        ></div>
         <a
           href="https://www.weezevent.com/fme2021"
           target="_blank"
-          class="text-xl px-6 py-4 text-black bg-white rounded no-underline cursor-pointer"
+          class="relative text-xl px-6 py-4 shadow-xl text-black bg-white rounded no-underline cursor-pointer"
           >Compra la teva entrada</a
         >
       </div>
     </section>
+    <div
+      class="
+        bg-fixed bg-center bg-no-repeat bg-cover bg-divider-1 bg-gray-400
+        backdrop-opacity-30
+        bg-blend-multiply
+        relative
+        h-[500px]
+        lg:bg-scroll
+      "
+    ></div>
     <section id="quisom" class="px-4 my-10 max-w-5xl m-auto">
-      <h2 class="text-center text-3xl my-2 uppercase">Festa Major d'Entitats</h2>
+      <h2 class="text-center font-heading text-3xl my-2 uppercase">Festa Major d'Entitats</h2>
       <p class="text-center text-xl my-4 italic">Qui som?</p>
       <div class="flex flex-wrap gap-8 flex-col-reverse mb-6 lg:flex-nowrap lg:flex-row">
         <img
@@ -142,7 +236,7 @@
     </section>
     <div
       class="
-        bg-fixed bg-center bg-no-repeat bg-cover bg-divider-1 bg-gray-400
+        bg-fixed bg-center bg-no-repeat bg-cover bg-divider-2 bg-gray-400
         backdrop-opacity-30
         bg-blend-multiply
         relative
@@ -151,7 +245,7 @@
       "
     ></div>
     <section id="artistes" class="px-4 my-10 max-w-5xl m-auto">
-      <h2 class="text-center text-3xl my-2 uppercase">Cartell 2021</h2>
+      <h2 class="text-center font-heading text-3xl my-2 uppercase">Cartell 2021</h2>
       <p class="text-center text-xl my-4 italic">lorem impsum artistes etc</p>
       <div class="grid grid-cols-2 gap-4 lg:grid-cols-3 lg:gap-6">
         <a
@@ -200,14 +294,14 @@
     </section>
     <div
       class="
-        bg-fixed bg-center bg-no-repeat bg-cover bg-divider-2 bg-gray-400 bg-blend-multiply
+        bg-fixed bg-center bg-no-repeat bg-cover bg-divider-3 bg-gray-400 bg-blend-multiply
         relative
         h-[500px]
         lg:bg-scroll
       "
     ></div>
     <section id="faqs" class="px-4 my-10 max-w-5xl m-auto">
-      <h2 class="text-center text-3xl my-2 uppercase">Preguntes Frequents</h2>
+      <h2 class="text-center font-heading text-3xl my-2 uppercase">Preguntes Frequents</h2>
       <p class="text-center text-xl my-4 italic">lorem impsum faqs etc</p>
     </section>
   </body>
