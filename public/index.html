@@ -201,7 +201,7 @@
     </section>
     <section id="quisom" class="px-4 my-10 max-w-5xl m-auto" style="scroll-margin-top: 84px">
       <h2 class="text-center font-heading text-3xl my-2 uppercase">Qui som?</h2>
-      <p class="text-center text-xl my-4 italic">bla bla</p>
+      <p class="text-center text-xl my-4 italic">Coneix l'origen de la FME i les entitats que hi ha darrera</p>
       <div class="flex flex-wrap gap-8 flex-col-reverse mb-6 lg:flex-nowrap lg:flex-row">
         <img
           src="images/logo.png"
@@ -212,11 +212,13 @@
           alt="Logo Festa Major d'Entitats"
         />
         <p class="text-justify flex-1">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
-          magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-          est laborum.
+          La Festa Major d'Entitats neix l'any 2017 després que un grup d'entitats vinculades al teixit associatiu
+          juvenil i cultural de la ciutat veiessin la necessitat d'implicar-se de forma més activa en la programació
+          musical de la Festa Major. És per això que La Unió Vilanovina, Festuc, l'Apol·lo, el Ball de Diables i el
+          Casal popular uneixen forces per crear la FME, una sèrie de concerts i activitats al carrer organitzats el cap
+          de setmana del Correfoc de Festa Major. En només 3 edicions la FME experimenta un fort creixement i
+          consolidació com l'acte musical de referència en les seves dates, arribant a acollir fins a 2000 persones en
+          la seva última edició l'any 2019.
         </p>
       </div>
       <p class="font-bold mb-4 text-center">Entitats organitzadores</p>
@@ -272,8 +274,8 @@
     ></div>
     <section id="artistes" class="px-4 my-10 max-w-5xl m-auto" style="scroll-margin-top: 84px">
       <h2 class="text-center font-heading text-3xl my-2 uppercase">Cartell 2021</h2>
-      <p class="text-center text-xl my-4 italic">lorem impsum artistes etc</p>
-      <div class="grid grid-cols-2 gap-4 lg:grid-cols-3 lg:gap-6">
+      <p class="text-center text-xl my-4 italic">Aquests son els grups que ens faran ballar enguany</p>
+      <div class="grid grid-cols-2 gap-4 mb-8 lg:grid-cols-3 lg:gap-6">
         <a
           href="https://open.spotify.com/artist/0LweECx5LKm6I3gIcWMdpB"
           target="_blank"
@@ -331,6 +333,33 @@
           ><img src="images/santasalut.jpg" alt="Santa Salut"
         /></a>
       </div>
+      <div class="'flex">
+        <button
+          onclick="toggleOldPosters()"
+          class="
+            block
+            m-auto
+            text-base
+            px-6
+            py-4
+            border border-solid border-fme-black
+            rounded-md
+            cursor-pointer
+            hover:bg-fme-black
+            hover:text-white
+          "
+        >
+          CARTELLS ANTERIORS
+        </button>
+      </div>
+      <div
+        class="h-0 opacity-0 w-full flex justify-center gap-6 py-6 transition-opacity duration-500 ease-in-out"
+        id="oldPosters"
+      >
+        <img src="images/cartell2017.jpg" width="320" />
+        <img src="images/cartell2018.jpg" width="320" />
+        <img src="images/cartell2019.jpg" width="320" />
+      </div>
     </section>
     <div
       class="
@@ -342,7 +371,7 @@
     ></div>
     <section id="faqs" class="px-4 my-10 max-w-5xl m-auto" style="scroll-margin-top: 84px">
       <h2 class="text-center font-heading text-3xl my-2 uppercase">Preguntes Frequents</h2>
-      <p class="text-center text-xl my-4 italic">lorem impsum faqs etc</p>
+      <p class="text-center text-xl my-4 italic">Intentem resoldre alguns dels dubtes que teniu</p>
     </section>
   </body>
 
@@ -350,6 +379,21 @@
     function toggleMenu() {
       const element = document.getElementById('menu');
       element.classList.toggle('hidden');
+    }
+
+    function toggleOldPosters() {
+      const container = document.getElementById('oldPosters');
+
+      const isHidden = container.classList.contains('h-0');
+      if (isHidden) {
+        container.classList.add('opacity-100');
+        container.classList.remove('opacity-0');
+        container.classList.remove('h-0');
+      } else {
+        container.classList.remove('opacity-100');
+        container.classList.add('opacity-0');
+        setTimeout(() => container.classList.add('h-0'), 250);
+      }
     }
   </script>
 </html>
