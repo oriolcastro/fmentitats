@@ -767,10 +767,10 @@ video {
 	background-color: rgba(156, 163, 175, var(--tw-bg-opacity));
 }
 .bg-divider-2 {
-	background-image: url('/images/fme_1.jpeg');
+	background-image: url('/images/background_2.jpeg');
 }
 .bg-divider-3 {
-	background-image: url('/images/fme_2.jpeg');
+	background-image: url('/images/background_3.jpeg');
 }
 .bg-cover {
 	background-size: cover;
@@ -936,14 +936,6 @@ video {
 
 html {
   scroll-behavior: smooth;
-}
-
-@font-face {
-  font-family: GeometosRounded;
-  src: url('/fonts/GeometosRounded.woff2') format('woff2'), url('/fonts/GeometosRounded.woff') format('woff');
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
 }
 
 .hover\:scale-110:hover {
