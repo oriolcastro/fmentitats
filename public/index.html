@@ -216,6 +216,7 @@
           <source srcset="images/logo.webp" type="image/webp" />
           <img
             src="images/logo.jpg"
+            loading="lazy"
             class="rounded-full flex-1 max-w-xs m-auto"
             alt="Logo Festa Major d'Entitats"
             width="320"
@@ -245,6 +246,7 @@
             <source srcset="images/launio.webp" type="image/webp" />
             <img
               src="images/launio.jpg"
+              loading="lazy"
               class="opacity-75 max-w-[75px] lg:max-w-[120px] hover:opacity-100"
               alt="La Unió"
               width="240"
@@ -263,6 +265,7 @@
             <source srcset="images/diables.webp" type="image/webp" />
             <img
               src="images/diables.jpg"
+              loading="lazy"
               class="opacity-75 max-w-[75px] lg:max-w-[120px] hover:opacity-100"
               alt="Ball de Diables de Vilanova"
               width="240"
@@ -280,6 +283,7 @@
             <source srcset="images/festuc.webp" type="image/webp" />
             <img
               src="images/festuc.jpg"
+              loading="lazy"
               class="opacity-75 max-w-[75px] lg:max-w-[120px] hover:opacity-100"
               alt="Festuc"
               width="240"
@@ -297,6 +301,7 @@
             <source srcset="images/apollo.webp" type="image/webp" />
             <img
               src="images/apollo.jpg"
+              loading="lazy"
               class="opacity-75 max-w-[75px] lg:max-w-[120px] hover:opacity-100"
               alt="Apol·lo"
               width="240"
@@ -329,7 +334,7 @@
           <picture>
             <source srcset="images/31Fam.avif" type="image/avif" />
             <source srcset="images/31Fam.webp" type="image/webp" />
-            <img src="images/31Fam.jpg" alt="31 Fam" width="720" height="450" />
+            <img src="images/31Fam.jpg" loading="lazy" alt="31 Fam" width="720" height="450" />
           </picture>
         </a>
         <a
@@ -342,7 +347,7 @@
           <picture>
             <source srcset="images/ElsPets.avif" type="image/avif" />
             <source srcset="images/ElsPets.webp" type="image/webp" />
-            <img src="images/ElsPets.jpg" alt="Els Pets" width="720" height="450" /> </picture
+            <img src="images/ElsPets.jpg" loading="lazy" alt="Els Pets" width="720" height="450" /> </picture
         ></a>
         <a
           href="https://open.spotify.com/artist/3hi1Ewhqpzl1jO2GemGmv6"
@@ -353,7 +358,7 @@
           ><picture>
             <source srcset="images/Ginesta.avif" type="image/avif" />
             <source srcset="images/Ginesta.webp" type="image/webp" />
-            <img src="images/Ginesta.jpg" alt="Ginestà" width="720" height="450" /> </picture
+            <img src="images/Ginesta.jpg" loading="lazy" alt="Ginestà" width="720" height="450" /> </picture
         ></a>
         <a
           href="https://open.spotify.com/artist/5ra24fdFLZoDjlJiebjJku"
@@ -364,7 +369,7 @@
           ><picture>
             <source srcset="images/MaretaBufona.avif" type="image/avif" />
             <source srcset="images/MaretaBufona.webp" type="image/webp" />
-            <img src="images/MaretBufona.jpg" alt="Mareta Bufona" width="720" height="450" /> </picture
+            <img src="images/MaretBufona.jpg" loading="lazy" alt="Mareta Bufona" width="720" height="450" /> </picture
         ></a>
         <a
           href="https://open.spotify.com/artist/7Eyd1SVCVJGC9uqmpg4QAY"
@@ -375,7 +380,7 @@
           ><picture>
             <source srcset="images/PatasVng.avif" type="image/avif" />
             <source srcset="images/PatasVng.webp" type="image/webp" />
-            <img src="images/PatasVng.jpg" alt="Patas Vng" width="720" height="450" /> </picture
+            <img src="images/PatasVng.jpg" loading="lazy" alt="Patas Vng" width="720" height="450" /> </picture
         ></a>
         <a
           href="https://open.spotify.com/artist/5UN0rzL594mWY2RbOtZqIN"
@@ -386,7 +391,7 @@
           ><picture>
             <source srcset="images/Ptazeta.avif" type="image/avif" />
             <source srcset="images/Ptazeta.webp" type="image/webp" />
-            <img src="images/Ptazeta.jpg" alt="Ptazeta" width="720" height="450" /> </picture
+            <img src="images/Ptazeta.jpg" loading="lazy" alt="Ptazeta" width="720" height="450" /> </picture
         ></a>
         <a
           href="https://open.spotify.com/artist/75vabMROpVyiTX4wv3iHFH"
@@ -397,7 +402,7 @@
           ><picture>
             <source srcset="images/SantaSalut.avif" type="image/avif" />
             <source srcset="images/SantaSalut.webp" type="image/webp" />
-            <img src="images/Saç.jpg" alt="Santa Salut" width="720" height="450" /> </picture
+            <img src="images/SantaSalut.jpg" loading="lazy" alt="Santa Salut" width="720" height="450" /> </picture
         ></a>
       </div>
       <div class="'flex">
@@ -435,9 +440,21 @@
         "
         id="oldPosters"
       >
-        <img src="images/cartell2017.jpg" width="320" height="452" loading="lazy" alt="Cartell de l'edició 2017" />
-        <img src="images/cartell2018.jpg" width="320" height="452" loading="lazy" alt="Cartell de l'edició 2018" />
-        <img src="images/cartell2019.jpg" width="320" height="452" loading="lazy" alt="Cartell de l'edició 2019" />
+        <picture>
+          <source srcset="images/cartell2017.avif" type="image/avif" />
+          <source srcset="images/cartell2017.webp" type="image/webp" />
+          <img src="images/cartell2017.jpg" width="320" height="452" loading="lazy" alt="Cartell de l'edició 2017" />
+        </picture>
+        <picture>
+          <source srcset="images/cartell2018.avif" type="image/avif" />
+          <source srcset="images/cartell2018.webp" type="image/webp" />
+          <img src="images/cartell2018.jpg" width="320" height="452" loading="lazy" alt="Cartell de l'edició 2018" />
+        </picture>
+        <picture>
+          <source srcset="images/cartell2019.avif" type="image/avif" />
+          <source srcset="images/cartell2019.webp" type="image/webp" />
+          <img src="images/cartell2019.jpg" width="320" height="452" loading="lazy" alt="Cartell de l'edició 2019" />
+        </picture>
       </div>
     </section>
     <div
