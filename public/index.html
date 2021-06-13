@@ -1,8 +1,12 @@
 <!DOCTYPE html>
 <html lang="ca">
   <head>
+    <!-- TODO: Add other metat tags and interesting prefetchs -->
+    <!-- TODO: add FAQs content -->
     <link href="/styles.css" rel="stylesheet" />
     <title>Festa Major d'Entitats 2021</title>
+    <link rel="preload" href="/fonts/GeometosRounded.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="/fonts/GeometosRounded.woff" as="font" type="font/woff" crossorigin />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content="Compra les teves entrades per la FME 2021" />
@@ -32,7 +36,11 @@
     >
       <div class="flex-1 flex justify-between items-center">
         <a href="#">
-          <img src="images/logo_fme.png" width="102" height="40" alt="Logo Festa Major d'Entitats" />
+          <picture>
+            <source srcset="images/logo_fme.avif" type="image/avif" />
+            <source srcset="images/logo_fme.webp" type="image/webp" />
+            <img src="images/logo_fme.png" alt="Logo Festa Major d'Entitats" width="102" height="40" />
+          </picture>
         </a>
       </div>
       <button onclick="toggleMenu()" class="pointer-cursor lg:hidden block">
@@ -203,14 +211,17 @@
       <h2 class="text-center font-heading text-3xl my-2 uppercase">Qui som?</h2>
       <p class="text-center text-xl my-4 italic">Coneix l'origen de la FME i les entitats que hi ha darrera</p>
       <div class="flex flex-wrap gap-8 flex-col-reverse mb-6 lg:flex-nowrap lg:flex-row">
-        <img
-          src="images/logo.png"
-          class="rounded-full flex-1 max-w-xs m-auto"
-          alt="Photo of Me"
-          width="500"
-          height="500"
-          alt="Logo Festa Major d'Entitats"
-        />
+        <picture>
+          <source srcset="images/logo.avif" type="image/avif" />
+          <source srcset="images/logo.webp" type="image/webp" />
+          <img
+            src="images/logo.jpg"
+            class="rounded-full flex-1 max-w-xs m-auto"
+            alt="Logo Festa Major d'Entitats"
+            width="320"
+            height="320"
+          />
+        </picture>
         <p class="text-justify flex-1">
           La Festa Major d'Entitats neix l'any 2017 després que un grup d'entitats vinculades al teixit associatiu
           juvenil i cultural de la ciutat veiessin la necessitat d'implicar-se de forma més activa en la programació
@@ -228,38 +239,70 @@
           target="_blank"
           rel="noopener"
           aria-label="Enllaç a l'Instagram de La Unió"
-          ><img src="images/unio.jpg" class="opacity-75 max-w-[75px] lg:max-w-[120px] hover:opacity-100" alt="log_unio"
-        /></a>
+        >
+          <picture>
+            <source srcset="images/launio.avif" type="image/avif" />
+            <source srcset="images/launio.webp" type="image/webp" />
+            <img
+              src="images/launio.jpg"
+              class="opacity-75 max-w-[75px] lg:max-w-[120px] hover:opacity-100"
+              alt="La Unió"
+              width="240"
+              height="264"
+            />
+          </picture>
+        </a>
         <a
           href="https://www.instagram.com/diablesvng/"
           target="_blank"
           rel="noopener"
           aria-label="Enllaç a l'Instagram dels Diables de Vilanova"
-          ><img
-            src="images/diables.jpg"
-            class="opacity-75 max-w-[75px] lg:max-w-[120px] hover:opacity-100"
-            alt="log_diables"
-        /></a>
+        >
+          <picture>
+            <source srcset="images/diables.avif" type="image/avif" />
+            <source srcset="images/diables.webp" type="image/webp" />
+            <img
+              src="images/diables.jpg"
+              class="opacity-75 max-w-[75px] lg:max-w-[120px] hover:opacity-100"
+              alt="Ball de Diables de Vilanova"
+              width="240"
+              height="264"
+            /> </picture
+        ></a>
         <a
           href="https://www.instagram.com/festuc_vng/"
           target="_blank"
           rel="noopener"
           aria-label="Enllaç a l'Instagram de Festuc"
-          ><img
-            src="images/festuc.jpg"
-            class="opacity-75 max-w-[75px] lg:max-w-[120px] hover:opacity-100"
-            alt="log_festuc"
-        /></a>
+        >
+          <picture>
+            <source srcset="images/festuc.avif" type="image/avif" />
+            <source srcset="images/festuc.webp" type="image/webp" />
+            <img
+              src="images/festuc.jpg"
+              class="opacity-75 max-w-[75px] lg:max-w-[120px] hover:opacity-100"
+              alt="Festuc"
+              width="240"
+              height="264"
+            /> </picture
+        ></a>
         <a
           href="https://www.instagram.com/apollovng/"
           target="_blank"
           rel="noopener"
           aria-label="Enllaç a l'Instagram d'Apol·lo"
-          ><img
-            src="images/apollo.jpg"
-            class="opacity-75 max-w-[75px] lg:max-w-[120px] hover:opacity-100"
-            alt="log_apol·lo"
-        /></a>
+        >
+          <picture>
+            <source srcset="images/apollo.avif" type="image/avif" />
+            <source srcset="images/apollo.webp" type="image/webp" />
+            <img
+              src="images/apollo.jpg"
+              class="opacity-75 max-w-[75px] lg:max-w-[120px] hover:opacity-100"
+              alt="Apol·lo"
+              width="240"
+              height="264"
+            /> </picture
+        ></a>
       </div>
     </section>
     <div
@@ -282,56 +325,80 @@
           rel="noopener"
           class="transform hover:scale-110 duration-300 transition-transform"
           aria-label="Enllaç a la pagina de Spotify de 31 Fam"
-          ><img src="images/31fam.jpeg" alt="31 Fam"
-        /></a>
+        >
+          <picture>
+            <source srcset="images/31Fam.avif" type="image/avif" />
+            <source srcset="images/31Fam.webp" type="image/webp" />
+            <img src="images/31Fam.jpg" alt="31 Fam" width="720" height="450" />
+          </picture>
+        </a>
         <a
           href="https://open.spotify.com/artist/0OVfimlbekXaMrP8IoCzHJ"
           target="_blank"
           rel="noopener"
           class="transform hover:scale-110 duration-300 transition-transform"
           aria-label="Enllaç a la pagina de Spotify de Els Pets"
-          ><img src="images/ELS_PETS.jpg" alt="Els Pets"
-        /></a>
+        >
+          <picture>
+            <source srcset="images/ElsPets.avif" type="image/avif" />
+            <source srcset="images/ElsPets.webp" type="image/webp" />
+            <img src="images/ElsPets.jpg" alt="Els Pets" width="720" height="450" /> </picture
+        ></a>
         <a
           href="https://open.spotify.com/artist/3hi1Ewhqpzl1jO2GemGmv6"
           target="_blank"
           rel="noopener"
           class="transform hover:scale-110 duration-300 transition-transform"
           aria-label="Enllaç a la pagina de Spotify de Ginestà"
-          ><img src="images/ginesta.jpg" alt="Ginestà"
-        /></a>
+          ><picture>
+            <source srcset="images/Ginesta.avif" type="image/avif" />
+            <source srcset="images/Ginesta.webp" type="image/webp" />
+            <img src="images/Ginesta.jpg" alt="Ginestà" width="720" height="450" /> </picture
+        ></a>
         <a
           href="https://open.spotify.com/artist/5ra24fdFLZoDjlJiebjJku"
           target="_blank"
           rel="noopener"
           class="transform hover:scale-110 duration-300 transition-transform"
           aria-label="Enllaç a la pagina de Spotify de Mareta Bufona"
-          ><img src="images/maretabufona.jpg" alt="Mareta Bufona"
-        /></a>
+          ><picture>
+            <source srcset="images/MaretaBufona.avif" type="image/avif" />
+            <source srcset="images/MaretaBufona.webp" type="image/webp" />
+            <img src="images/MaretBufona.jpg" alt="Mareta Bufona" width="720" height="450" /> </picture
+        ></a>
         <a
           href="https://open.spotify.com/artist/7Eyd1SVCVJGC9uqmpg4QAY"
           target="_blank"
           rel="noopener"
           class="transform hover:scale-110 duration-300 transition-transform"
           aria-label="Enllaç a la pagina de Spotify de Patas Vng"
-          ><img src="images/ptas.jpg" alt="Patas Vng"
-        /></a>
+          ><picture>
+            <source srcset="images/PatasVng.avif" type="image/avif" />
+            <source srcset="images/PatasVng.webp" type="image/webp" />
+            <img src="images/PatasVng.jpg" alt="Patas Vng" width="720" height="450" /> </picture
+        ></a>
         <a
           href="https://open.spotify.com/artist/5UN0rzL594mWY2RbOtZqIN"
           target="_blank"
           rel="noopener"
           class="transform hover:scale-110 duration-300 transition-transform"
           aria-label="Enllaç a la pagina de Spotify de Ptazeta"
-          ><img src="images/ptzt.jpg" alt="Ptazeta"
-        /></a>
+          ><picture>
+            <source srcset="images/Ptazeta.avif" type="image/avif" />
+            <source srcset="images/Ptazeta.webp" type="image/webp" />
+            <img src="images/Ptazeta.jpg" alt="Ptazeta" width="720" height="450" /> </picture
+        ></a>
         <a
           href="https://open.spotify.com/artist/75vabMROpVyiTX4wv3iHFH"
           target="_blank"
           rel="noopener"
           class="transform hover:scale-110 duration-300 transition-transform"
           aria-label="Enllaç a la pagina de Spotify de Santa Salut"
-          ><img src="images/santasalut.jpg" alt="Santa Salut"
-        /></a>
+          ><picture>
+            <source srcset="images/SantaSalut.avif" type="image/avif" />
+            <source srcset="images/SantaSalut.webp" type="image/webp" />
+            <img src="images/Saç.jpg" alt="Santa Salut" width="720" height="450" /> </picture
+        ></a>
       </div>
       <div class="'flex">
         <button
