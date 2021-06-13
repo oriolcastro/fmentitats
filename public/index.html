@@ -1,34 +1,45 @@
 <!DOCTYPE html>
 <html lang="ca">
   <head>
-    <!-- TODO: Add other metat tags and interesting prefetchs -->
     <!-- TODO: add FAQs content -->
     <link href="/styles.css" rel="stylesheet" />
     <title>Festa Major d'Entitats 2021</title>
-    <link rel="preload" href="/fonts/GeometosRounded.woff2" as="font" type="font/woff2" crossorigin />
-    <link rel="preload" href="/fonts/GeometosRounded.woff" as="font" type="font/woff" crossorigin />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content="Compra les teves entrades per la FME 2021" />
     <meta itemprop="name" content="Festa Major d'Entitats 2021" />
     <meta itemprop="description" content="Compra les teves entrades per la FME 2021" />
-    <meta itemprop="image" content="https://fme.cat/images/cartell.png" />
+    <meta itemprop="image" content="/images/cartell.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="96x96" href="/images/favicon-96x96.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png" />
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
     <meta property="og:title" content="Festa Major d'Entitats 2021" />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://fme.cat" />
+    <meta property="og:url" content="https://develop--fmentitats.netlify.app" />
     <meta property="og:description" content="Compra les teves entrades per la FME 2021" />
-    <meta property="og:image" content="https://fme.cat/images/cartell.png" />
+    <meta property="og:image" content="/images/cartell.png" itemprop="image" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="1200" />
+    <meta property="og:image:alt" content="Cartell de la Festa Major d'Entitats 2021" />
+    <meta property="og:locale" content="ca" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta property="twitter:title" content="Festa Major d'Entitats 2021" />
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:site" content="@fmentitats" />
     <meta name="twitter:creator" content="@fmentitats" />
-    <meta property="og:url" content="https://fme.cat" />
-    <meta property="og:title" content="Festa Major d'Entitats 2021" />
-    <meta property="og:description" content="Compra les teves entrades per la FME 2021" />
-    <meta property="og:image" content="https://fme.cat/images/cartell.png" />
+    <meta property="twitter:description" content="Compra les teves entrades per la FME 2021" />
+    <meta name="twitter:image" content="https://develop--fmentitats.netlify.app/images/cartell.png" />
+    <style>
+      @font-face {
+        font-family: GeometosRounded;
+        src: url('/fonts/GeometosRounded.woff2') format('woff2'), url('/fonts/GeometosRounded.woff') format('woff');
+        font-weight: 400;
+        font-style: normal;
+        font-display: swap;
+      }
+    </style>
   </head>
   <body>
     <header
@@ -39,7 +50,7 @@
           <picture>
             <source srcset="images/logo_fme.avif" type="image/avif" />
             <source srcset="images/logo_fme.webp" type="image/webp" />
-            <img src="images/logo_fme.png" alt="Logo Festa Major d'Entitats" width="102" height="40" />
+            <img src="images/logo_fme.png" alt="Logo Festa Major d'Entitats" loading="eager" width="102" height="40" />
           </picture>
         </a>
       </div>
