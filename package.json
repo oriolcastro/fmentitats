@@ -18,9 +18,12 @@
   },
   "homepage": "https://github.com/oriolcastro/fmentitats#readme",
   "devDependencies": {
-    "autoprefixer": "^10.2.6",
-    "postcss": "^8.3.0",
-    "postcss-cli": "^8.3.1",
-    "tailwindcss-cli": "^0.1.2"
+    "autoprefixer": "10.2.6",
+    "postcss": "8.3.3",
+    "postcss-cli": "8.3.1",
+    "tailwindcss-cli": "0.1.2"
+  },
+  "dependencies": {
+    "@tailwindcss/typography": "0.4.1"
   }
 }
