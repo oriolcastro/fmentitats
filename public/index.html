@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html lang="ca">
+  <head>
+    <link href="/styles.css" rel="stylesheet" />
+    <style>
+      @font-face {
+        font-family: GeometosRounded;
+        src: url('/fonts/GeometosRounded.woff2') format('woff2'), url('/fonts/GeometosRounded.woff') format('woff');
+        font-weight: 400;
+        font-style: normal;
+        font-display: swap;
+      }
+    </style>
+    <title>Festa Major d'Entitats 2021</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Compra les teves entrades per la FME 2021" />
+    <meta itemprop="name" content="Festa Major d'Entitats 2021" />
+    <meta itemprop="description" content="Compra les teves entrades per la FME 2021" />
+    <meta itemprop="image" content="https://fme.cat/images/social_facebook.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="96x96" href="/images/favicon-96x96.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <meta property="og:title" content="Festa Major d'Entitats 2021" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://fme.cat" />
+    <meta property="og:description" content="Compra les teves entrades per la FME 2021" />
+    <meta property="og:image" content="https://fme.cat/images/social_facebook.png" itemprop="image" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="1200" />
+    <meta property="og:image:alt" content="Cartell de la Festa Major d'Entitats 2021" />
+    <meta property="og:locale" content="ca" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://fme.cat/" />
+    <meta property="twitter:title" content="Festa Major d'Entitats 2021" />
+    <meta property="twitter:description" content="Compra les teves entrades per la FME 2021" />
+    <meta name="twitter:site" content="@fmentitats" />
+    <meta name="twitter:creator" content="@fmentitats" />
+    <meta name="twitter:image" content="https://fme.cat/images/social_twitter.png" />
+  </head>
+  <body>
+    <header
+      class="sticky top-0 w-full lg:px-16 px-6 bg-fme-black flex flex-wrap items-center lg:py-0 py-2 z-10 shadow-md"
+    >
+      <div class="flex-1 flex justify-between items-center">
+        <a href="#">
+          <picture>
+            <source srcset="images/logo_fme.avif" type="image/avif" />
+            <source srcset="images/logo_fme.webp" type="image/webp" />
+            <img src="images/logo_fme.png" alt="Logo Festa Major d'Entitats" loading="eager" width="102" height="40" />
+          </picture>
+        </a>
+      </div>
+      <button onclick="toggleMenu()" class="pointer-cursor lg:hidden block">
+        <svg
+          class="fill-current text-white"
+          xmlns="http://www.w3.org/2000/svg"
+          width="20"
+          height="20"
+          viewBox="0 0 20 20"
+        >
+          <title>menu</title>
+          <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+        </svg>
+      </button>
+      <div
+        class="
+          hidden
+          fixed
+          right-0
+          top-14
+          w-full
+          bg-fme-black
+          z-10
+          px-6
+          lg:relative lg:top-auto lg:right-auto lg:flex lg:items-center lg:w-auto
+        "
+        id="menu"
+      >
+        <nav>
+          <ul class="lg:flex items-center justify-between text-base text-white pt-4 lg:pt-0">
+            <li>
+              <a
+                class="lg:p-4 py-3 px-0 block border-b-4 border-transparent hover:border-fme-red"
+                href="#quisom"
+                onclick="toggleMenu()"
+                >Qui som?</a
+              >
+            </li>
+            <li>
+              <a
+                class="lg:p-4 py-3 px-0 block border-b-4 border-transparent hover:border-fme-green"
+                href="#artistes"
+                onclick="toggleMenu()"
+                >Artistes</a
+              >
+            </li>
+            <li>
+              <a
+                class="lg:p-4 py-3 px-0 block border-b-4 border-transparent hover:border-fme-yellow"
+                href="#faqs"
+                onclick="toggleMenu()"
+                >FAQs</a
+              >
+            </li>
+            <!-- <li>
+              <a
+                class="lg:p-4 py-3 px-0 block border-b-4 border-transparent hover:border-fme-red lg:mb-0 mb-2"
+                onclick="toggleMenu()"
+                href="#contacte"
+                >Contacte</a
+              >
+            </li> -->
+            <li class="flex flex-row mb-4 lg:mb-0">
+              <a href="https://twitter.com/fmentitats" target="_blank" rel="noopener" class="lg:py-4 p-3 block">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  class="fill-current text-white"
+                >
+                  <path
+                    d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6.066 9.645c.183 4.04-2.83 8.544-8.164 8.544-1.622 0-3.131-.476-4.402-1.291 1.524.18 3.045-.244 4.252-1.189-1.256-.023-2.317-.854-2.684-1.995.451.086.895.061 1.298-.049-1.381-.278-2.335-1.522-2.304-2.853.388.215.83.344 1.301.359-1.279-.855-1.641-2.544-.889-3.835 1.416 1.738 3.533 2.881 5.92 3.001-.419-1.796.944-3.527 2.799-3.527.825 0 1.572.349 2.096.907.654-.128 1.27-.368 1.824-.697-.215.671-.67 1.233-1.263 1.589.581-.07 1.135-.224 1.649-.453-.384.578-.87 1.084-1.433 1.489z"
+                  />
+                </svg>
+              </a>
+              <a href="https://www.instagram.com/fmentitats" target="_blank" rel="noopener" class="lg:py-4 p-3 block">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  class="fill-current text-white"
+                >
+                  <path
+                    d="M14.829 6.302c-.738-.034-.96-.04-2.829-.04s-2.09.007-2.828.04c-1.899.087-2.783.986-2.87 2.87-.033.738-.041.959-.041 2.828s.008 2.09.041 2.829c.087 1.879.967 2.783 2.87 2.87.737.033.959.041 2.828.041 1.87 0 2.091-.007 2.829-.041 1.899-.086 2.782-.988 2.87-2.87.033-.738.04-.96.04-2.829s-.007-2.09-.04-2.828c-.088-1.883-.973-2.783-2.87-2.87zm-2.829 9.293c-1.985 0-3.595-1.609-3.595-3.595 0-1.985 1.61-3.594 3.595-3.594s3.595 1.609 3.595 3.594c0 1.985-1.61 3.595-3.595 3.595zm3.737-6.491c-.464 0-.84-.376-.84-.84 0-.464.376-.84.84-.84.464 0 .84.376.84.84 0 .463-.376.84-.84.84zm-1.404 2.896c0 1.289-1.045 2.333-2.333 2.333s-2.333-1.044-2.333-2.333c0-1.289 1.045-2.333 2.333-2.333s2.333 1.044 2.333 2.333zm-2.333-12c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6.958 14.886c-.115 2.545-1.532 3.955-4.071 4.072-.747.034-.986.042-2.887.042s-2.139-.008-2.886-.042c-2.544-.117-3.955-1.529-4.072-4.072-.034-.746-.042-.985-.042-2.886 0-1.901.008-2.139.042-2.886.117-2.544 1.529-3.955 4.072-4.071.747-.035.985-.043 2.886-.043s2.14.008 2.887.043c2.545.117 3.957 1.532 4.071 4.071.034.747.042.985.042 2.886 0 1.901-.008 2.14-.042 2.886z"
+                  />
+                </svg>
+              </a>
+              <a href="https://www.facebook.com/FMEntitatsVNG" target="_blank" rel="noopener" class="lg:py-4 p-3 block">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  class="fill-current text-white"
+                >
+                  <path
+                    d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm3 8h-1.35c-.538 0-.65.221-.65.778v1.222h2l-.209 2h-1.791v7h-3v-7h-2v-2h2v-2.308c0-1.769.931-2.692 3.029-2.692h1.971v3z"
+                  />
+                </svg>
+              </a>
+              <a
+                href="https://open.spotify.com/user/cb44avwfmmjada7ccotzddckm?si=2b9ee626286e4dd4"
+                target="_blank"
+                rel="noopener"
+                class="lg:py-4 p-3 block"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  class="fill-current text-white"
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                >
+                  <path
+                    d="M24 12c0 6.627-5.373 12-12 12s-12-5.373-12-12 5.373-12 12-12 12 5.373 12 12zm-12-7c-3.866 0-7 3.134-7 7s3.134 7 7 7 7-3.134 7-7-3.134-7-7-7zm3.21 10.096c-.125.207-.394.271-.6.146-1.643-1.005-3.712-1.232-6.149-.675-.235.053-.469-.094-.522-.328-.054-.235.092-.469.328-.523 2.666-.609 4.954-.347 6.799.78.205.126.27.395.144.6zm.857-1.906c-.158.257-.494.338-.751.18-1.881-1.156-4.75-1.491-6.975-.816-.289.088-.594-.075-.681-.363-.087-.289.076-.593.364-.681 2.542-.771 5.703-.398 7.863.93.257.158.338.494.18.75zm.074-1.984c-2.257-1.34-5.979-1.464-8.133-.81-.345.105-.711-.09-.816-.436-.105-.346.09-.712.436-.817 2.473-.75 6.583-.605 9.181.937.311.184.413.586.229.897-.185.311-.587.413-.897.229z"
+                  />
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <section class="relative h-[50vh] md:h-[66vh] lg:h-screen bg-fme-black">
+      <video width="720" height="406" autoplay muted loop class="object-cover absolute filter blur-sm w-full h-full">
+        <source src="/images/video.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+      <div class="relative p-4 h-full flex flex-col justify-center items-center">
+        <h1 class="text-3xl md:text-4xl lg:text-5xl font-heading mb-4 text-center text-white">
+          Festa Major d'Entitats 2021
+        </h1>
+        <p class="text-lg md:text-xl lg:text-2xl font-light uppercase mb-10 text-white">
+          30 i 31 de Juliol | Vilanova i la Geltrú
+        </p>
+        <a
+          href="https://www.weezevent.com/fme2021"
+          target="_blank"
+          rel="noopener"
+          class="
+            relative
+            text-base
+            md:text-lg
+            lg:text-xl
+            px-6
+            py-4
+            shadow-xl
+            text-fme-black
+            bg-white
+            rounded-md
+            no-underline
+            cursor-pointer
+          "
+          >Compra la teva entrada</a
+        >
+      </div>
+    </section>
+    <section id="quisom" class="px-4 my-10 max-w-5xl m-auto" style="scroll-margin-top: 84px">
+      <h2 class="text-center font-heading text-3xl my-2 uppercase">Qui som?</h2>
+      <p class="text-center text-xl my-4 italic">Coneix l'origen de la FME i les entitats que hi ha darrera</p>
+      <div class="flex flex-wrap gap-8 flex-col-reverse mb-6 items-center lg:flex-nowrap lg:flex-row">
+        <picture>
+          <source srcset="images/logo.avif" type="image/avif" />
+          <source srcset="images/logo.webp" type="image/webp" />
+          <img
+            src="images/logo.jpg"
+            loading="lazy"
+            class="rounded-full flex-1 max-w-xs m-auto"
+            alt="Logo Festa Major d'Entitats"
+            width="320"
+            height="320"
+          />
+        </picture>
+        <p class="text-justify flex-1">
+          La Festa Major d'Entitats neix l'any 2017 després que un grup d'entitats vinculades al teixit associatiu
+          juvenil i cultural de la ciutat veiessin la necessitat d'implicar-se de forma més activa en la programació
+          musical de la Festa Major. És per això que La Unió Vilanovina, Festuc, l'Apol·lo, el Ball de Diables i el
+          Casal popular uneixen forces per crear la FME, una sèrie de concerts i activitats al carrer organitzats el cap
+          de setmana del Correfoc de Festa Major. En només 3 edicions la FME experimenta un fort creixement i
+          consolidació com l'acte musical de referència en les seves dates, arribant a acollir fins a 2000 persones en
+          la seva última edició l'any 2019.
+        </p>
+      </div>
+      <p class="font-bold mb-4 text-center">Entitats organitzadores</p>
+      <div class="flex justify-center gap-2 lg:gap-8">
+        <a
+          href="https://www.instagram.com/launiovilanovina/"
+          target="_blank"
+          rel="noopener"
+          aria-label="Enllaç a l'Instagram de La Unió"
+        >
+          <picture>
+            <source srcset="images/launio.avif" type="image/avif" />
+            <source srcset="images/launio.webp" type="image/webp" />
+            <img
+              src="images/launio.jpg"
+              loading="lazy"
+              class="opacity-75 max-w-[75px] lg:max-w-[120px] hover:opacity-100"
+              alt="La Unió"
+              width="240"
+              height="264"
+            />
+          </picture>
+        </a>
+        <a
+          href="https://www.instagram.com/diablesvng/"
+          target="_blank"
+          rel="noopener"
+          aria-label="Enllaç a l'Instagram dels Diables de Vilanova"
+        >
+          <picture>
+            <source srcset="images/diables.avif" type="image/avif" />
+            <source srcset="images/diables.webp" type="image/webp" />
+            <img
+              src="images/diables.jpg"
+              loading="lazy"
+              class="opacity-75 max-w-[75px] lg:max-w-[120px] hover:opacity-100"
+              alt="Ball de Diables de Vilanova"
+              width="240"
+              height="264"
+            /> </picture
+        ></a>
+        <a
+          href="https://www.instagram.com/festuc_vng/"
+          target="_blank"
+          rel="noopener"
+          aria-label="Enllaç a l'Instagram de Festuc"
+        >
+          <picture>
+            <source srcset="images/festuc.avif" type="image/avif" />
+            <source srcset="images/festuc.webp" type="image/webp" />
+            <img
+              src="images/festuc.jpg"
+              loading="lazy"
+              class="opacity-75 max-w-[75px] lg:max-w-[120px] hover:opacity-100"
+              alt="Festuc"
+              width="240"
+              height="264"
+            /> </picture
+        ></a>
+        <a
+          href="https://www.instagram.com/apollovng/"
+          target="_blank"
+          rel="noopener"
+          aria-label="Enllaç a l'Instagram d'Apol·lo"
+        >
+          <picture>
+            <source srcset="images/apollo.avif" type="image/avif" />
+            <source srcset="images/apollo.webp" type="image/webp" />
+            <img
+              src="images/apollo.jpg"
+              loading="lazy"
+              class="opacity-75 max-w-[75px] lg:max-w-[120px] hover:opacity-100"
+              alt="Apol·lo"
+              width="240"
+              height="264"
+            /> </picture
+        ></a>
+      </div>
+    </section>
+    <div
+      class="
+        bg-fixed bg-center bg-no-repeat bg-cover bg-divider-2 bg-gray-400
+        backdrop-opacity-30
+        bg-blend-multiply
+        relative
+        h-[500px]
+        lg:bg-scroll
+      "
+    ></div>
+    <section id="artistes" class="px-4 my-10 max-w-5xl m-auto" style="scroll-margin-top: 84px">
+      <h2 class="text-center font-heading text-3xl my-2 uppercase">Cartell 2021</h2>
+      <p class="text-center text-xl my-4 italic">Aquests son els grups que ens faran ballar enguany</p>
+      <div class="grid grid-cols-2 gap-4 mb-8 lg:grid-cols-3 lg:gap-6">
+        <a
+          href="https://open.spotify.com/artist/0LweECx5LKm6I3gIcWMdpB"
+          target="_blank"
+          rel="noopener"
+          class="transform hover:scale-110 duration-300 transition-transform"
+          aria-label="Enllaç a la pagina de Spotify de 31 Fam"
+        >
+          <picture>
+            <source srcset="images/31fam.avif" type="image/avif" />
+            <source srcset="images/31fam.webp" type="image/webp" />
+            <img src="images/31fam.jpg" loading="lazy" alt="31 Fam" width="720" height="450" />
+          </picture>
+        </a>
+        <a
+          href="https://open.spotify.com/artist/0OVfimlbekXaMrP8IoCzHJ"
+          target="_blank"
+          rel="noopener"
+          class="transform hover:scale-110 duration-300 transition-transform"
+          aria-label="Enllaç a la pagina de Spotify de Els Pets"
+        >
+          <picture>
+            <source srcset="images/elspets.avif" type="image/avif" />
+            <source srcset="images/elspets.webp" type="image/webp" />
+            <img src="images/elspets.jpg" loading="lazy" alt="Els Pets" width="720" height="450" /> </picture
+        ></a>
+        <a
+          href="https://open.spotify.com/artist/3hi1Ewhqpzl1jO2GemGmv6"
+          target="_blank"
+          rel="noopener"
+          class="transform hover:scale-110 duration-300 transition-transform"
+          aria-label="Enllaç a la pagina de Spotify de Ginestà"
+          ><picture>
+            <source srcset="images/ginesta.avif" type="image/avif" />
+            <source srcset="images/ginesta.webp" type="image/webp" />
+            <img src="images/ginesta.jpg" loading="lazy" alt="Ginestà" width="720" height="450" /> </picture
+        ></a>
+        <a
+          href="https://open.spotify.com/artist/5ra24fdFLZoDjlJiebjJku"
+          target="_blank"
+          rel="noopener"
+          class="transform hover:scale-110 duration-300 transition-transform"
+          aria-label="Enllaç a la pagina de Spotify de Mareta Bufona"
+          ><picture>
+            <source srcset="images/maretabufona.avif" type="image/avif" />
+            <source srcset="images/maretabufona.webp" type="image/webp" />
+            <img src="images/maretabufona.jpg" loading="lazy" alt="Mareta Bufona" width="720" height="450" /> </picture
+        ></a>
+        <a
+          href="https://open.spotify.com/artist/7Eyd1SVCVJGC9uqmpg4QAY"
+          target="_blank"
+          rel="noopener"
+          class="transform hover:scale-110 duration-300 transition-transform"
+          aria-label="Enllaç a la pagina de Spotify de Patas Vng"
+          ><picture>
+            <source srcset="images/patasvng.avif" type="image/avif" />
+            <source srcset="images/patasvng.webp" type="image/webp" />
+            <img src="images/patasvng.jpg" loading="lazy" alt="Patas Vng" width="720" height="450" /> </picture
+        ></a>
+        <a
+          href="https://open.spotify.com/artist/5UN0rzL594mWY2RbOtZqIN"
+          target="_blank"
+          rel="noopener"
+          class="transform hover:scale-110 duration-300 transition-transform"
+          aria-label="Enllaç a la pagina de Spotify de Ptazeta"
+          ><picture>
+            <source srcset="images/ptazeta.avif" type="image/avif" />
+            <source srcset="images/ptazeta.webp" type="image/webp" />
+            <img src="images/ptazeta.jpg" loading="lazy" alt="Ptazeta" width="720" height="450" /> </picture
+        ></a>
+        <a
+          href="https://open.spotify.com/artist/75vabMROpVyiTX4wv3iHFH"
+          target="_blank"
+          rel="noopener"
+          class="transform hover:scale-110 duration-300 transition-transform"
+          aria-label="Enllaç a la pagina de Spotify de Santa Salut"
+          ><picture>
+            <source srcset="images/santasalut.avif" type="image/avif" />
+            <source srcset="images/santasalut.webp" type="image/webp" />
+            <img src="images/santasalut.jpg" loading="lazy" alt="Santa Salut" width="720" height="450" /> </picture
+        ></a>
+      </div>
+      <div class="flex flex-row flex-wrap justify-center gap-4 mb-6 lg:flex-nowrap">
+        <div class="flex-1">
+          <h3 class="font-heading text-xl my-2">Descobreix la seva música</h3>
+          <p class="prose mb-4 text-justify">
+            Us hem preparat dues llistes de reproducció, una per cada dia del festival, amb els millors èxits de tots
+            els artistes que actuaran a la Festa Major d'Entitats d'aquest any.
+          </p>
+          <a
+            href="https://open.spotify.com/playlist/0eOimS5cDR3pNdClE99dhK?si=c1f436150018482d"
+            target="_blank"
+            rel="noopener"
+            class="flex flex-row items-center px-4 py-3 rounded-md text-white bg-fme-green w-[fit-content] mx-auto mb-4"
+          >
+            <svg
+              width="24"
+              height="24"
+              xmlns="http://www.w3.org/2000/svg"
+              class="fill-current text-white mr-2"
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+            >
+              <path
+                d="M19.098 10.638c-3.868-2.297-10.248-2.508-13.941-1.387-.593.18-1.22-.155-1.399-.748-.18-.593.154-1.22.748-1.4 4.239-1.287 11.285-1.038 15.738 1.605.533.317.708 1.005.392 1.538-.316.533-1.005.709-1.538.392zm-.126 3.403c-.272.44-.847.578-1.287.308-3.225-1.982-8.142-2.557-11.958-1.399-.494.15-1.017-.129-1.167-.623-.149-.495.13-1.016.624-1.167 4.358-1.322 9.776-.682 13.48 1.595.44.27.578.847.308 1.286zm-1.469 3.267c-.215.354-.676.465-1.028.249-2.818-1.722-6.365-2.111-10.542-1.157-.402.092-.803-.16-.895-.562-.092-.403.159-.804.562-.896 4.571-1.045 8.492-.595 11.655 1.338.353.215.464.676.248 1.028zm-5.503-17.308c-6.627 0-12 5.373-12 12 0 6.628 5.373 12 12 12 6.628 0 12-5.372 12-12 0-6.627-5.372-12-12-12z"
+              />
+            </svg>
+            Llista reproducció divendres</a
+          >
+          <a
+            href="https://open.spotify.com/playlist/1dbptJvmqRuL8ind14VPG6?si=9f2a3e929fb74f69"
+            target="_blank"
+            rel="noopener"
+            class="flex flex-row items-center px-4 py-3 rounded-md text-white bg-fme-green w-[fit-content] mx-auto mb-4"
+          >
+            <svg
+              width="24"
+              height="24"
+              xmlns="http://www.w3.org/2000/svg"
+              class="fill-current text-white mr-2"
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+            >
+              <path
+                d="M19.098 10.638c-3.868-2.297-10.248-2.508-13.941-1.387-.593.18-1.22-.155-1.399-.748-.18-.593.154-1.22.748-1.4 4.239-1.287 11.285-1.038 15.738 1.605.533.317.708 1.005.392 1.538-.316.533-1.005.709-1.538.392zm-.126 3.403c-.272.44-.847.578-1.287.308-3.225-1.982-8.142-2.557-11.958-1.399-.494.15-1.017-.129-1.167-.623-.149-.495.13-1.016.624-1.167 4.358-1.322 9.776-.682 13.48 1.595.44.27.578.847.308 1.286zm-1.469 3.267c-.215.354-.676.465-1.028.249-2.818-1.722-6.365-2.111-10.542-1.157-.402.092-.803-.16-.895-.562-.092-.403.159-.804.562-.896 4.571-1.045 8.492-.595 11.655 1.338.353.215.464.676.248 1.028zm-5.503-17.308c-6.627 0-12 5.373-12 12 0 6.628 5.373 12 12 12 6.628 0 12-5.372 12-12 0-6.627-5.372-12-12-12z"
+              />
+            </svg>
+            Llista reproducció dissabte</a
+          >
+        </div>
+        <picture>
+          <source srcset="images/cartell2021.avif" type="image/avif" />
+          <source srcset="images/cartell2021.webp" type="image/webp" />
+          <img src="images/cartell2021.jpg" loading="lazy" alt="Cartell de l'edició 2021" width="420" height="525" />
+        </picture>
+      </div>
+      <div class="'flex">
+        <button
+          onclick="toggleOldPosters()"
+          class="
+            block
+            m-auto
+            text-base
+            px-6
+            py-4
+            border border-solid border-fme-black
+            rounded-md
+            cursor-pointer
+            hover:bg-fme-black hover:text-white
+          "
+        >
+          CARTELLS ANTERIORS
+        </button>
+      </div>
+      <div
+        class="
+          h-0
+          opacity-0
+          w-full
+          flex
+          justify-center
+          flex-wrap
+          gap-6
+          py-6
+          transition-opacity
+          duration-500
+          ease-in-out
+        "
+        id="oldPosters"
+      >
+        <picture>
+          <source srcset="images/cartell2017.avif" type="image/avif" />
+          <source srcset="images/cartell2017.webp" type="image/webp" />
+          <img src="images/cartell2017.jpg" width="320" height="452" loading="lazy" alt="Cartell de l'edició 2017" />
+        </picture>
+        <picture>
+          <source srcset="images/cartell2018.avif" type="image/avif" />
+          <source srcset="images/cartell2018.webp" type="image/webp" />
+          <img src="images/cartell2018.jpg" width="320" height="452" loading="lazy" alt="Cartell de l'edició 2018" />
+        </picture>
+        <picture>
+          <source srcset="images/cartell2019.avif" type="image/avif" />
+          <source srcset="images/cartell2019.webp" type="image/webp" />
+          <img src="images/cartell2019.jpg" width="320" height="452" loading="lazy" alt="Cartell de l'edició 2019" />
+        </picture>
+      </div>
+    </section>
+    <div
+      class="
+        bg-fixed bg-center bg-no-repeat bg-cover bg-divider-3 bg-gray-400 bg-blend-multiply
+        relative
+        h-[500px]
+        lg:bg-scroll
+      "
+    ></div>
+    <section id="faqs" class="px-4 my-10 max-w-5xl m-auto prose" style="scroll-margin-top: 84px">
+      <h2 class="text-center font-heading text-3xl my-2 uppercase">Preguntes Frequents</h2>
+      <p class="text-center text-xl mb-6 italic">Intentem resoldre alguns dels dubtes que teniu</p>
+      <!-- INFORMACIÓ GENERAL -->
+      <h3 class="font-heading text-xl my-2">Informació General</h3>
+      <div class="mb-4">
+        <h4 class="font-bold">Per què la FME 2021 és de pagament?</h4>
+        <p class="text-justify">
+          La Festa Major d'Entitats ha estat sempre oberta i gratuïta, però enguany no serà així. Les restriccions
+          derivades de la pandèmia ens limiten molt l'aforament i això té un impacte directe ens els ingressos de barres
+          que feien sostenible l'acte. A banda les condicions necessàries per garantir la seguretat de tothom han
+          incrementat substancialment els costos del festival. És per això que l'organització ha decidit que l'única
+          forma de fer viable i tirar endavant la FME d'enguany és cobrant entrada.
+        </p>
+      </div>
+      <div class="mb-4">
+        <h4 class="font-bold">Que haig de dur si sóc menor d’edat?</h4>
+        <p class="text-justify">
+          Els menors d’edat heu de dur l'autorització degudament omplerta segons quina sigui la vostra edat (16 a 18
+          anys o menys de 16), així com la documentació adjunta necessària. Us podeu descarregar el document a
+          continuació:
+        </p>
+        <ul>
+          <li>
+            <a href="assets/Menors_de_16_anys.pdf" class="hover:text-fme-green">Autorització menors de 16 anys</a>
+          </li>
+          <li>
+            <a href="assets/Menors_de_16_a_18_anys.pdf" class="hover:text-fme-green"
+              >Autorització menors de 16 a 18 anys</a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="mb-4">
+        <h4 class="font-bold">Puc entrar dins del recinte un cop n’he sortit?</h4>
+        <p class="text-justify">No, una vegada hagis sortit del recinte ja no hi podràs tornar a accedir.</p>
+      </div>
+      <div class="mb-4">
+        <h4 class="font-bold">
+          S’ha de presentar el DNI/NIE, el passaport o el carnet de conduir a la taquilla del festival?
+        </h4>
+        <p class="text-justify">
+          Totes les persones hauran de portar un document d’identificació vàlid per si l’organització requereix d’alguna
+          comprovació.
+        </p>
+      </div>
+      <div class="mb-4">
+        <h4 class="font-bold">He de portar la meva entrada impresa per accedir al festival?</h4>
+        <p class="text-justify">
+          No és necessari. La verificació de les entrades es durà a terme a través del codi de barres present en el PDF
+          que rebeu en el moment de la compra, de forma que recomanem dur les entrades en format electrònic.
+        </p>
+      </div>
+      <div class="mb-4">
+        <h4 class="font-bold">Es poden dur motxilles al festival?</h4>
+        <p class="text-justify">
+          Sí que es podran dur motxilles al festival. Tot i això, aquestes no poden contenir beguda, menjar ni articles
+          perillosos. El personal d’accés podrà revisar els efectes personals a l’entrada i retirar qualsevol objecte
+          que consideri que pot suposar un risc pels assistents.
+        </p>
+      </div>
+      <div class="mb-4">
+        <h4 class="font-bold">Els cotxets dels infants poden entrar al recinte?</h4>
+        <p class="text-justify">
+          Sí, els cotxets podran ubicar-se al costat de la localització dels seients dels seus propietaris.
+        </p>
+      </div>
+      <div class="mb-4">
+        <h4 class="font-bold">Quan rebré el braçalet que dona accés a les instal·lacions?</h4>
+        <p class="text-justify">
+          El braçalet que et permet entrar al recinte el rebràs a la porta d’accés un cop validada la teva entrada.
+        </p>
+      </div>
+      <!-- ENTRADES -->
+      <h3 class="font-heading text-xl my-2">Sobre les entrades</h3>
+      <div class="mb-4">
+        <h4 class="font-bold">Puc comprar entrades per als meus amics, familiars o coneguts?</h4>
+        <p class="text-justify">
+          Si, les entrades NO són nominals i no us caldrà donar cap dada dels vostres amics, familiars o coneguts. En el
+          moment de fer la compra només us demanarem les vostres dades per tal de gestionar incidències i fer-vos
+          arribar informació del festival.
+        </p>
+      </div>
+      <div class="mb-4">
+        <h4 class="font-bold">Si tinc un problema amb l'entrada amb qui puc contactar?</h4>
+        <p class="text-justify">
+          En cas de tenir qualsevol problema relacionat amb les entrades ens pots escriure a
+          <a href="mailto:fmentitats@gmail.com">fmentitats@gmail.com</a> o contactar amb nosaltres a través de les
+          xarxes socials.
+        </p>
+      </div>
+      <div class="mb-4">
+        <h4 class="font-bold">Puc comprar més d’una entrada?</h4>
+        <p class="text-justify">
+          Sí, però amb la finalitat de garantir que el màxim nombre de persones pugui aconseguir alguna entrada, s’ha
+          limitat la compra d’entrades a un màxim de 15 entrades per operació.
+        </p>
+      </div>
+      <div class="mb-4">
+        <h4 class="font-bold">Puc validar l’entrada d’algú que no hi sigui?</h4>
+        <p class="text-justify">
+          No, la validació d’entrades és personal i es fa a l’arribada al recinte per tal de canviar l’entrada per una
+          polsera que hi dóna accés.
+        </p>
+      </div>
+      <div class="mb-4">
+        <h4 class="font-bold">Els infants han de pagar entrada?</h4>
+        <p class="text-justify">
+          Han de pagar entrada tothom qui el dia d'accés al recinte hagi complert els 6 anys. És important tenir en
+          compte que els i les menors de 6 anys no tindran assignat un seient, i que per tant, hauran de seure amb els
+          seus tutors legals.
+        </p>
+      </div>
+      <div class="mb-4">
+        <h4 class="font-bold">He comprat l’entrada i no m’ha arribat cap correu de confirmació, que he de fer?</h4>
+        <p class="text-justify">
+          Primer de tot dóna uns minuts al sistema per tal que processi la teva compra. Revisa la carpeta del correu
+          brossa o busca correus rebuts de part de support@weezevent.com o amb assumpte "Tu pedido para Festa Major
+          d'Entitats 2021".<br />
+          Si així i tot no localitzes les teves entrades des de la
+          <a href="https://www.weezevent.com/fme2021" target="_blank" rel="noopener" class="hover:text-fme-green"
+            >pàgina de compra</a
+          >
+          tens l'opció de reenviar la confirmació de compra introduint el teu correu electrònic.<br />
+          Finalment si no trobes solució escriu-nos a <a href="mailto:fmentitats@gmail.com">fmentitats@gmail.com</a> amb
+          les teves dades:
+        </p>
+        <ul>
+          <li>Nom i cognoms</li>
+          <li>Correu electrònic amb què has fet la compra</li>
+          <li>Data i hora aproximada</li>
+          <li>Tipus d'entrada/es seleccionades</li>
+        </ul>
+      </div>
+      <!-- HORARIS -->
+      <h3 class="font-heading text-xl my-2">Sobre els horaris</h3>
+      <div class="mb-4">
+        <h4 class="font-bold">Quins són els horaris de les actuacions?</h4>
+        <p class="text-justify">
+          En aquests moments encara no tenim tancats els horaris dels concerts, ja que estem pendents dels canvis que
+          pugui haver-hi a les restriccions que ens afecten. Ens els pròxims dies publicarem a les nostres xarxes
+          socials i web els horaris d'actuació.
+        </p>
+      </div>
+      <div class="mb-4">
+        <h4 class="font-bold">Puc entrar a qualsevol hora dins del recinte?</h4>
+        <p class="text-justify">
+          Es podrà accedir al recinte en tot moment des l’hora d’obertura de portes. Recordem, que l’assignació de
+          seients es realitzarà per ordre d’arribada al recinte.
+        </p>
+      </div>
+      <!-- MESURES COVID -->
+      <h3 class="font-heading text-xl my-2">Sobre les mesures Covid</h3>
+      <div class="mb-4">
+        <h4 class="font-bold">Els concerts seran asseguts?</h4>
+        <p class="text-justify">
+          Les restriccions actualment vigents marquen que en tots els concerts i actes culturals el públic ha d'estar
+          assegut i amb mascareta. L'organització seguim treballant per actualitzar el format i funcionament del
+          festival segons les últimes indicacions de les autoritats sanitàries.
+        </p>
+      </div>
+      <div class="mb-4">
+        <h4 class="font-bold">He de dur mascareta tota l’estona?</h4>
+        <p class="text-justify">
+          Sí, segons la normativa vigent s’haurà de portar tota l’estona menys per menjar i beure a les zones
+          autoritzades.
+        </p>
+      </div>
+      <div class="mb-4">
+        <h4 class="font-bold">Es pot entrar menjar i beguda al recinte?</h4>
+        <p class="text-justify">
+          No, dins el recinte de la Festa Major d'Entitats hi haurà serveis de barra i "food trucks" a l'abast de tot el
+          públic. Sí que es permetrà l'accés amb menjar per als infants menors de 6 anys així com en el cas de
+          restriccions alimentàries.
+        </p>
+      </div>
+    </section>
+  </body>
+
+  <script>
+    function toggleMenu() {
+      const element = document.getElementById('menu');
+      element.classList.toggle('hidden');
+    }
+
+    function toggleOldPosters() {
+      const container = document.getElementById('oldPosters');
+
+      const isHidden = container.classList.contains('h-0');
+      if (isHidden) {
+        container.classList.add('opacity-100');
+        container.classList.remove('opacity-0');
+        container.classList.remove('h-0');
+      } else {
+        container.classList.remove('opacity-100');
+        container.classList.add('opacity-0');
+        setTimeout(() => container.classList.add('h-0'), 250);
+      }
+    }
+  </script>
+</html>
