@@ -2,7 +2,6 @@
   "name": "fmentitats",
   "version": "1.0.0",
   "description": "Website for the FME 2021",
-  "main": "index.js",
   "scripts": {
     "build": "NODE_ENV=production postcss styles.css -o ./public/styles.css",
     "dev": "NODE_ENV=development postcss styles.css -o ./public/styles.css -w"
@@ -11,12 +10,19 @@
     "type": "git",
     "url": "git+https://github.com/oriolcastro/fmentitats.git"
   },
-  "author": "",
+  "author": {
+    "name": "Oriol Castro Arnau",
+    "email": "uri@oriolcastro.me",
+    "url": "https://github.com/oriolcastro"
+  },
+  "contributors": [
+    "Marc Ferrer Mompart (https://github.com/MarcFerrerMompart)"
+  ],
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/oriolcastro/fmentitats/issues"
   },
-  "homepage": "https://github.com/oriolcastro/fmentitats#readme",
+  "homepage": "https://fme.cat",
   "devDependencies": {
     "autoprefixer": "10.2.6",
     "postcss": "8.3.4",
