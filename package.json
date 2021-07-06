@@ -25,9 +25,9 @@
   "homepage": "https://fme.cat",
   "devDependencies": {
     "autoprefixer": "10.2.6",
-    "postcss": "8.3.4",
+    "postcss": "8.3.5",
     "postcss-cli": "8.3.1",
-    "tailwindcss-cli": "0.1.2"
+    "tailwindcss": "2.2.4"
   },
   "dependencies": {
     "@tailwindcss/typography": "0.4.1"
