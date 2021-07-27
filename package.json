@@ -24,10 +24,10 @@
   },
   "homepage": "https://fme.cat",
   "devDependencies": {
-    "autoprefixer": "10.2.6",
-    "postcss": "8.3.5",
+    "autoprefixer": "10.3.1",
+    "postcss": "8.3.6",
     "postcss-cli": "8.3.1",
-    "tailwindcss": "2.2.4"
+    "tailwindcss": "2.2.7"
   },
   "dependencies": {
     "@tailwindcss/typography": "0.4.1"
