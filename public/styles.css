@@ -970,9 +970,6 @@ video {
 	margin-left: auto;
 	margin-right: auto;
 }
-.mb-2 {
-	margin-bottom: 0.5rem;
-}
 .mb-4 {
 	margin-bottom: 1rem;
 }
@@ -1123,6 +1120,9 @@ video {
 }
 .bg-divider-3 {
 	background-image: url('/images/background_3.jpeg');
+}
+.bg-divider-1 {
+	background-image: url('/images/background_1.jpeg');
 }
 .bg-cover {
 	background-size: cover;
