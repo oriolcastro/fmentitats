@@ -1,9 +1,7 @@
 const defaultTheme = require('tailwindcss/defaultTheme');
 
 module.exports = {
-  mode: 'jit',
-  purge: ['./public/**/*.html'],
-  darkMode: false,
+  content: ['./public/**/*.html'],
   theme: {
     extend: {
       backgroundImage: (theme) => ({
@@ -12,7 +10,7 @@ module.exports = {
         'divider-3': "url('/images/background_3.jpeg')",
       }),
       fontFamily: {
-        heading: ['GeometosRounded', ...defaultTheme.fontFamily.sans],
+        heading: ['Buchery', ...defaultTheme.fontFamily.sans],
       },
       colors: {
         'fme-red': 'rgb(193, 73, 71)',
@@ -22,8 +20,6 @@ module.exports = {
       },
     },
   },
-  variants: {
-    extend: {},
-  },
+
   plugins: [require('@tailwindcss/typography')],
 };
