@@ -4,56 +4,63 @@
     <link href="/styles.css" rel="stylesheet" />
     <style>
       @font-face {
-        font-family: GeometosRounded;
-        src: url('/fonts/GeometosRounded.woff2') format('woff2'), url('/fonts/GeometosRounded.woff') format('woff');
+        font-family: Butchery;
+        src: url('/fonts/Butchery.woff2') format('woff2'), url('/fonts/Butchery.woff') format('woff');
+        font-weight: 400;
+        font-style: normal;
+        font-display: swap;
+      }
+      @font-face {
+        font-family: Jost;
+        src: url('/fonts/Jost.woff2') format('woff2'), url('/fonts/Jost.woff') format('woff');
         font-weight: 400;
         font-style: normal;
         font-display: swap;
       }
     </style>
-    <title>Festa Major d'Entitats 2021</title>
+    <title>Festa Major d'Entitats 2023</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="Compra les teves entrades per la FME 2021" />
-    <meta itemprop="name" content="Festa Major d'Entitats 2021" />
-    <meta itemprop="description" content="Compra les teves entrades per la FME 2021" />
+    <meta name="description" content="Descobreix tota la programació de l'edició 2023" />
+    <meta itemprop="name" content="Festa Major d'Entitats 2023" />
+    <meta itemprop="description" content="Descobreix tota la programació de l'edició 2023" />
     <meta itemprop="image" content="https://fme.cat/images/social_facebook.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="96x96" href="/images/favicon-96x96.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png" />
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
-    <meta property="og:title" content="Festa Major d'Entitats 2021" />
+    <meta property="og:title" content="Festa Major d'Entitats 2023" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://fme.cat" />
-    <meta property="og:description" content="Compra les teves entrades per la FME 2021" />
+    <meta property="og:description" content="Descobreix tota la programació de l'edició 2023" />
     <meta property="og:image" content="https://fme.cat/images/social_facebook.png" itemprop="image" />
     <meta property="og:image:type" content="image/png" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="1200" />
-    <meta property="og:image:alt" content="Cartell de la Festa Major d'Entitats 2021" />
+    <meta property="og:image:alt" content="Cartell de la Festa Major d'Entitats 2023" />
     <meta property="og:locale" content="ca" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta property="twitter:url" content="https://fme.cat/" />
-    <meta property="twitter:title" content="Festa Major d'Entitats 2021" />
-    <meta property="twitter:description" content="Compra les teves entrades per la FME 2021" />
+    <meta property="twitter:title" content="Festa Major d'Entitats 2023" />
+    <meta property="twitter:description" content="Descobreix tota la programació de l'edició 2023" />
     <meta name="twitter:site" content="@fmentitats" />
     <meta name="twitter:creator" content="@fmentitats" />
     <meta name="twitter:image" content="https://fme.cat/images/social_twitter.png" />
   </head>
   <body>
     <header
-      class="sticky top-0 w-full lg:px-16 px-6 bg-fme-black flex flex-wrap items-center lg:py-0 py-2 z-10 shadow-md"
+      class="sticky top-0 z-10 flex w-full flex-wrap items-center bg-fme-black px-6 py-2 shadow-md lg:px-16 lg:py-0"
     >
-      <div class="flex-1 flex justify-between items-center">
+      <div class="flex flex-1 items-center justify-between py-2">
         <a href="#">
           <picture>
-            <source srcset="images/logo_fme.avif" type="image/avif" />
-            <source srcset="images/logo_fme.webp" type="image/webp" />
-            <img src="images/logo_fme.png" alt="Logo Festa Major d'Entitats" loading="eager" width="102" height="40" />
+            <source srcset="images/logo-fme.avif" type="image/avif" />
+            <source srcset="images/logo-fme.webp" type="image/webp" />
+            <img src="images/logo-fme.png" alt="Logo Festa Major d'Entitats" loading="eager" width="102" height="40" />
           </picture>
         </a>
       </div>
-      <button onclick="toggleMenu()" class="pointer-cursor lg:hidden block">
+      <button onclick="toggleMenu()" class="pointer-cursor block lg:hidden">
         <svg
           class="fill-current text-white"
           xmlns="http://www.w3.org/2000/svg"
@@ -66,43 +73,33 @@
         </svg>
       </button>
       <div
-        class="
-          hidden
-          fixed
-          right-0
-          top-14
-          w-full
-          bg-fme-black
-          z-10
-          px-6
-          lg:relative lg:top-auto lg:right-auto lg:flex lg:items-center lg:w-auto
-        "
+        class="fixed right-0 top-14 z-10 hidden w-full bg-fme-black px-6 lg:relative lg:top-auto lg:right-auto lg:flex lg:w-auto lg:items-center"
         id="menu"
       >
         <nav>
-          <ul class="lg:flex items-center justify-between text-base text-white pt-4 lg:pt-0">
+          <ul class="items-center justify-between pt-4 text-base text-white lg:flex lg:pt-0">
             <li>
               <a
-                class="lg:p-4 py-3 px-0 block border-b-4 border-transparent hover:border-fme-red"
-                href="#quisom"
+                class="block border-b-4 border-transparent py-3 px-0 hover:border-fme-red lg:p-4"
+                href="#projecte"
                 onclick="toggleMenu()"
-                >Qui som?</a
+                >Que és la FME?</a
               >
             </li>
             <li>
               <a
-                class="lg:p-4 py-3 px-0 block border-b-4 border-transparent hover:border-fme-green"
-                href="#artistes"
+                class="block border-b-4 border-transparent py-3 px-0 hover:border-fme-green lg:p-4"
+                href="#programa-2023"
                 onclick="toggleMenu()"
-                >Artistes</a
+                >Programa 2023</a
               >
             </li>
             <li>
               <a
-                class="lg:p-4 py-3 px-0 block border-b-4 border-transparent hover:border-fme-yellow"
-                href="#faqs"
+                class="block border-b-4 border-transparent py-3 px-0 hover:border-fme-yellow lg:p-4"
+                href="#altres"
                 onclick="toggleMenu()"
-                >FAQs</a
+                >???</a
               >
             </li>
             <!-- <li>
@@ -113,8 +110,8 @@
                 >Horaris</a
               >
             </li> -->
-            <li class="flex flex-row mb-4 lg:mb-0">
-              <a href="https://twitter.com/fmentitats" target="_blank" rel="noopener" class="lg:py-4 p-3 block">
+            <li class="mb-4 flex flex-row lg:mb-0">
+              <a href="https://twitter.com/fmentitats" target="_blank" rel="noopener" class="block p-3 lg:py-4">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"
@@ -127,7 +124,7 @@
                   />
                 </svg>
               </a>
-              <a href="https://www.instagram.com/fmentitats" target="_blank" rel="noopener" class="lg:py-4 p-3 block">
+              <a href="https://www.instagram.com/fmentitats" target="_blank" rel="noopener" class="block p-3 lg:py-4">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"
@@ -140,7 +137,7 @@
                   />
                 </svg>
               </a>
-              <a href="https://www.facebook.com/FMEntitatsVNG" target="_blank" rel="noopener" class="lg:py-4 p-3 block">
+              <a href="https://www.facebook.com/FMEntitatsVNG" target="_blank" rel="noopener" class="block p-3 lg:py-4">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"
@@ -157,7 +154,7 @@
                 href="https://open.spotify.com/user/cb44avwfmmjada7ccotzddckm?si=2b9ee626286e4dd4"
                 target="_blank"
                 rel="noopener"
-                class="lg:py-4 p-3 block"
+                class="block p-3 lg:py-4"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -178,42 +175,27 @@
         </nav>
       </div>
     </header>
-    <section class="relative h-[50vh] md:h-[66vh] lg:h-screen bg-fme-black">
-      <video width="720" height="406" autoplay muted loop class="object-cover absolute filter blur-sm w-full h-full">
+    <section class="relative h-[50vh] bg-fme-black md:h-[66vh] lg:h-screen">
+      <video width="720" height="406" autoplay muted loop class="absolute h-full w-full object-cover blur-sm filter">
         <source src="/images/video.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
-      <div class="relative p-4 h-full flex flex-col justify-center items-center">
-        <h1 class="text-3xl md:text-4xl lg:text-5xl font-heading mb-4 text-center text-white">
-          Festa Major d'Entitats 2021
+      <div class="relative flex h-full flex-col items-center justify-center p-4">
+        <h1 class="mb-4 text-center font-heading text-4xl text-white md:text-6xl lg:text-7xl">
+          Festa Major d'Entitats 2023
         </h1>
-        <p class="text-lg md:text-xl lg:text-2xl font-light uppercase mb-10 text-white">
-          30 i 31 de Juliol | Vilanova i la Geltrú
+        <p class="mb-10 text-lg font-light uppercase text-white md:text-xl lg:text-2xl">
+          27 de juliol al 5 d'agost | Vilanova i la Geltrú
         </p>
         <a
           href="https://www.weezevent.com/fme2021"
           target="_blank"
           rel="noopener"
-          class="
-            flex flex-row
-            items-center
-            relative
-            text-base
-            md:text-lg
-            lg:text-xl
-            px-6
-            py-4
-            shadow-xl
-            text-fme-black
-            bg-white
-            rounded-md
-            no-underline
-            cursor-pointer
-          "
+          class="relative flex cursor-pointer flex-row items-center rounded-md bg-white px-6 py-4 text-base text-fme-black no-underline shadow-xl md:text-lg lg:text-xl"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            class="h-6 w-6 mr-2"
+            class="mr-2 h-6 w-6"
             fill="none"
             viewBox="0 0 24 24"
             stroke="currentColor"
@@ -226,37 +208,37 @@
             />
           </svg>
 
-          Compra la teva entrada</a
+          EDICIO 2023</a
         >
       </div>
     </section>
-    <section id="quisom" class="px-4 my-10 max-w-5xl m-auto" style="scroll-margin-top: 84px">
-      <h2 class="text-center font-heading text-3xl my-2 uppercase">Qui som?</h2>
-      <p class="text-center text-xl my-4 italic">Coneix l'origen de la FME i les entitats que hi ha darrera</p>
-      <div class="flex flex-wrap gap-8 flex-col-reverse mb-6 items-center lg:flex-nowrap lg:flex-row">
+    <section id="quisom" class="m-auto my-10 max-w-5xl px-4" style="scroll-margin-top: 84px">
+      <h2 class="my-2 text-center font-heading text-3xl uppercase">Qui som?</h2>
+      <p class="my-4 text-center text-xl italic">Coneix l'origen de la FME i les entitats que hi ha darrera</p>
+      <div class="mb-6 flex flex-col-reverse flex-wrap items-center gap-8 lg:flex-row lg:flex-nowrap">
         <picture>
           <source srcset="images/logo.avif" type="image/avif" />
           <source srcset="images/logo.webp" type="image/webp" />
           <img
             src="images/logo.jpg"
             loading="lazy"
-            class="rounded-full flex-1 max-w-xs m-auto"
+            class="m-auto max-w-xs flex-1 rounded-full"
             alt="Logo Festa Major d'Entitats"
             width="320"
             height="320"
           />
         </picture>
-        <p class="text-justify flex-1">
-          La Festa Major d'Entitats neix l'any 2017 després que un grup d'entitats vinculades al teixit associatiu
-          juvenil i cultural de la ciutat veiessin la necessitat d'implicar-se de forma més activa en la programació
-          musical de la Festa Major. És per això que La Unió Vilanovina, Festuc, l'Apol·lo, el Ball de Diables i el
-          Casal popular uneixen forces per crear la FME, una sèrie de concerts i activitats al carrer organitzats el cap
-          de setmana del Correfoc de Festa Major. En només 3 edicions la FME experimenta un fort creixement i
-          consolidació com l'acte musical de referència en les seves dates, arribant a acollir fins a 2000 persones en
-          la seva última edició l'any 2019.
+        <p class="flex-1 text-justify">
+          ACTUALITZAR: La Festa Major d'Entitats neix l'any 2017 després que un grup d'entitats vinculades al teixit
+          associatiu juvenil i cultural de la ciutat veiessin la necessitat d'implicar-se de forma més activa en la
+          programació musical de la Festa Major. És per això que La Unió Vilanovina, Festuc, l'Apol·lo, el Ball de
+          Diables i el Casal popular uneixen forces per crear la FME, una sèrie de concerts i activitats al carrer
+          organitzats el cap de setmana del Correfoc de Festa Major. En només 3 edicions la FME experimenta un fort
+          creixement i consolidació com l'acte musical de referència en les seves dates, arribant a acollir fins a 2000
+          persones en la seva última edició l'any 2019.
         </p>
       </div>
-      <p class="font-bold mb-4 text-center">Entitats organitzadores</p>
+      <p class="mb-4 text-center font-bold">Entitats organitzadores</p>
       <div class="flex justify-center gap-2 lg:gap-8">
         <a
           href="https://www.instagram.com/launiovilanovina/"
@@ -270,7 +252,7 @@
             <img
               src="images/launio.jpg"
               loading="lazy"
-              class="opacity-75 max-w-[75px] lg:max-w-[120px] hover:opacity-100"
+              class="max-w-[75px] opacity-75 hover:opacity-100 lg:max-w-[120px]"
               alt="La Unió"
               width="240"
               height="264"
@@ -289,7 +271,7 @@
             <img
               src="images/diables.jpg"
               loading="lazy"
-              class="opacity-75 max-w-[75px] lg:max-w-[120px] hover:opacity-100"
+              class="max-w-[75px] opacity-75 hover:opacity-100 lg:max-w-[120px]"
               alt="Ball de Diables de Vilanova"
               width="240"
               height="264"
@@ -307,7 +289,7 @@
             <img
               src="images/festuc.jpg"
               loading="lazy"
-              class="opacity-75 max-w-[75px] lg:max-w-[120px] hover:opacity-100"
+              class="max-w-[75px] opacity-75 hover:opacity-100 lg:max-w-[120px]"
               alt="Festuc"
               width="240"
               height="264"
@@ -325,33 +307,66 @@
             <img
               src="images/apollo.jpg"
               loading="lazy"
-              class="opacity-75 max-w-[75px] lg:max-w-[120px] hover:opacity-100"
+              class="max-w-[75px] opacity-75 hover:opacity-100 lg:max-w-[120px]"
               alt="Apol·lo"
               width="240"
               height="264"
             /> </picture
         ></a>
+        <a
+          href="https://www.instagram.com/bordegassosvilanova/"
+          target="_blank"
+          rel="noopener"
+          aria-label="Enllaç a l'Instagram dels Bordegassos de Vilanova"
+          class="flex flex-col items-center justify-center"
+        >
+          <picture>
+            <source srcset="images/bordegassos.avif" type="image/avif" />
+            <source srcset="images/bordegassos.webp" type="image/webp" />
+            <img
+              src="images/bordegassos.jpg"
+              loading="lazy"
+              class="max-w-[120px] opacity-75 hover:opacity-100 lg:max-w-[180px]"
+              alt="Bordegassos"
+              width="240"
+              height="264"
+            />
+          </picture>
+        </a>
+        <a
+          href="https://www.instagram.com/ateneuvilanovi/"
+          target="_blank"
+          rel="noopener"
+          aria-label="Enllaç a l'Instagram del Ateneu Vilanovi"
+          class="flex flex-col items-center justify-center"
+        >
+          <picture>
+            <source srcset="images/ateneu.avif" type="image/avif" />
+            <source srcset="images/ateneu.webp" type="image/webp" />
+            <img
+              src="images/ateneu.jpg"
+              loading="lazy"
+              class="max-w-[120px] opacity-75 hover:opacity-100 lg:max-w-[180px]"
+              alt="Ateneu Vilanovi"
+              width="790"
+              height="180"
+            />
+          </picture>
+        </a>
       </div>
     </section>
     <div
-      class="
-        bg-fixed bg-center bg-no-repeat bg-cover bg-divider-2 bg-gray-400
-        backdrop-opacity-30
-        bg-blend-multiply
-        relative
-        h-[500px]
-        lg:bg-scroll
-      "
+      class="relative h-[500px] bg-gray-400 bg-divider-2 bg-cover bg-fixed bg-center bg-no-repeat bg-blend-multiply backdrop-opacity-30 lg:bg-scroll"
     ></div>
-    <section id="artistes" class="px-4 my-10 max-w-5xl m-auto" style="scroll-margin-top: 84px">
-      <h2 class="text-center font-heading text-3xl my-2 uppercase">Cartell 2021</h2>
-      <p class="text-center text-xl my-4 italic">Aquests son els grups que ens faran ballar enguany</p>
-      <div class="grid grid-cols-2 gap-4 mb-8 lg:grid-cols-3 lg:gap-6">
+    <section id="artistes" class="m-auto my-10 max-w-5xl px-4" style="scroll-margin-top: 84px">
+      <h2 class="my-2 text-center font-heading text-3xl uppercase">Cartell 2021</h2>
+      <p class="my-4 text-center text-xl italic">Aquests son els grups que ens faran ballar enguany</p>
+      <div class="mb-8 grid grid-cols-2 gap-4 lg:grid-cols-3 lg:gap-6">
         <a
           href="https://open.spotify.com/artist/0LweECx5LKm6I3gIcWMdpB"
           target="_blank"
           rel="noopener"
-          class="transform hover:scale-110 duration-300 transition-transform"
+          class="transform transition-transform duration-300 hover:scale-110"
           aria-label="Enllaç a la pagina de Spotify de 31 Fam"
         >
           <picture>
@@ -364,7 +379,7 @@
           href="https://open.spotify.com/artist/0OVfimlbekXaMrP8IoCzHJ"
           target="_blank"
           rel="noopener"
-          class="transform hover:scale-110 duration-300 transition-transform"
+          class="transform transition-transform duration-300 hover:scale-110"
           aria-label="Enllaç a la pagina de Spotify de Els Pets"
         >
           <picture>
@@ -376,7 +391,7 @@
           href="https://open.spotify.com/artist/3hi1Ewhqpzl1jO2GemGmv6"
           target="_blank"
           rel="noopener"
-          class="transform hover:scale-110 duration-300 transition-transform"
+          class="transform transition-transform duration-300 hover:scale-110"
           aria-label="Enllaç a la pagina de Spotify de Ginestà"
           ><picture>
             <source srcset="images/ginesta.avif" type="image/avif" />
@@ -388,7 +403,7 @@
           href="https://open.spotify.com/artist/5ra24fdFLZoDjlJiebjJku"
           target="_blank"
           rel="noopener"
-          class="transform hover:scale-110 duration-300 transition-transform"
+          class="transform transition-transform duration-300 hover:scale-110"
           aria-label="Enllaç a la pagina de Spotify de Mareta Bufona"
           ><picture>
             <source srcset="images/maretabufona.avif" type="image/avif" />
@@ -399,7 +414,7 @@
           href="https://open.spotify.com/artist/7Eyd1SVCVJGC9uqmpg4QAY"
           target="_blank"
           rel="noopener"
-          class="transform hover:scale-110 duration-300 transition-transform"
+          class="transform transition-transform duration-300 hover:scale-110"
           aria-label="Enllaç a la pagina de Spotify de Patas Vng"
           ><picture>
             <source srcset="images/patasvng.avif" type="image/avif" />
@@ -410,7 +425,7 @@
           href="https://open.spotify.com/artist/5UN0rzL594mWY2RbOtZqIN"
           target="_blank"
           rel="noopener"
-          class="transform hover:scale-110 duration-300 transition-transform"
+          class="transform transition-transform duration-300 hover:scale-110"
           aria-label="Enllaç a la pagina de Spotify de Ptazeta"
           ><picture>
             <source srcset="images/ptazeta.avif" type="image/avif" />
@@ -421,7 +436,7 @@
           href="https://open.spotify.com/artist/75vabMROpVyiTX4wv3iHFH"
           target="_blank"
           rel="noopener"
-          class="transform hover:scale-110 duration-300 transition-transform"
+          class="transform transition-transform duration-300 hover:scale-110"
           aria-label="Enllaç a la pagina de Spotify de Santa Salut"
           ><picture>
             <source srcset="images/santasalut.avif" type="image/avif" />
@@ -429,9 +444,9 @@
             <img src="images/santasalut.jpg" loading="lazy" alt="Santa Salut" width="720" height="450" /> </picture
         ></a>
       </div>
-      <div class="flex flex-row flex-wrap justify-center gap-4 mb-6 lg:flex-nowrap">
+      <div class="mb-6 flex flex-row flex-wrap justify-center gap-4 lg:flex-nowrap">
         <div class="flex-1">
-          <h3 class="font-heading text-xl my-2">Descobreix la seva música</h3>
+          <h3 class="my-2 font-heading text-xl">Descobreix la seva música</h3>
           <p class="prose mb-4 text-justify">
             Us hem preparat dues llistes de reproducció, una per cada dia del festival, amb els millors èxits de tots
             els artistes que actuaran a la Festa Major d'Entitats d'aquest any.
@@ -440,13 +455,13 @@
             href="https://open.spotify.com/playlist/0eOimS5cDR3pNdClE99dhK?si=c1f436150018482d"
             target="_blank"
             rel="noopener"
-            class="flex flex-row items-center px-4 py-3 rounded-md text-white bg-fme-green w-[fit-content] mx-auto mb-4"
+            class="mx-auto mb-4 flex w-[fit-content] flex-row items-center rounded-md bg-fme-green px-4 py-3 text-white"
           >
             <svg
               width="24"
               height="24"
               xmlns="http://www.w3.org/2000/svg"
-              class="fill-current text-white mr-2"
+              class="mr-2 fill-current text-white"
               fill-rule="evenodd"
               clip-rule="evenodd"
             >
@@ -460,13 +475,13 @@
             href="https://open.spotify.com/playlist/1dbptJvmqRuL8ind14VPG6?si=9f2a3e929fb74f69"
             target="_blank"
             rel="noopener"
-            class="flex flex-row items-center px-4 py-3 rounded-md text-white bg-fme-green w-[fit-content] mx-auto mb-4"
+            class="mx-auto mb-4 flex w-[fit-content] flex-row items-center rounded-md bg-fme-green px-4 py-3 text-white"
           >
             <svg
               width="24"
               height="24"
               xmlns="http://www.w3.org/2000/svg"
-              class="fill-current text-white mr-2"
+              class="mr-2 fill-current text-white"
               fill-rule="evenodd"
               clip-rule="evenodd"
             >
@@ -486,35 +501,13 @@
       <div class="'flex">
         <button
           onclick="toggleOldPosters()"
-          class="
-            block
-            m-auto
-            text-base
-            px-6
-            py-4
-            border border-solid border-fme-black
-            rounded-md
-            cursor-pointer
-            hover:bg-fme-black hover:text-white
-          "
+          class="m-auto block cursor-pointer rounded-md border border-solid border-fme-black px-6 py-4 text-base hover:bg-fme-black hover:text-white"
         >
           CARTELLS ANTERIORS
         </button>
       </div>
       <div
-        class="
-          h-0
-          opacity-0
-          w-full
-          flex
-          justify-center
-          flex-wrap
-          gap-6
-          py-6
-          transition-opacity
-          duration-500
-          ease-in-out
-        "
+        class="flex h-0 w-full flex-wrap justify-center gap-6 py-6 opacity-0 transition-opacity duration-500 ease-in-out"
         id="oldPosters"
       >
         <picture>
@@ -535,19 +528,14 @@
       </div>
     </section>
     <div
-      class="
-        bg-fixed bg-center bg-no-repeat bg-cover bg-divider-3 bg-gray-400 bg-blend-multiply
-        relative
-        h-[500px]
-        lg:bg-scroll
-      "
+      class="relative h-[500px] bg-gray-400 bg-divider-3 bg-cover bg-fixed bg-center bg-no-repeat bg-blend-multiply lg:bg-scroll"
     ></div>
-    <section id="faqs" class="px-4 my-10 max-w-5xl m-auto prose" style="scroll-margin-top: 84px">
-      <h2 class="text-center font-heading text-3xl my-2 uppercase">Preguntes Frequents</h2>
-      <p class="text-center text-xl mb-6 italic">Intentem resoldre alguns dels dubtes que teniu</p>
+    <section id="faqs" class="prose m-auto my-10 max-w-5xl px-4" style="scroll-margin-top: 84px">
+      <h2 class="my-2 text-center font-heading text-3xl uppercase">Preguntes Frequents</h2>
+      <p class="mb-6 text-center text-xl italic">Intentem resoldre alguns dels dubtes que teniu</p>
       <!-- INFORMACIÓ GENERAL -->
       <a id="FAQsInformacioGeneral" style="scroll-margin-top: 84px"></a>
-      <h3 class="font-heading text-xl my-2">Informació General</h3>
+      <h3 class="my-2 font-heading text-xl">Informació General</h3>
       <div class="mb-4">
         <h4 class="font-bold">Per què la FME 2021 és de pagament?</h4>
         <p class="text-justify">
@@ -628,7 +616,7 @@
       </div>
       <!-- ENTRADES -->
       <a id="FAQsEntrades" style="scroll-margin-top: 84px"></a>
-      <h3 class="font-heading text-xl my-2">Sobre les entrades</h3>
+      <h3 class="my-2 font-heading text-xl">Sobre les entrades</h3>
       <div class="mb-4">
         <h4 class="font-bold">Puc comprar entrades per als meus amics, familiars o coneguts?</h4>
         <p class="text-justify">
@@ -718,7 +706,7 @@
       </div>
       <!-- MESURES COVID -->
       <a id="FAQsCovid" style="scroll-margin-top: 84px"></a>
-      <h3 class="font-heading text-xl my-2">Sobre les mesures Covid</h3>
+      <h3 class="my-2 font-heading text-xl">Sobre les mesures Covid</h3>
       <div class="mb-4">
         <h4 class="font-bold">Els concerts seran asseguts?</h4>
         <p class="text-justify">
@@ -745,16 +733,11 @@
       </div>
     </section>
     <div
-      class="
-        bg-fixed bg-center bg-no-repeat bg-cover bg-divider-1 bg-gray-400 bg-blend-multiply
-        relative
-        h-[500px]
-        lg:bg-scroll
-      "
+      class="relative h-[500px] bg-gray-400 bg-divider-1 bg-cover bg-fixed bg-center bg-no-repeat bg-blend-multiply lg:bg-scroll"
     ></div>
-    <section id="condicions-entrades" class="px-4 my-10 max-w-5xl m-auto prose" style="scroll-margin-top: 84px">
-      <h2 class="text-center font-heading text-3xl my-2 uppercase">Condicions de l'entrada</h2>
-      <p class="text-center text-xl mb-6 italic">Termes i condicions generals</p>
+    <section id="condicions-entrades" class="prose m-auto my-10 max-w-5xl px-4" style="scroll-margin-top: 84px">
+      <h2 class="my-2 text-center font-heading text-3xl uppercase">Condicions de l'entrada</h2>
+      <p class="mb-6 text-center text-xl italic">Termes i condicions generals</p>
       <div>
         <p>
           <b>ASSOCIACIÓ FESTA MAJOR D’ENTITATS DE VILANOVA I LA GELTRÚ</b>., amb NIF nº G-04936001 i domicili al carrer
