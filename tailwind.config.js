@@ -5,9 +5,10 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: (theme) => ({
-        'divider-1': "url('/images/background_1.jpeg')",
-        'divider-2': "url('/images/background_2.jpeg')",
-        'divider-3': "url('/images/background_3.jpeg')",
+        'divider-1': "url('/images/background_1.webp')",
+        'divider-2': "url('/images/background_2.webp')",
+        'divider-3': "url('/images/background_3.webp')",
+        'divider-4': "url('/images/background_4.webp')",
       }),
       fontFamily: {
         heading: ['Buchery', ...defaultTheme.fontFamily.sans],
