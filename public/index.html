@@ -177,11 +177,21 @@
     </header>
     <!-- HERO SECTION -->
     <section class="relative h-[50vh] bg-fme-black md:h-[66vh] lg:h-screen">
-      <video width="720" height="406" autoplay muted loop class="absolute h-full w-full object-cover blur-sm filter">
-        <source src="/images/video.mp4" type="video/mp4" />
+      <div id="video-container"></div>
+      <video
+        width="720"
+        height="406"
+        autoplay
+        muted
+        playsinline
+        loop
+        class="absolute h-full w-full object-cover blur-sm filter z-0"
+      >
+        <source src="/images/video.mp4" srcset="/images/video.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
-      <div class="relative flex h-full flex-col items-center justify-center p-4">
+
+      <div class="relative flex h-full flex-col items-center justify-center p-4 z-10">
         <h1 class="text-center font-heading text-4xl text-white md:text-6xl lg:text-7xl">Festa Major d'Entitats</h1>
         <p class="mb-4 text-center font-heading text-6xl text-white md:text-8xl lg:text-9xl">2023</p>
         <p class="mb-10 text-center text-lg font-light uppercase text-white md:text-xl lg:text-2xl">
@@ -365,90 +375,85 @@
       <h2 class="my-2 text-center font-heading text-3xl uppercase">Programa d'actes</h2>
       <p class="my-4 text-center text-xl italic">Això és tot el que us hem preparat per a aquesta FME.</p>
       <!-- TOOD: afegir programa d'actes escrit, i cartell concerts. -->
+      <div class="grid grid-cols-2 gap-4 mb-10">
+        <div class="flex flex-col items-center justify-center">
+          <div class="mt-4 text-lg font-semibold text-fme-yellow">Dijous 27 de juliol</div>
+          <p class="text-center font-bold">21:30h - Assaig especial de la Diada de les Neus</p>
+          <p class="text-center">Local de Bordegassos de Vilanova</p>
+          <p class="text-center">Organitza: Bordegassos de Vilanova</p>
 
-      <div class="mb-8 grid grid-cols-2 gap-4 lg:grid-cols-3 lg:gap-6">
-        <a
-          href="https://open.spotify.com/artist/0LweECx5LKm6I3gIcWMdpB"
-          target="_blank"
-          rel="noopener"
-          class="transform transition-transform duration-300 hover:scale-110"
-          aria-label="Enllaç a la pagina de Spotify de 31 Fam"
-        >
-          <picture>
-            <source srcset="images/31fam.avif" type="image/avif" />
-            <source srcset="images/31fam.webp" type="image/webp" />
-            <img src="images/31fam.jpg" loading="lazy" alt="31 Fam" width="720" height="450" />
-          </picture>
-        </a>
-        <a
-          href="https://open.spotify.com/artist/0OVfimlbekXaMrP8IoCzHJ"
-          target="_blank"
-          rel="noopener"
-          class="transform transition-transform duration-300 hover:scale-110"
-          aria-label="Enllaç a la pagina de Spotify de Els Pets"
-        >
-          <picture>
-            <source srcset="images/elspets.avif" type="image/avif" />
-            <source srcset="images/elspets.webp" type="image/webp" />
-            <img src="images/elspets.jpg" loading="lazy" alt="Els Pets" width="720" height="450" /> </picture
-        ></a>
-        <a
-          href="https://open.spotify.com/artist/3hi1Ewhqpzl1jO2GemGmv6"
-          target="_blank"
-          rel="noopener"
-          class="transform transition-transform duration-300 hover:scale-110"
-          aria-label="Enllaç a la pagina de Spotify de Ginestà"
-          ><picture>
-            <source srcset="images/ginesta.avif" type="image/avif" />
-            <source srcset="images/ginesta.webp" type="image/webp" />
-            <img src="images/ginesta.jpg" loading="lazy" alt="Ginestà" width="720" height="450" />
-          </picture>
-        </a>
-        <a
-          href="https://open.spotify.com/artist/5ra24fdFLZoDjlJiebjJku"
-          target="_blank"
-          rel="noopener"
-          class="transform transition-transform duration-300 hover:scale-110"
-          aria-label="Enllaç a la pagina de Spotify de Mareta Bufona"
-          ><picture>
-            <source srcset="images/maretabufona.avif" type="image/avif" />
-            <source srcset="images/maretabufona.webp" type="image/webp" />
-            <img src="images/maretabufona.jpg" loading="lazy" alt="Mareta Bufona" width="720" height="450" /> </picture
-        ></a>
-        <a
-          href="https://open.spotify.com/artist/7Eyd1SVCVJGC9uqmpg4QAY"
-          target="_blank"
-          rel="noopener"
-          class="transform transition-transform duration-300 hover:scale-110"
-          aria-label="Enllaç a la pagina de Spotify de Patas Vng"
-          ><picture>
-            <source srcset="images/patasvng.avif" type="image/avif" />
-            <source srcset="images/patasvng.webp" type="image/webp" />
-            <img src="images/patasvng.jpg" loading="lazy" alt="Patas Vng" width="720" height="450" /> </picture
-        ></a>
-        <a
-          href="https://open.spotify.com/artist/5UN0rzL594mWY2RbOtZqIN"
-          target="_blank"
-          rel="noopener"
-          class="transform transition-transform duration-300 hover:scale-110"
-          aria-label="Enllaç a la pagina de Spotify de Ptazeta"
-          ><picture>
-            <source srcset="images/ptazeta.avif" type="image/avif" />
-            <source srcset="images/ptazeta.webp" type="image/webp" />
-            <img src="images/ptazeta.jpg" loading="lazy" alt="Ptazeta" width="720" height="450" /> </picture
-        ></a>
-        <a
-          href="https://open.spotify.com/artist/75vabMROpVyiTX4wv3iHFH"
-          target="_blank"
-          rel="noopener"
-          class="transform transition-transform duration-300 hover:scale-110"
-          aria-label="Enllaç a la pagina de Spotify de Santa Salut"
-          ><picture>
-            <source srcset="images/santasalut.avif" type="image/avif" />
-            <source srcset="images/santasalut.webp" type="image/webp" />
-            <img src="images/santasalut.jpg" loading="lazy" alt="Santa Salut" width="720" height="450" /> </picture
-        ></a>
+          <div class="mt-4 text-lg font-semibold text-fme-yellow">Divendres 28 de juliol</div>
+          <p class="text-center font-bold">17:00h - Ludoteca del Correfoc</p>
+          <p class="text-center">Plaça de les Casernes</p>
+          <p class="text-center">Organitza: Ball de Diables de Vilanova i el Drac de Vilanova i la Geltrú</p>
+
+          <p class="text-center font-bold mt-2">20:00h - Sopar del Correfoc</p>
+          <p class="text-center">Plaça de les Casernes</p>
+          <p class="text-center">Organitza: Ball de Diables de Vilanova</p>
+
+          <p class="text-center font-bold mt-2">22:30h - Ballem sota el foc del Correfoc</p>
+          <p class="text-center">Pels carrers de la vila</p>
+
+          <p class="text-center font-bold mt-2">00:30h - concerts amb Figa Flawas i DJ Casqui</p>
+          <p class="text-center">Plaça de les Casernes</p>
+          <p class="text-center">Organitza: FME</p>
+
+          <div class="mt-4 text-lg font-semibold text-fme-yellow">Dissabte 29 de juliol</div>
+          <p class="text-center font-bold">18:00h - Fem Pinya a la Diada de les Neus</p>
+          <p class="text-center">Plaça de la Vila</p>
+
+          <p class="text-center font-bold mt-2">19:00h - Ruta Major d'Entitats</p>
+          <p class="text-center">Plaça de les Neus</p>
+          <p class="text-center">Organitza: Apol·lo</p>
+
+          <p class="text-center font-bold mt-2">23:00h - Concerts amb Ketekalles, Awakate i Boom Boom Fighters</p>
+          <p class="text-center">Plaça de les Casernes</p>
+          <p class="text-center">Organitza: FME</p>
+
+          <div class="mt-4 text-lg font-semibold text-fme-yellow">Diumenge 30 de juliol</div>
+          <p class="text-center font-bold">19:00h - Vespre de Monòlegs amb Marc Sarrats</p>
+          <p class="text-center">Plaça de les Casernes</p>
+          <p class="text-center">Organitza: Festuc</p>
+        </div>
+        <div class="flex flex-col items-center">
+          <div class="mt-4 text-lg font-semibold text-fme-yellow">Dilluns 31 de juliol</div>
+          <p class="text-center font-bold">18:30h - Escalabirres</p>
+          <p class="text-center">Plaça de les Casernes</p>
+          <p class="text-center">Organitza: Bordegassos de Vilanova</p>
+
+          <p class="text-center font-bold mt-2">20:30h - Botifarrada popular</p>
+          <p class="text-center">Plaça de les Casernes</p>
+          <p class="text-center">Organitza: Bordegassos de Vilanova i La Unió Vilanovina</p>
+
+          <p class="text-center font-bold mt-2">21:00h - Ball de Gralles amb l'Havana Xica i Canya d'Or</p>
+          <p class="text-center">Plaça de les Casernes</p>
+          <p class="text-center">Organitza: La Unió Vilanovina</p>
+
+          <div class="mt-4 text-lg font-semibold text-fme-yellow">Dimarts 1 d'agost</div>
+          <p class="text-center font-bold">
+            19:00h - Jornada antirrepresiva, xerrada i música en directe “Cultura i Carrer: A la reconquesta de l'espai
+            públic”
+          </p>
+          <p class="text-center">Plaça de les Casernes</p>
+          <p class="text-center">Organitza: Ateneu Vilanoví</p>
+
+          <div class="mt-4 text-lg font-semibold text-fme-yellow">Dimecres 2 d'agost</div>
+          <p class="text-center font-bold">18:00h - La petita FME: Tarda de jocs</p>
+          <p class="text-center">Plaça de les Casernes</p>
+          <p class="text-center">Organitza: FME</p>
+
+          <div class="mt-4 text-lg font-semibold text-fme-yellow">Divendres 4 d'agost</div>
+          <p class="text-center font-bold">13:30h - Vermut i dinar de la FME i sobretaula musical</p>
+          <p class="text-center">Plaça de les Casernes</p>
+          <p class="text-center">Organitza: FME</p>
+
+          <div class="mt-4 text-lg font-semibold text-fme-yellow">Dissabte 5 d'agost</div>
+          <p class="text-center font-bold">00:00h - Ball del Vot del Poble</p>
+          <p class="text-center">Plaça de les Casernes</p>
+          <p class="text-center">Organitza: Ateneu Vilanoví</p>
+        </div>
       </div>
+
       <div class="mb-6 flex flex-row flex-wrap justify-center gap-4 lg:flex-nowrap">
         <div class="flex-1">
           <h3 class="my-2 font-heading text-xl">Descobreix la música de la FME</h3>
@@ -457,10 +462,10 @@
             Major d'Entitats d'aquest any.
           </p>
           <a
-            href="https://open.spotify.com/playlist/TODO"
+            href="https://open.spotify.com/playlist/76ogOCN8Er0CTryn939UZ2?si=88c43e16805a445e"
             target="_blank"
             rel="noopener"
-            class="mx-auto mb-4 flex w-[fit-content] flex-row items-center rounded-md bg-fme-green px-4 py-3 text-white"
+            class="mx-auto mb-8 flex w-[fit-content] flex-row items-center rounded-md bg-fme-green px-4 py-3 text-white"
           >
             <svg
               width="24"
@@ -476,6 +481,69 @@
             </svg>
             Llista FME 2023</a
           >
+          <div class="grid grid-cols-2 gap-4 lg:grid-cols-3 lg:gap-6">
+            <a
+              href="https://open.spotify.com/artist/2enhM5DK9oTxWiCVpFIDv3?si=OXNaQ68nTNOdBIO10tj_YQ"
+              target="_blank"
+              rel="noopener"
+              class="transform transition-transform duration-300 hover:scale-110"
+              aria-label="Enllaç a la pagina de Spotify de Figa Flawas"
+              ><picture>
+                <source srcset="images/figaflawas.avif" type="image/avif" />
+                <source srcset="images/figaflawas.webp" type="image/webp" />
+                <img src="images/figaflawas.jpg" loading="lazy" alt="Figa Flawas" width="450" height="450" /> </picture
+            ></a>
+            <a
+              href="https://instagram.com/la.casqui"
+              target="_blank"
+              rel="noopener"
+              class="transform transition-transform duration-300 hover:scale-110"
+              aria-label="Enllaç a la pagina de Spotify de Djs Casqui"
+              ><picture>
+                <source srcset="images/casqui.avif" type="image/avif" />
+                <source srcset="images/casqui.webp" type="image/webp" />
+                <img src="images/casqui.jpg" loading="lazy" alt="Dj Casqui" width="450" height="450" /> </picture
+            ></a>
+            <a
+              href="https://open.spotify.com/artist/32opeIbCeLG1LiAkmwiiof?si=ARIeUjZfQhi_f1AheV459Q"
+              target="_blank"
+              rel="noopener"
+              class="transform transition-transform duration-300 hover:scale-110"
+              aria-label="Enllaç a la pagina de Spotify de Ketekalles"
+              ><picture>
+                <source srcset="images/ketekalles.avif" type="image/avif" />
+                <source srcset="images/ketekalles.webp" type="image/webp" />
+                <img src="images/ketekalles.jpg" loading="lazy" alt="Ketekalles" width="450" height="450" /> </picture
+            ></a>
+            <a
+              href="https://open.spotify.com/artist/48nizYtwPgaiGgp7rMmNCX?si=CFOxHujvTSqxfmvUEuEnAA"
+              target="_blank"
+              rel="noopener"
+              class="transform transition-transform duration-300 hover:scale-110"
+              aria-label="Enllaç a la pagina de Spotify de Awakate"
+              ><picture>
+                <source srcset="images/awakate.avif" type="image/avif" />
+                <source srcset="images/awakate.webp" type="image/webp" />
+                <img src="images/awakate.jpg" loading="lazy" alt="Awakate" width="450" height="450" /> </picture
+            ></a>
+            <a
+              href="https://open.spotify.com/artist/2bNKVXUVgZPjFR9VNYJNj6?si=onuJwHD8SIS2Exq5LqBCxQ"
+              target="_blank"
+              rel="noopener"
+              class="transform transition-transform duration-300 hover:scale-110"
+              aria-label="Enllaç a la pagina de Spotify de Boom Boom Fighters"
+              ><picture>
+                <source srcset="images/boomboom.avif" type="image/avif" />
+                <source srcset="images/boomboom.webp" type="image/webp" />
+                <img
+                  src="images/boomboom.jpg"
+                  loading="lazy"
+                  alt="Boom Boom Fighters"
+                  width="450"
+                  height="450"
+                /> </picture
+            ></a>
+          </div>
         </div>
         <picture>
           <source srcset="images/cartell2023.avif" type="image/avif" />
@@ -537,452 +605,29 @@
     <div
       class="relative h-[500px] bg-gray-400 bg-divider-3 bg-cover bg-fixed bg-center bg-no-repeat bg-blend-multiply lg:bg-scroll"
     ></div>
-    <section id="faqs" class="prose m-auto my-10 max-w-5xl px-4" style="scroll-margin-top: 84px">
-      <h2 class="my-2 text-center font-heading text-3xl uppercase">Preguntes Frequents</h2>
-      <p class="mb-6 text-center text-xl italic">Intentem resoldre alguns dels dubtes que teniu</p>
-      <!-- INFORMACIÓ GENERAL -->
-      <a id="FAQsInformacioGeneral" style="scroll-margin-top: 84px"></a>
-      <h3 class="my-2 font-heading text-xl">Informació General</h3>
-      <div class="mb-4">
-        <h4 class="font-bold">Per què la FME 2021 és de pagament?</h4>
-        <p class="text-justify">
-          La Festa Major d'Entitats ha estat sempre oberta i gratuïta, però enguany no serà així. Les restriccions
-          derivades de la pandèmia ens limiten molt l'aforament i això té un impacte directe ens els ingressos de barres
-          que feien sostenible l'acte. A banda les condicions necessàries per garantir la seguretat de tothom han
-          incrementat substancialment els costos del festival. És per això que l'organització ha decidit que l'única
-          forma de fer viable i tirar endavant la FME d'enguany és cobrant entrada.
-        </p>
-      </div>
-      <div class="mb-4">
-        <h4 class="font-bold">Que haig de dur si sóc menor d’edat?</h4>
-        <p class="text-justify">
-          Els menors d’edat heu de dur l'autorització degudament omplerta segons quina sigui la vostra edat (16 a 18
-          anys o menys de 16), així com la documentació adjunta necessària. Us podeu descarregar el document a
-          continuació:
-        </p>
-        <ul>
-          <li>
-            <a href="assets/Menors_de_16_anys.pdf" class="hover:text-fme-green">Autorització menors de 16 anys</a>
-          </li>
-          <li>
-            <a href="assets/Menors_de_16_a_18_anys.pdf" class="hover:text-fme-green"
-              >Autorització menors de 16 a 18 anys</a
-            >
-          </li>
-        </ul>
-      </div>
-      <div class="mb-4">
-        <h4 class="font-bold">Puc entrar dins del recinte un cop n’he sortit?</h4>
-        <p class="text-justify">No, una vegada hagis sortit del recinte ja no hi podràs tornar a accedir.</p>
-      </div>
-      <div class="mb-4">
-        <h4 class="font-bold">
-          S’ha de presentar el DNI/NIE, el passaport o el carnet de conduir a la taquilla del festival?
-        </h4>
-        <p class="text-justify">
-          Totes les persones hauran de portar un document d’identificació vàlid per si l’organització requereix d’alguna
-          comprovació.
-        </p>
-      </div>
-      <div class="mb-4">
-        <h4 class="font-bold">He de portar la meva entrada impresa per accedir al festival?</h4>
-        <p class="text-justify">
-          No és necessari. La verificació de les entrades es durà a terme a través del codi de barres present en el PDF
-          que rebeu en el moment de la compra, de forma que recomanem dur les entrades en format electrònic.
-        </p>
-      </div>
-      <div class="mb-4">
-        <h4 class="font-bold">Es poden dur motxilles al festival?</h4>
-        <p class="text-justify">
-          Sí que es podran dur motxilles al festival. Tot i això, aquestes no poden contenir beguda, menjar ni articles
-          perillosos. El personal d’accés podrà revisar els efectes personals a l’entrada i retirar qualsevol objecte
-          que consideri que pot suposar un risc pels assistents.
-        </p>
-      </div>
-      <div class="mb-4">
-        <h4 class="font-bold">Els cotxets dels infants poden entrar al recinte?</h4>
-        <p class="text-justify">
-          Sí, els cotxets podran ubicar-se al costat de la localització dels seients dels seus propietaris.
-        </p>
-      </div>
-      <div class="mb-4">
-        <h4 class="font-bold">Quan rebré el braçalet que dona accés a les instal·lacions?</h4>
-        <p class="text-justify">
-          El braçalet que et permet entrar al recinte el rebràs a la porta d’accés un cop validada la teva entrada.
-        </p>
-      </div>
-      <div class="mb-4">
-        <h4 class="font-bold">On esta el recinte del festival i com hi puc arribar?</h4>
-        <p class="text-justify">
-          La Festa Major d'Entitats se celebra a la Zona Esportiva de Vilanova i la Geltrú. Podeu obtenir indicacions
-          amb aquest enllaç
-          <a href="https://goo.gl/maps/okTKnoAN8mdS2x6N8" target="_blank" rel="noopener" class="hover:text-fme-green"
-            >Com arribar a la FME</a
-          >.
-        </p>
-      </div>
-      <!-- ENTRADES -->
-      <a id="FAQsEntrades" style="scroll-margin-top: 84px"></a>
-      <h3 class="my-2 font-heading text-xl">Sobre les entrades</h3>
-      <div class="mb-4">
-        <h4 class="font-bold">Puc comprar entrades per als meus amics, familiars o coneguts?</h4>
-        <p class="text-justify">
-          Si, les entrades NO són nominals i no us caldrà donar cap dada dels vostres amics, familiars o coneguts. En el
-          moment de fer la compra només us demanarem les vostres dades per tal de gestionar incidències i fer-vos
-          arribar informació del festival.
-        </p>
-      </div>
-      <div class="mb-4">
-        <h4 class="font-bold">Si tinc un problema amb l'entrada amb qui puc contactar?</h4>
-        <p class="text-justify">
-          En cas de tenir qualsevol problema relacionat amb les entrades ens pots escriure a
-          <a href="mailto:fmentitats@gmail.com">fmentitats@gmail.com</a> o contactar amb nosaltres a través de les
-          xarxes socials.
-        </p>
-      </div>
-      <div class="mb-4">
-        <h4 class="font-bold">Puc comprar més d’una entrada?</h4>
-        <p class="text-justify">
-          Sí, però amb la finalitat de garantir que el màxim nombre de persones pugui aconseguir alguna entrada, s’ha
-          limitat la compra d’entrades a un màxim de 15 entrades per operació.
-        </p>
-      </div>
-      <div class="mb-4">
-        <h4 class="font-bold">Puc validar l’entrada d’algú que no hi sigui?</h4>
-        <p class="text-justify">
-          No, la validació d’entrades és personal i es fa a l’arribada al recinte per tal de canviar l’entrada per una
-          polsera que hi dóna accés.
-        </p>
-      </div>
-      <div class="mb-4">
-        <h4 class="font-bold">Els infants han de pagar entrada?</h4>
-        <p class="text-justify">
-          Han de pagar entrada tothom qui el dia d'accés al recinte hagi complert els 6 anys. És important tenir en
-          compte que els i les menors de 6 anys no tindran assignat un seient, i que per tant, hauran de seure amb els
-          seus tutors legals.
-        </p>
-      </div>
-      <div class="mb-4">
-        <h4 class="font-bold">He comprat l’entrada i no m’ha arribat cap correu de confirmació, que he de fer?</h4>
-        <p class="text-justify">
-          Primer de tot dóna uns minuts al sistema per tal que processi la teva compra. Revisa la carpeta del correu
-          brossa o busca correus rebuts de part de support@weezevent.com o amb assumpte "Tu pedido para Festa Major
-          d'Entitats 2021".<br />
-          Si així i tot no localitzes les teves entrades des de la
-          <a href="https://www.weezevent.com/fme2021" target="_blank" rel="noopener" class="hover:text-fme-green"
-            >pàgina de compra</a
-          >
-          tens l'opció de reenviar la confirmació de compra introduint el teu correu electrònic.<br />
-          Finalment si no trobes solució escriu-nos a <a href="mailto:fmentitats@gmail.com">fmentitats@gmail.com</a> amb
-          les teves dades:
-        </p>
-        <ul>
-          <li>Nom i cognoms</li>
-          <li>Correu electrònic amb què has fet la compra</li>
-          <li>Data i hora aproximada</li>
-          <li>Tipus d'entrada/es seleccionades</li>
-        </ul>
-      </div>
-      <!-- HORARIS -->
-      <!-- <a id="FAQsHoraris" style="scroll-margin-top: 84px"></a>
-      <h3 class="font-heading text-xl my-2">Sobre els horaris</h3>
-      <div class="mb-4">
-        <h4 class="font-bold">Quins són els horaris de les actuacions?</h4>
-        <h5 class="font-bold">Divendres</h5>
-        <ul>
-          <li>18:00 h - Obertura de portes</li>
-          <li>19:00 h - Mareta Bufona</li>
-          <li>20:30 h - Ginestà</li>
-          <li>22:00 h - Els Pets</li>
-        </ul>
-        <h5 class="font-bold">Dissabte</h5>
-        <ul>
-          <li>18:00 h - Obertura de portes</li>
-          <li>18:30 h - Patas Vng</li>
-          <li>19:30 h - Santa Salut</li>
-          <li>21:00 h - 31Fam</li>
-          <li>22:45 h - Ptazeta</li>
-        </ul>
-      </div> -->
-      <div class="mb-4">
-        <h4 class="font-bold">Puc entrar a qualsevol hora dins del recinte?</h4>
-        <p class="text-justify">
-          Es podrà accedir al recinte en tot moment des l’hora d’obertura de portes. Recordem, que l’assignació de
-          seients es realitzarà per ordre d’arribada al recinte.
-        </p>
-      </div>
-      <!-- MESURES COVID -->
-      <a id="FAQsCovid" style="scroll-margin-top: 84px"></a>
-      <h3 class="my-2 font-heading text-xl">Sobre les mesures Covid</h3>
-      <div class="mb-4">
-        <h4 class="font-bold">Els concerts seran asseguts?</h4>
-        <p class="text-justify">
-          Les restriccions actualment vigents marquen que en tots els concerts i actes culturals el públic ha d'estar
-          assegut i amb mascareta. El recinte tindrà un espai de "pista" davant l'escenari amb cadires individuals on
-          veure els concerts, també hi haurà una zona de "restauració" amb taules de 4 i 8 persones on es podrà menjar i
-          beure assentat.
-        </p>
-      </div>
-      <div class="mb-4">
-        <h4 class="font-bold">He de dur mascareta tota l’estona?</h4>
-        <p class="text-justify">
-          Sí, segons la normativa vigent s’haurà de portar tota l’estona menys per menjar i beure a les zones
-          autoritzades.
-        </p>
-      </div>
-      <div class="mb-4">
-        <h4 class="font-bold">Es pot entrar menjar i beguda al recinte?</h4>
-        <p class="text-justify">
-          No, dins el recinte de la Festa Major d'Entitats hi haurà serveis de barra i 3 "food trucks" a l'abast de tot
-          el públic. Sí que es permetrà l'accés amb menjar per als infants menors de 6 anys així com en el cas de
-          restriccions alimentàries no cobertes per l'oferta del festival.
-        </p>
-      </div>
+    <section id="???" class="prose m-auto my-10 max-w-5xl px-4" style="scroll-margin-top: 84px">
+      <h2 class="my-2 text-center font-heading text-3xl uppercase">???</h2>
     </section>
     <div
       class="relative h-[500px] bg-gray-400 bg-divider-1 bg-cover bg-fixed bg-center bg-no-repeat bg-blend-multiply lg:bg-scroll"
     ></div>
     <!-- TOOD: treure  -->
     <section id="condicions-entrades" class="prose m-auto my-10 max-w-5xl px-4" style="scroll-margin-top: 84px">
-      <h2 class="my-2 text-center font-heading text-3xl uppercase">Condicions de l'entrada</h2>
-      <p class="mb-6 text-center text-xl italic">Termes i condicions generals</p>
-      <div>
-        <p>
-          <b>ASSOCIACIÓ FESTA MAJOR D’ENTITATS DE VILANOVA I LA GELTRÚ</b>., amb NIF nº G-04936001 i domicili al carrer
-          Estany, 20, 2n-1a 08800 Vilanova i la Geltrú (Barcelona) (a partir d’ara es denominarà “FESTA MAJOR
-          D’ENTITATS” o “Organització”) organitza la “Festa Major d’Entitats 2021” els dies 30 i 31 de juliol de 2021 (a
-          partir d’ara es denominarà la “Festa Major d’Entitats 2021”). 
-        </p>
-        <p>
-          La situació provocada per la <b>Covid-19</b> obliga a l’Organització a implementar
-          <b>mesures excepcionals</b>, amb la finalitat de preservar la seguretat i salut dels assistents la “Festa
-          Major d’Entitats 2021” (a partir d’ara se’ls denominarà “els participants”), les quals podran canviar en
-          qualsevol moment com a conseqüència de les indicacions que, en cada moment, puguin ser establertes per les
-          autoritats competents i que seran notificades per l’Organització als compradors de les entrades, tan aviat com
-          els siguin comunicades. Per això, les condicions d’accés i permanència a la Festa Major d’Entitats 2021, que
-          s’estableixen a continuació, queden subjectes a la normativa en materia sanitària per preveure contagis per la
-          Covid-19 vigent a cada moment i poden variar en funció de l’aprovació de noves mesures que modifiquin les
-          condicions vigents en el moment de la compra de l’entrada.
-        </p>
-        <p>
-          A continuació, s’inclouen les condicions de l’aplicació per l’assistència a la Festa Major d’Entitats 2021,
-          les quals es consideren acceptades amb la compra de l’entrada:
-        </p>
-        <p class="font-bold">I - COMPRA DE L’ENTRADA</p>
-        <ul>
-          <li>
-            Durant el procés de compra de l’entrada, l’Organització sol·licitarà el nom i cognoms dels participants, el
-            seu número de telèfon mòbil, el DNI, la ciutat on viu i el correu electrònic on fer arribar l’entrada.
-            L’Organització no es fa responsable dels efectes que puguin derivar-se de l’inexactitud del número de
-            telèfon mòbil i/o la direcció de correu electrònic, així com de la resta de dades personals facilitades en
-            el procés de compra. El subministre d’aquestes dades en el procés de compra comporta el consentiment efectiu
-            del seu titular en els fins expressats.
-          </li>
-          <li>
-            A l’entrada del festival els participants hauran d’omplir un formulari (nom, cognoms, DNI, número de
-            telèfon), que seran cedits per part de l’Organització a les autoritats sanitàries en cas que ho sol·licitin.
-          </li>
-          <li>Per accedir a la Festa Major d’Entitats 2021 serà necessàri portar mascareta.</li>
-          <li>
-            L’accés a la Festa Major d’Entitats 2021 estarà condicionat per les restriccions de mobilitat establertes en
-            la normativa vigent o per les autoritats competents en el moment de la seva celebració.
-          </li>
-          <li>
-            Les <b>dades de caràcter personal</b> facilitades pasaran a formar part d’un fitxer, del qual el responsable
-            és ASSOCIACIÓ FESTA MAJOR D’ENTITATS DE VILANOVA I LA GELTRÚ, NIF nº G-04936001 i domicili al carrer Estany,
-            20, 2n-1a 08800 Vilanova i la Geltrú (Barcelona) i direcció de correu electrònic fmentitats@gmail.com. Les
-            dades mencionades s’utilitzaran pels fins descrits. Les dades proporcionades es conservaran durant tot el
-            temps que sigui necessari pels fins pels que van ser recaptats, així com durant tot el temps que sigui
-            precís per donar compliment a les obligacions legals. Segons l’establert a la Llei 3/2018, de 5 de desembre,
-            de Protecció de Dades de Caràcter Personal, el participant té dret a accedir a les referides dades,
-            rectificar aquells que siguin inexactes i sol·licitar la seva cancel·lació o supressió quan no siguin
-            necessaris pels fins pels que van ser recaptats, així com, en el seu cas, a exercitar els drets d’oposició o
-            portabilitat. Per exercitar qualsevol d’aquests drets haurà de presentar un escrit a la següent direcció:
-            carrer Estany, 20, 2n-1a 08800 Vilanova i la Geltrú (Barcelona). En cas de considerar vulnerat el seu dret a
-            la protecció de dades personals, podrà interposar una reclamació davant l’Agencia Española de Protección de
-            Datos ( www.agpd.es). 
-          </li>
-          <li>
-            Si el participant té qualsevol dubte sobre el seu estat de salut, no ha d’assistir a la Festa Major
-            d’Entitats 2021 i ha d’actuar segons les indicacions dictades per les autoritats sanitàries. En el cas de
-            presentar algún símptoma, de qualsevol tipus, durant la Festa Major d’Entitats 2021, el participant ha de
-            comunicar-ho de manera inmediata al personal de l’Organització, qui té dissenyat un protocol per qualsevol
-            incidencia.
-          </li>
-          <li>
-            L’Organització es reserva el <b>dret d’admissió</b> amb l’objectiu de que no puguin accedir a la Festa Major
-            d’Entitats les persones que:
-            <ul>
-              <li>
-                Tinguin una malaltia crònica greu com diabetis mellitus, hipertensió, cardiopatia isquèmica, qualsevol
-                tipus de càncer en tractament actiu, malalties pulmonars cròniques com EPOC i asma.
-              </li>
-              <li>
-                Reportin qualsevol simptomatologia suggestiva d’una infecció per SARS-CoV-2 en els 10 dies prèvis a la
-                Festa Major d’Entitats 2021.
-              </li>
-              <li>
-                Hagin sigut contactes estrets d’una persona positiva en SARS-CoV-2 dins les dues setmanes prèvies a la
-                Festa Major d’Entitats 2021.
-              </li>
-            </ul>
-          </li>
-        </ul>
-        <p>
-          Sense perjudici de tot el que s’ha explicat, el participant assumeix que l’assistència a la Festa Major
-          d’Entitats 2021 implica un risc d’exposició a la Covid-19 i allibera de responsabilitat a l’Organització d’un
-          eventual contagi.
-        </p>
-        <p class="font-bold">II - MENORS D’EDAT</p>
-        <p>El règim d’accés de menors d’edat a la Festa Major d’Entitats 2021 és el següent:</p>
-        <ul>
-          <li>
-            Els menors de 0 a 6 anys (inclosos): L'entrada dona accés al recinte a menors de 6 anys, però no dona dret a
-            cadira. L'organització es guarda el dret a canviar el format sense cadira si les restriccions del moment ho
-            permeten. L'entrada no serà vàlida si no va acompanyada de l'autorització signada i de la còpia del DNI del
-            pare, mare, o tutor/a. L'entrada s'haurà de mostrar a taquilla, però no serà validada, el codi no tindrà
-            efecte, es posarà polsera per als mateixos dies que al pare, mare o tutor/a.
-          </li>
-          <li>
-            Els menors a partir de 16 anys:
-
-            <ul>
-              <li>
-                L'entrada no serà vàlida si no va acompanyada de l'autorització signada i de la còpia del DNI del pare,
-                mare, o tutor/a.
-              </li>
-              <li>
-                L’adult que hagi signat l’autorització serà el responsable de qualsevol acció o omissió del menor durant
-                l’estada a la Festa Major d’Entitats 2021.
-              </li>
-              <li>
-                Sense perjudici de tot el que s’ha exposat, si les autoritats competents i/o la normativa d’aplicació
-                prohibissin l’accés dels menors a la Festa Major d’Entitats 2021, l’Organització no permetrà la seva
-                entrada i procedirà a la devolució del preu de la mateixa.
-              </li>
-            </ul>
-          </li>
-        </ul>
-        <p class="font-bold">III - POLÍTICA DE CANVIS I DEVOLUCIONS</p>
-        <ul>
-          <li>
-            Una vegada adquirida l’entrada pel participant, <b>no s’admetran canvis o devolució de l’import</b> de la
-            mateixa.
-          </li>
-          <li>
-            L’Organització es reserva el dret a alterar o modificar el programa de la Festa Major d’Entitats 2021. En el
-            cas de que l’Organització alteri o modifiqui la programació, el participant no tindrà dret a reclamar la
-            devolució de l’import abonat. 
-          </li>
-          <li>
-            La cancel·lació, total o parcial, de la Festa Major d’Entitats 2021 per causes fortuïtes o de força major no
-            imputables a l’Organització no donarà lloc a la devolució de l’import de l’entrada, excepte en els casos en
-            que així s’estableixi legalment, en aquest cas l’adquirent de la/es entrada/es podrà sol·licitar el
-            reemborsament de l’import de la/es mateixa/es conforme al procediment i plaços que li siguin notificats per
-            part de l’Organització.
-          </li>
-          <li>
-            No es generarà el dret de devolució de l’import de les entrades en aquells supòsits en que la suspensió o
-            modificació es produís una vegada començada la Festa Major d’Entitats 2021 i fos per una causa fortuïta o de
-            força major.
-          </li>
-        </ul>
-        <p class="font-bold">IV - DINÀMICA DE L’EVENT</p>
-        <ul>
-          <li>
-            Amb la finalitat de garantir la seguretat dels participants a la Festa Major d’Entitats 2021, és
-            <b>obligatori accedir al recinte amb la mascareta</b>, i utilizar-la en tot moment en l’interior, cobrint
-            nas i boca. A las zones habilitades pel consum de beguda i menjar, els participants podran baixar-se la
-            mascareta en el moment de consumir i, immediatament, se l’hauran de col·locar de nou, cobrint nas i boca.
-          </li>
-
-          <li>En diferents punts, hi haurà <b>gel hidro-alcohòlic</b> per la desinfecció de mans. </li>
-          <li>
-            L’aforament, l’organització i la disposició dels participants a l’interior de la Festa Major d’Entitats 2021
-            atendrà en tot moment a les indicacions i mesures establertes per les autoritats competents i per la
-            normativa d’aplicació en el moment de la seva celebració. El participant haurà de respectar en tot moment
-            els aforaments i els fluxes de circulació establerts i marcats per anar d’un espai a l’altre dins el
-            recinte, i haurà de seguir sempre les instruccions de l’Organització.
-          </li>
-          <li>
-            L’Organització es reserva el dret d’admissió amb l’objectiu d’impedir l’accés a persones que no respectin
-            les mesures bàsiques d’higiene i seguretat i/o les instruccions que doni el personal de l’Organització, tals
-            com mantenir la distància de seguretat amb la resta de participants, portar mascareta en tot moment (a
-            excepció de quan es vagi a consumir).
-          </li>
-          <li>
-            Les participants hauran de respectar en tot moment tot el que s’ha exposat en el present apartat. El seu
-            incompliment podrà ser motiu d’expulsió de la Festa Major d’Entitats 2021 sense dret a cap indemnització i
-            sense perjudici de les responsabilitats administratives o penals que puguin correspondre.
-          </li>
-        </ul>
-        <p class="font-bold">V - CAUSES DE DENEGACIÓ DE L’ACCÉS AL RECINTE</p>
-        <p>Es denegarà l’entrada al participant:</p>
-        <ul>
-          <li>
-            Quan el participant manifesti una actitud violenta o que inciti públicament a l’odi, la violència o la
-            discriminació per motius de naixement, raça, sexe, religió, opinió, discapacitat, orientació sexual,
-            identitat de gènere o qualsevol altra condició o circumstància social o personal. També, i en especial, quan
-            el participant que es comporti de manera agressiva o provoqui disturbis a l’exterior o a l’entrada, dugui
-            armes o objectes susceptibles de ser utilitzats com a tals o dugui roba, objectes o símbols que incitin a la
-            violència o suposin apologia a activitats contràries als drets fonamentals reconguts per la llei i la
-            Constitució.
-          </li>
-          <li>
-            Quan el participant presenti símptomes d’embriaguesa o d’estar consumint o haver consumit drogues o
-            substàncies estupefaents.
-          </li>
-          <li>
-            En el moment de l’entrada al recinte, el participant pot estar subjecte a un registre segons la llei. No
-            està permesa l’entrada d’objectes que puguin ser considerats perillosos per l’Organització o estiguin
-            prohibits per la normativa vigent.
-          </li>
-        </ul>
-        <p class="font-bold">VI - DRETS D’IMATGE</p>
-        <ul>
-          <li>
-            Queda estrictament prohibida la filmació, gravació, enregistrament o captació d’imatges a l’interior de
-            l’esdeveniment per a un ús fora del personal. En cas d’incompliment d’aquesta obligació, els participants
-            assumiran íntegrament qualsevol responsabilitat que es pugui derivar davant de tercers per la captació i ús
-            no consentit de qualsevol imatge a l’interior de l’esdeveniment.
-          </li>
-          <li>
-            El participant de l’esdeveniment reconeix i acepta que podrà aparèixer en imatges captades dins
-            l’esdeveniment per diferents mitjans per a una posterior difusió informativa i autoritza aquest ús, que serà
-            resposabilitat de cada mitjà. Les imatges poden aparèixer a internet, motiu pel qual la seva difusió pot no
-            ésser controlada.
-          </li>
-        </ul>
-        <p class="font-bold">VII - PROPIETAT INTEL·LECTUAL I INDUSTRIAL</p>
-        <ul>
-          <li>
-            L’organització es reserva tots els drets de propietat intel·lectual, industrial o de naturalesa anàloga a
-            l’esdeveniment i els seus continguts. En conseqüència, queda prohibida la seva reproducció, distribució,
-            comunicació pública i transformació per part dels participants a l’esdeveniment, sense la pràvia i expressa
-            autorització de l’organització.
-          </li>
-        </ul>
-        <p class="font-bold">VIII - EXCLUSIÓ DE RESPONSABILITAT</p>
-        <ul>
-          <li>
-            L’organització no garanteix l’autenticitat ni assumeix cap responsabilitat en relació amb les entrades que
-            no hagin estat adquirides a través dels punts de venda telemàtics o presencials oficials.
-          </li>
-          <li>
-            Cada usuari és responsable de la custòdia de la seva entrada i ha d’assumir la responsabilitat que es derivi
-            en cas que aquesta sigui duplicada, fotocopiada o falsificada. L’organització no es fa responsable de cap
-            pèrdua o robatori d’entrades.
-          </li>
-          <li>
-            L’organització no oferirà cap servei de guarda-robes i no serà en cap cas responsable de la pèrdua o
-            robatori d’objectes personals dels participants durant l’accés i estança al recinte per accions o omissions
-            de tercers no imputables a l’organització.
-          </li>
-        </ul>
-      </div>
+      <h2 class="my-2 text-center font-heading text-3xl uppercase">???</h2>
     </section>
   </body>
-
+  <style>
+    #video-container {
+      height: 100%;
+      width: 100%;
+      background-image: url('/images/video.mp4');
+      background-color: transparent;
+      position: absolute;
+      background-size: cover;
+      filter: blur(4px);
+      z-index: 1;
+    }
+  </style>
   <script>
     function toggleMenu() {
       const element = document.getElementById('menu');

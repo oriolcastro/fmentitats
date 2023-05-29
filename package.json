@@ -3,7 +3,7 @@
   "version": "2.0.0",
   "description": "Website for the FME 2023",
   "scripts": {
-    "build": "NODE_ENV=production pnpm dlx tailwindcss styles.css -o ./public/styles.css --minify",
+    "build": "NODE_ENV=production pnpm dlx tailwindcss -i ./styles.css -o ./public/styles.css --minify",
     "dev": "NODE_ENV=development pnpm dlx tailwindcss -i ./styles.css -o ./public/styles.css --watch",
     "serve": "serve public"
   },
