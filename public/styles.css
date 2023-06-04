@@ -1046,6 +1046,10 @@ video {
   z-index: 10;
 }
 
+.z-100 {
+  z-index: 100;
+}
+
 .m-auto {
   margin: auto;
 }
@@ -1155,10 +1159,6 @@ video {
   max-width: 20rem;
 }
 
-.max-w-\[150px\] {
-  max-width: 150px;
-}
-
 .flex-1 {
   flex: 1 1 0%;
 }
@@ -1175,8 +1175,8 @@ video {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
-.grid-cols-4 {
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+.grid-cols-1 {
+  grid-template-columns: repeat(1, minmax(0, 1fr));
 }
 
 .flex-row {
@@ -1624,6 +1624,10 @@ html {
 
   .lg\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .lg\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .lg\:flex-row {

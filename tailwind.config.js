@@ -19,6 +19,9 @@ module.exports = {
         'fme-yellow': 'rgb(229, 197, 107)',
         'fme-black': 'rgb(35,35,35)',
       },
+      zIndex: {
+        100: '100',
+      },
     },
   },
 
