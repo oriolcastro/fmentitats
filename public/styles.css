@@ -1007,19 +1007,19 @@ video {
   margin-bottom: 0.75em;
 }
 
-.prose :where(.prose > ul > li > *:first-child):not(:where([class~="not-prose"],[class~="not-prose"] *)) {
+.prose :where(.prose > ul > li > p:first-child):not(:where([class~="not-prose"],[class~="not-prose"] *)) {
   margin-top: 1.25em;
 }
 
-.prose :where(.prose > ul > li > *:last-child):not(:where([class~="not-prose"],[class~="not-prose"] *)) {
+.prose :where(.prose > ul > li > p:last-child):not(:where([class~="not-prose"],[class~="not-prose"] *)) {
   margin-bottom: 1.25em;
 }
 
-.prose :where(.prose > ol > li > *:first-child):not(:where([class~="not-prose"],[class~="not-prose"] *)) {
+.prose :where(.prose > ol > li > p:first-child):not(:where([class~="not-prose"],[class~="not-prose"] *)) {
   margin-top: 1.25em;
 }
 
-.prose :where(.prose > ol > li > *:last-child):not(:where([class~="not-prose"],[class~="not-prose"] *)) {
+.prose :where(.prose > ol > li > p:last-child):not(:where([class~="not-prose"],[class~="not-prose"] *)) {
   margin-bottom: 1.25em;
 }
 
@@ -1356,12 +1356,24 @@ video {
   background-image: url('/images/background_1.webp');
 }
 
+.bg-divider-1-2023 {
+  background-image: url('/images/2023/background_1.webp');
+}
+
 .bg-divider-2 {
   background-image: url('/images/background_2.webp');
 }
 
+.bg-divider-2-2023 {
+  background-image: url('/images/2023/background_2.webp');
+}
+
 .bg-divider-3 {
   background-image: url('/images/background_3.webp');
+}
+
+.bg-divider-3-2023 {
+  background-image: url('/images/2023/background_3.webp');
 }
 
 .bg-cover {
