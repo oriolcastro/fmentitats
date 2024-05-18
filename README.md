@@ -13,18 +13,30 @@
 ## Install
 
 ```sh
-npm install
+pnpm install
 ```
 
 ## Development
 
-Run this command to compile the Tailwind CSS.
+Run this command to compile the Tailwind CSS in watch mode.
 
 ```sh
-npm run dev
+pnpm run dev
 ```
 
-Use any static server tool to open the `public/index.html` file.
+Use this command to easily start a server and open the website.
+
+```sh
+pnpm run serve
+```
+
+## Build
+
+Run this command to compile the Tailwind CSS in production mode.
+
+```sh
+pnpm run build
+```
 
 ## Author
 
@@ -36,5 +48,5 @@ Use any static server tool to open the `public/index.html` file.
 
 ## 📝 License
 
-Copyright © 2021 [Oriol Castro Arnau](https://github.com/oriolcastro).<br />
+Copyright © 2024 [Oriol Castro Arnau](https://github.com/oriolcastro).<br />
 This project is [ISC](https://github.com/oriolcastro/fmentitats/blob/master/LICENSE) licensed.

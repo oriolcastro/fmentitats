@@ -1,7 +1,7 @@
 {
   "name": "fmentitats",
   "version": "2.0.0",
-  "description": "Website for the FME 2023",
+  "description": "Website for the FME 2024",
   "scripts": {
     "build": "NODE_ENV=production pnpm dlx tailwindcss -i ./styles.css -o ./public/styles.css --minify",
     "dev": "NODE_ENV=development pnpm dlx tailwindcss -i ./styles.css -o ./public/styles.css --watch",
@@ -26,11 +26,11 @@
   "homepage": "https://fme.cat",
   "devDependencies": {
     "prettier": "3.2.5",
-    "prettier-plugin-tailwindcss": "0.5.13",
-    "serve": "14.2.1",
+    "prettier-plugin-tailwindcss": "0.5.14",
+    "serve": "14.2.3",
     "tailwindcss": "3.4.3"
   },
   "dependencies": {
-    "@tailwindcss/typography": "0.5.12"
+    "@tailwindcss/typography": "0.5.13"
   }
 }
