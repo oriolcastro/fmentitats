@@ -16,11 +16,13 @@ module.exports = {
       }),
       fontFamily: {
         heading: ['Buchery', ...defaultTheme.fontFamily.sans],
+        jost: ['Jost'],
+        artega: ['Artega'],
       },
       colors: {
-        'fme-red': 'rgb(193, 73, 71)',
-        'fme-green': 'rgb(57, 131, 110)',
-        'fme-yellow': 'rgb(229, 197, 107)',
+        'fme-red': 'hsl(2  63  55 / 100)',
+        'fme-green': 'hsl(155 57 36 / 100)',
+        'fme-yellow': 'hsl(38 94 62 / 100)',
         'fme-black': 'rgb(35,35,35)',
       },
       zIndex: {
