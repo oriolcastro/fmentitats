@@ -21,6 +21,15 @@
         font-style: normal;
         font-display: swap;
       }
+      @font-face {
+        font-family: Artega;
+        src:
+          url('/fonts/Artega.woff2') format('woff2'),
+          url('/fonts/Artega.woff') format('woff');
+        font-weight: 400;
+        font-style: normal;
+        font-display: swap;
+      }
     </style>
     <title>Festa Major d'Entitats 2024</title>
     <meta charset="UTF-8" />
@@ -54,57 +63,65 @@
     <meta name="twitter:creator" content="@fmentitats" />
     <!-- TODO: update social images -->
     <meta name="twitter:image" content="https://fme.cat/images/social_twitter.webp" />
+    <style>
+      .dropdown:hover .dropdown-content {
+        display: block;
+      }
+      .dropdown:hover .dropdown-trigger {
+        background-color: hsl(2 63 55 / 100);
+      }
+    </style>
     <script>
       !(function (t, e) {
-        var o, n, p, r;
+        var o, n, p, r
         e.__SV ||
           ((window.posthog = e),
           (e._i = []),
           (e.init = function (i, s, a) {
             function g(t, e) {
-              var o = e.split('.');
+              var o = e.split('.')
               2 == o.length && ((t = t[o[0]]), (e = o[1])),
                 (t[e] = function () {
-                  t.push([e].concat(Array.prototype.slice.call(arguments, 0)));
-                });
+                  t.push([e].concat(Array.prototype.slice.call(arguments, 0)))
+                })
             }
-            ((p = t.createElement('script')).type = 'text/javascript'),
+            ;((p = t.createElement('script')).type = 'text/javascript'),
               (p.async = !0),
               (p.src = s.api_host.replace('.i.posthog.com', '-assets.i.posthog.com') + '/static/array.js'),
-              (r = t.getElementsByTagName('script')[0]).parentNode.insertBefore(p, r);
-            var u = e;
+              (r = t.getElementsByTagName('script')[0]).parentNode.insertBefore(p, r)
+            var u = e
             for (
               void 0 !== a ? (u = e[a] = []) : (a = 'posthog'),
                 u.people = u.people || [],
                 u.toString = function (t) {
-                  var e = 'posthog';
-                  return 'posthog' !== a && (e += '.' + a), t || (e += ' (stub)'), e;
+                  var e = 'posthog'
+                  return 'posthog' !== a && (e += '.' + a), t || (e += ' (stub)'), e
                 },
                 u.people.toString = function () {
-                  return u.toString(1) + '.people (stub)';
+                  return u.toString(1) + '.people (stub)'
                 },
                 o =
                   'capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags getFeatureFlag getFeatureFlagPayload reloadFeatureFlags group updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures getActiveMatchingSurveys getSurveys onSessionId'.split(
-                    ' '
+                    ' ',
                   ),
                 n = 0;
               n < o.length;
               n++
             )
-              g(u, o[n]);
-            e._i.push([i, s, a]);
+              g(u, o[n])
+            e._i.push([i, s, a])
           }),
-          (e.__SV = 1));
-      })(document, window.posthog || []);
-      posthog.init('phc_Eb5TtlXxGYT5nesa65yyFhJ5GGrtWLGa1wDJRpzYrPx', { api_host: 'https://eu.i.posthog.com' });
+          (e.__SV = 1))
+      })(document, window.posthog || [])
+      posthog.init('phc_Eb5TtlXxGYT5nesa65yyFhJ5GGrtWLGa1wDJRpzYrPx', { api_host: 'https://eu.i.posthog.com' })
     </script>
   </head>
   <body>
     <header
-      class="sticky top-0 flex w-full flex-wrap items-center bg-fme-black px-6 py-2 shadow-md z-100 lg:px-16 lg:py-0"
+      class="sticky top-0 z-100 flex w-full flex-wrap items-center bg-fme-black px-6 py-2 shadow-md lg:px-16 lg:py-0"
     >
       <div class="flex flex-1 items-center justify-between py-2">
-        <a href="#">
+        <a href="/">
           <picture>
             <source srcset="images/logo-fme.avif" type="image/avif" />
             <source srcset="images/logo-fme.webp" type="image/webp" />
@@ -125,14 +142,14 @@
         </svg>
       </button>
       <div
-        class="fixed right-0 top-14 z-10 hidden w-full bg-fme-black px-6 lg:relative lg:top-auto lg:right-auto lg:flex lg:w-auto lg:items-center"
+        class="fixed right-0 top-14 z-10 hidden w-full bg-fme-black px-6 lg:relative lg:right-auto lg:top-auto lg:flex lg:w-auto lg:items-center"
         id="menu"
       >
         <nav>
           <ul class="items-center justify-between pt-4 text-base text-white lg:flex lg:pt-0">
             <li>
               <a
-                class="block border-b-4 border-transparent py-3 px-0 hover:border-fme-red lg:p-4"
+                class="block border-b-4 border-transparent px-0 py-3 hover:border-fme-red lg:p-4"
                 href="#projecte"
                 onclick="toggleMenu()"
                 >Que és la FME?</a
@@ -140,28 +157,27 @@
             </li>
             <li>
               <a
-                class="block border-b-4 border-transparent py-3 px-0 hover:border-fme-green lg:p-4"
+                class="block border-b-4 border-transparent px-0 py-3 hover:border-fme-green lg:p-4"
                 href="#programa"
                 onclick="toggleMenu()"
-                >Edició 2024</a
+                >Programa d'actes</a
               >
             </li>
             <li>
               <a
-                class="block border-b-4 border-transparent py-3 px-0 hover:border-fme-yellow lg:p-4"
+                class="block border-b-4 border-transparent px-0 py-3 hover:border-fme-yellow lg:p-4"
                 href="#collaboradors"
                 onclick="toggleMenu()"
                 >Col·laboradors</a
               >
             </li>
-            <!-- <li>
-              <a
-                class="lg:p-4 py-3 px-0 block border-b-4 border-transparent hover:border-fme-red"
-                href="#FAQsHoraris"
-                onclick="toggleMenu()"
-                >Horaris</a
-              >
-            </li> -->
+            <li class="dropdown relative inline-block w-full lg:w-auto">
+              <div class="dropdown-trigger block w-full px-0 py-3 lg:p-4">Edicions anteriors</div>
+              <div class="dropdown-content w-full bg-fme-black pl-3 lg:absolute lg:hidden lg:pl-0">
+                <a href="edicio-2023.html" class="block px-0 py-3 hover:bg-fme-red lg:p-4">2023</a>
+                <a href="edicio-2022.html" class="block px-0 py-3 hover:bg-fme-red lg:p-4">2022</a>
+              </div>
+            </li>
             <li class="mb-4 flex flex-row lg:mb-0">
               <a href="https://twitter.com/fmentitats" target="_blank" rel="noopener" class="block p-3 lg:py-4">
                 <svg
@@ -189,7 +205,7 @@
                   />
                 </svg>
               </a>
-              <a href="https://www.facebook.com/FMEntitatsVNG" target="_blank" rel="noopener" class="block p-3 lg:py-4">
+              <!-- <a href="https://www.facebook.com/FMEntitatsVNG" target="_blank" rel="noopener" class="block p-3 lg:py-4">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"
@@ -201,7 +217,7 @@
                     d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm3 8h-1.35c-.538 0-.65.221-.65.778v1.222h2l-.209 2h-1.791v7h-3v-7h-2v-2h2v-2.308c0-1.769.931-2.692 3.029-2.692h1.971v3z"
                   />
                 </svg>
-              </a>
+              </a> -->
               <a
                 href="https://open.spotify.com/user/cb44avwfmmjada7ccotzddckm?si=2b9ee626286e4dd4"
                 target="_blank"
@@ -237,18 +253,22 @@
         muted
         playsinline
         loop
-        class="absolute h-full w-full object-cover z-1"
+        class="z-1 absolute h-full w-full object-cover"
         style="filter: blur(4px)"
       >
-        <source src="/images/video.mp4" srcset="/images/video.mp4" type="video/mp4" />
+        <source
+          src="https://media.fme.cat/video_fme_2023.mp4"
+          srcset="https://media.fme.cat/video_fme_2023.mp4"
+          type="video/mp4"
+        />
         Your browser does not support the video tag.
       </video>
 
-      <div class="relative flex h-full flex-col items-center justify-center p-4 z-10">
+      <div class="relative z-10 flex h-full flex-col items-center justify-center p-4">
         <h1 class="text-center font-heading text-4xl text-white md:text-6xl lg:text-7xl">Festa Major d'Entitats</h1>
         <p class="mb-4 text-center font-heading text-6xl text-white md:text-8xl lg:text-9xl">2024</p>
         <p class="mb-10 text-center text-lg font-light uppercase text-white md:text-xl lg:text-2xl">
-          27 de juliol al 5 d'agost | Vilanova i la Geltrú
+          30 de juliol al 5 d'agost | Vilanova i la Geltrú
         </p>
         <a
           href="#programa"
@@ -304,7 +324,7 @@
         </div>
       </div>
       <p class="mb-4 text-center font-bold">Entitats organitzadores</p>
-      <div class="flex flex-wrap justify-center gap-2 md:flex-nowrap lg:gap-8 lg:flex-nowrap">
+      <div class="flex flex-wrap justify-center gap-2 md:flex-nowrap lg:flex-nowrap lg:gap-8">
         <a
           href="https://www.instagram.com/launiovilanovina/"
           target="_blank"
@@ -427,10 +447,12 @@
     <section id="programa" class="m-auto my-10 max-w-5xl px-4" style="scroll-margin-top: 84px">
       <h2 class="my-2 text-center font-heading text-3xl uppercase">Programa d'actes</h2>
       <p class="my-4 text-center text-xl italic">Això és tot el que us hem preparat per a aquesta FME.</p>
-      <div class="grid grid-cols-1 gap-4 mb-10 lg:grid-cols-2">
+      <div class="mb-10 grid grid-cols-1 gap-4 lg:grid-cols-2">
         <div class="flex flex-col items-center justify-center">
-          <div class="mt-4 text-lg font-semibold text-fme-yellow">Dijous 27 de juliol</div>
-          <p class="text-center font-bold">21:30h - Assaig especial de la Diada de les Neus</p>
+          <div class="mt-4 bg-fme-red px-2 pb-0 pt-1 font-artega text-base uppercase text-white">
+            Dimarts 30 de juliol
+          </div>
+          <!-- <p class="text-center font-bold">21:30h - Assaig especial de la Diada de les Neus</p>
           <p class="text-center">Local de Bordegassos de Vilanova</p>
           <p class="text-center">Organitza: Bordegassos de Vilanova</p>
 
@@ -448,10 +470,12 @@
 
           <p class="text-center font-bold mt-2">00:30h - Concerts amb Figa Flawas i DJ Casqui</p>
           <p class="text-center">Plaça de les Casernes</p>
-          <p class="text-center">Organitza: FME</p>
+          <p class="text-center">Organitza: FME</p> -->
 
-          <div class="mt-4 text-lg font-semibold text-fme-yellow">Dissabte 29 de juliol</div>
-          <p class="text-center font-bold">18:00h - Fem Pinya a la Diada de les Neus</p>
+          <div class="mt-4 bg-fme-red px-2 pb-0 pt-1 font-artega text-base uppercase text-white">
+            Dimecres 31 de juliol
+          </div>
+          <!-- <p class="text-center font-bold">18:00h - Fem Pinya a la Diada de les Neus</p>
           <p class="text-center">Plaça de la Vila</p>
 
           <p class="text-center font-bold mt-2">19:00h - Ruta Major d'Entitats</p>
@@ -460,16 +484,18 @@
 
           <p class="text-center font-bold mt-2">23:00h - Concerts amb Ketekalles, Awakate i Boom Boom Fighters</p>
           <p class="text-center">Plaça de les Casernes</p>
-          <p class="text-center">Organitza: FME</p>
+          <p class="text-center">Organitza: FME</p> -->
 
-          <div class="mt-4 text-lg font-semibold text-fme-yellow">Diumenge 30 de juliol</div>
-          <p class="text-center font-bold">19:00h - Vespre de Monòlegs amb Marc Sarrats, Gemma Ortis i Albert Roig.</p>
+          <div class="mt-4 bg-fme-red px-2 pb-0 pt-1 font-artega text-base uppercase text-white">Dijous 1 d'agost</div>
+          <!-- <p class="text-center font-bold">19:00h - Vespre de Monòlegs amb Marc Sarrats, Gemma Ortis i Albert Roig.</p>
           <p class="text-center">Plaça de les Casernes</p>
-          <p class="text-center">Organitza: Festuc</p>
+          <p class="text-center">Organitza: Festuc</p> -->
+          <div class="mt-4 bg-fme-red px-2 pb-0 pt-1 font-artega text-base uppercase text-white">
+            Divendres 2 d'agost
+          </div>
         </div>
         <div class="flex flex-col items-center">
-          <div class="mt-4 text-lg font-semibold text-fme-yellow">Dilluns 31 de juliol</div>
-          <p class="text-center font-bold">18:30h - Escalabirres</p>
+          <!-- <p class="text-center font-bold">18:30h - Escalabirres</p>
           <p class="text-center">Plaça de les Casernes</p>
           <p class="text-center">Organitza: Bordegassos de Vilanova</p>
 
@@ -479,42 +505,42 @@
 
           <p class="text-center font-bold mt-2">21:00h - Ball de Gralles amb l'Havana Xica i Canya d'Or</p>
           <p class="text-center">Plaça de les Casernes</p>
-          <p class="text-center">Organitza: La Unió Vilanovina</p>
+          <p class="text-center">Organitza: La Unió Vilanovina</p> -->
 
-          <div class="mt-4 text-lg font-semibold text-fme-yellow">Dimarts 1 d'agost</div>
-          <p class="text-center font-bold">
+          <div class="mt-4 bg-fme-red px-2 pb-0 pt-1 font-artega text-base uppercase text-white">
+            Dissabte 3 d'agost
+          </div>
+          <!-- <p class="text-center font-bold">
             19:00h - Jornada antirrepresiva, xerrada i música en directe “Cultura i Carrer: A la reconquesta de l'espai
             públic”
           </p>
           <p class="text-center">Plaça de les Casernes</p>
-          <p class="text-center">Organitza: Ateneu Vilanoví</p>
+          <p class="text-center">Organitza: Ateneu Vilanoví</p> -->
 
-          <div class="mt-4 text-lg font-semibold text-fme-yellow">Dimecres 2 d'agost</div>
-          <p class="text-center font-bold">18:00h - La petita FME: Tarda de jocs</p>
+          <div class="mt-4 bg-fme-red px-2 pb-0 pt-1 font-artega text-base uppercase text-white">
+            Diumenge 4 d'agost
+          </div>
+          <!-- <p class="text-center font-bold">18:00h - La petita FME: Tarda de jocs</p>
           <p class="text-center">Plaça de les Casernes</p>
-          <p class="text-center">Organitza: FME</p>
+          <p class="text-center">Organitza: FME</p> -->
 
-          <div class="mt-4 text-lg font-semibold text-fme-yellow">Divendres 4 d'agost</div>
-          <p class="text-center font-bold">13:30h - Vermut i dinar de la FME i sobretaula musical</p>
+          <div class="mt-4 bg-fme-red px-2 pb-0 pt-1 font-artega text-base uppercase text-white">Dilluns 5 d'agost</div>
+          <!-- <p class="text-center font-bold">13:30h - Vermut i dinar de la FME i sobretaula musical</p>
           <p class="text-center">Plaça de les Casernes</p>
-          <p class="text-center">Organitza: FME</p>
-
-          <div class="mt-4 text-lg font-semibold text-fme-yellow">Dissabte 5 d'agost</div>
-          <p class="text-center font-bold">00:00h - Ball del Vot del Poble</p>
-          <p class="text-center">Plaça de la Peixeteria</p>
-          <p class="text-center">Organitza: Ateneu Vilanoví</p>
+          <p class="text-center">Organitza: FME</p> -->
         </div>
       </div>
 
       <div class="mb-6 flex flex-row flex-wrap justify-center gap-4 lg:flex-nowrap">
         <div class="flex-1">
-          <h3 class="my-2 font-heading text-xl">Descobreix la música de la FME</h3>
+          <h3 class="my-2 font-heading text-xl">La música de la FME</h3>
           <p class="prose mb-4 text-justify">
-            Us hem preparat una llista de reproducció amb els millors èxits de tots els artistes que actuaran a la Festa
-            Major d'Entitats d'aquest any.
+            Teniu una llista de reproducció amb els èxits de tots els artistes que actuaran a la Festa Major d'Entitats
+            d'aquest any.
           </p>
+          <!-- TODO: update spotify link -->
           <a
-            href="https://open.spotify.com/playlist/76ogOCN8Er0CTryn939UZ2?si=88c43e16805a445e"
+            href=""
             target="_blank"
             rel="noopener"
             class="mx-auto mb-8 flex w-[fit-content] flex-row items-center rounded-md bg-fme-green px-4 py-3 text-white"
@@ -534,7 +560,7 @@
             Llista FME 2024</a
           >
           <div class="grid grid-cols-2 gap-4 lg:grid-cols-3 lg:gap-6">
-            <a
+            <!-- <a
               href="https://open.spotify.com/artist/2enhM5DK9oTxWiCVpFIDv3?si=OXNaQ68nTNOdBIO10tj_YQ"
               target="_blank"
               rel="noopener"
@@ -544,57 +570,7 @@
                 <source srcset="images/figaflawas.avif" type="image/avif" />
                 <source srcset="images/figaflawas.webp" type="image/webp" />
                 <img src="images/figaflawas.png" loading="lazy" alt="Figa Flawas" width="450" height="450" /> </picture
-            ></a>
-            <a
-              href="https://instagram.com/la.casqui"
-              target="_blank"
-              rel="noopener"
-              class="transform transition-transform duration-300 hover:scale-110"
-              aria-label="Enllaç a la pagina de Spotify de Djs Casqui"
-              ><picture>
-                <source srcset="images/casqui.avif" type="image/avif" />
-                <source srcset="images/casqui.webp" type="image/webp" />
-                <img src="images/casqui.png" loading="lazy" alt="Dj Casqui" width="450" height="450" /> </picture
-            ></a>
-            <a
-              href="https://open.spotify.com/artist/32opeIbCeLG1LiAkmwiiof?si=ARIeUjZfQhi_f1AheV459Q"
-              target="_blank"
-              rel="noopener"
-              class="transform transition-transform duration-300 hover:scale-110"
-              aria-label="Enllaç a la pagina de Spotify de Ketekalles"
-              ><picture>
-                <source srcset="images/ketekalles.avif" type="image/avif" />
-                <source srcset="images/ketekalles.webp" type="image/webp" />
-                <img src="images/ketekalles.png" loading="lazy" alt="Ketekalles" width="450" height="450" /> </picture
-            ></a>
-            <a
-              href="https://open.spotify.com/artist/48nizYtwPgaiGgp7rMmNCX?si=CFOxHujvTSqxfmvUEuEnAA"
-              target="_blank"
-              rel="noopener"
-              class="transform transition-transform duration-300 hover:scale-110"
-              aria-label="Enllaç a la pagina de Spotify de Awakate"
-              ><picture>
-                <source srcset="images/awakate.avif" type="image/avif" />
-                <source srcset="images/awakate.webp" type="image/webp" />
-                <img src="images/awakate.jpeg" loading="lazy" alt="Awakate" width="450" height="450" /> </picture
-            ></a>
-            <a
-              href="https://open.spotify.com/artist/2bNKVXUVgZPjFR9VNYJNj6?si=onuJwHD8SIS2Exq5LqBCxQ"
-              target="_blank"
-              rel="noopener"
-              class="transform transition-transform duration-300 hover:scale-110"
-              aria-label="Enllaç a la pagina de Spotify de Boom Boom Fighters"
-              ><picture>
-                <source srcset="images/boomboom.avif" type="image/avif" />
-                <source srcset="images/boomboom.webp" type="image/webp" />
-                <img
-                  src="images/boomboom.png"
-                  loading="lazy"
-                  alt="Boom Boom Fighters"
-                  width="450"
-                  height="450"
-                /> </picture
-            ></a>
+            ></a> -->
           </div>
         </div>
         <picture>
@@ -609,15 +585,16 @@
           />
         </picture>
       </div>
-      <div class="'flex">
+      <!-- TODO: move to other editions page -->
+      <!-- <div class="'flex">
         <button
           onclick="toggleOldPosters()"
           class="m-auto block cursor-pointer rounded-md border border-solid border-fme-black px-6 py-4 text-base hover:bg-fme-black hover:text-white"
         >
           CARTELLS ANTERIORS
         </button>
-      </div>
-      <div
+      </div> -->
+      <!-- <div
         class="flex h-0 w-full flex-wrap justify-center gap-6 py-6 opacity-0 transition-opacity duration-500 ease-in-out"
         id="oldPosters"
       >
@@ -652,18 +629,19 @@
             alt="Cartell dels concerts de l'edició 2022"
           />
         </picture>
-      </div>
+      </div> -->
     </section>
     <div
       class="relative h-[500px] bg-gray-400 bg-divider-3 bg-cover bg-center bg-no-repeat bg-blend-multiply lg:bg-scroll"
     ></div>
+    <!-- TODO: Update with this year sponsors -->
     <section id="collaboradors" class="prose m-auto my-10 max-w-5xl px-4" style="scroll-margin-top: 84px">
       <h2 class="my-2 text-center font-heading text-3xl uppercase">Col·laboradors</h2>
       <p class="mb-4 text-justify">
         La Festa Major d'Entitats no seria possible sense el suport dels establiments i empreses locals que col·laboren
         amb el projecte.
       </p>
-      <div class="grid grid-cols-2 gap-2 items-center justify-items-center md:grid-cols-4">
+      <div class="grid grid-cols-2 items-center justify-items-center gap-2 md:grid-cols-4">
         <picture>
           <source srcset="images/esponsors/aperitius_tafaner.webp" type="image/webp" />
           <img
@@ -888,7 +866,6 @@
     #video-container {
       height: 100%;
       width: 100%;
-      background-image: url('/images/video.mp4');
       background-color: transparent;
       position: absolute;
       background-size: cover;
@@ -898,22 +875,22 @@
   </style>
   <script>
     function toggleMenu() {
-      const element = document.getElementById('menu');
-      element.classList.toggle('hidden');
+      const element = document.getElementById('menu')
+      element.classList.toggle('hidden')
     }
 
     function toggleOldPosters() {
-      const container = document.getElementById('oldPosters');
+      const container = document.getElementById('oldPosters')
 
-      const isHidden = container.classList.contains('h-0');
+      const isHidden = container.classList.contains('h-0')
       if (isHidden) {
-        container.classList.add('opacity-100');
-        container.classList.remove('opacity-0');
-        container.classList.remove('h-0');
+        container.classList.add('opacity-100')
+        container.classList.remove('opacity-0')
+        container.classList.remove('h-0')
       } else {
-        container.classList.remove('opacity-100');
-        container.classList.add('opacity-0');
-        setTimeout(() => container.classList.add('h-0'), 250);
+        container.classList.remove('opacity-100')
+        container.classList.add('opacity-0')
+        setTimeout(() => container.classList.add('h-0'), 250)
       }
     }
   </script>
