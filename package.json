@@ -2,10 +2,16 @@
   "name": "fmentitats",
   "version": "2.0.0",
   "description": "Website for the FME 2024",
+  "type": "module",
   "scripts": {
-    "build": "NODE_ENV=production pnpm dlx tailwindcss -i ./styles.css -o ./public/styles.css --minify",
-    "dev": "NODE_ENV=development pnpm dlx tailwindcss -i ./styles.css -o ./public/styles.css --watch",
-    "serve": "serve public"
+    "build": "concurrently \"pnpm build:hono\" \"pnpm build:tailwind\"",
+    "build:hono": "vite build",
+    "build:tailwind": "NODE_ENV=production pnpm dlx tailwindcss -i ./src/styles.css -o ./public/static/styles.css --minify",
+    "dev": "concurrently --kill-others \"pnpm dev:hono\" \"pnpm dev:tailwind\"",
+    "dev:hono": "vite",
+    "dev:tailwind": "NODE_ENV=development pnpm dlx tailwindcss -i ./src/styles.css -o ./public/static/styles.css --watch",
+    "serve": "serve public",
+    "preview": "wrangler pages dev"
   },
   "repository": {
     "type": "git",
@@ -25,12 +31,19 @@
   },
   "homepage": "https://fme.cat",
   "devDependencies": {
+    "@cloudflare/workers-types": "^4.20240512.0",
+    "@hono/vite-cloudflare-pages": "^0.4.0",
+    "@hono/vite-dev-server": "^0.12.1",
+    "concurrently": "^8.2.2",
     "prettier": "3.2.5",
     "prettier-plugin-tailwindcss": "0.5.14",
     "serve": "14.2.3",
-    "tailwindcss": "3.4.3"
+    "tailwindcss": "3.4.3",
+    "vite": "^5.2.11",
+    "wrangler": "^3.57.0"
   },
   "dependencies": {
-    "@tailwindcss/typography": "0.5.13"
+    "@tailwindcss/typography": "0.5.13",
+    "hono": "^4.3.7"
   }
 }

@@ -1,0 +1,965 @@
+<!doctype html>
+<html lang="ca">
+  <head>
+    <link href="/styles.css" rel="stylesheet" />
+    <style>
+      @font-face {
+        font-family: Buchery;
+        src:
+          url('/fonts/Buchery.woff2') format('woff2'),
+          url('/fonts/Buchery.woff') format('woff');
+        font-weight: 400;
+        font-style: normal;
+        font-display: swap;
+      }
+      @font-face {
+        font-family: Jost;
+        src:
+          url('/fonts/Jost.woff2') format('woff2'),
+          url('/fonts/Jost.woff') format('woff');
+        font-weight: 400;
+        font-style: normal;
+        font-display: swap;
+      }
+    </style>
+    <title>Festa Major d'Entitats 2023</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Descobreix tota la programació de l'edició 2023" />
+    <meta itemprop="name" content="Festa Major d'Entitats 2023" />
+    <meta itemprop="description" content="Descobreix tota la programació de l'edició 2023" />
+    <meta itemprop="image" content="https://fme.cat/images/2023/social_facebook.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="96x96" href="/images/favicon-96x96.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <meta property="og:title" content="Festa Major d'Entitats 2023" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://fme.cat" />
+    <meta property="og:description" content="Descobreix tota la programació de l'edició 2023" />
+    <meta property="og:image" content="https://fme.cat/images/2023/social_facebook.webp" itemprop="image" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="1692" />
+    <meta property="og:image:alt" content="Cartell de la Festa Major d'Entitats 2023" />
+    <meta property="og:locale" content="ca" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://fme.cat/" />
+    <meta property="twitter:title" content="Festa Major d'Entitats 2023" />
+    <meta property="twitter:description" content="Descobreix tota la programació de l'edició 2023" />
+    <meta name="twitter:site" content="@fmentitats" />
+    <meta name="twitter:creator" content="@fmentitats" />
+    <meta name="twitter:image" content="https://fme.cat/images/2023/social_twitter.webp" />
+    <style>
+      .dropdown:hover .dropdown-content {
+        display: block;
+      }
+      .dropdown:hover .dropdown-trigger {
+        background-color: hsl(2 63 55 / 100);
+      }
+    </style>
+    <script>
+      !(function (t, e) {
+        var o, n, p, r
+        e.__SV ||
+          ((window.posthog = e),
+          (e._i = []),
+          (e.init = function (i, s, a) {
+            function g(t, e) {
+              var o = e.split('.')
+              2 == o.length && ((t = t[o[0]]), (e = o[1])),
+                (t[e] = function () {
+                  t.push([e].concat(Array.prototype.slice.call(arguments, 0)))
+                })
+            }
+            ;((p = t.createElement('script')).type = 'text/javascript'),
+              (p.async = !0),
+              (p.src = s.api_host.replace('.i.posthog.com', '-assets.i.posthog.com') + '/static/array.js'),
+              (r = t.getElementsByTagName('script')[0]).parentNode.insertBefore(p, r)
+            var u = e
+            for (
+              void 0 !== a ? (u = e[a] = []) : (a = 'posthog'),
+                u.people = u.people || [],
+                u.toString = function (t) {
+                  var e = 'posthog'
+                  return 'posthog' !== a && (e += '.' + a), t || (e += ' (stub)'), e
+                },
+                u.people.toString = function () {
+                  return u.toString(1) + '.people (stub)'
+                },
+                o =
+                  'capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags getFeatureFlag getFeatureFlagPayload reloadFeatureFlags group updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures getActiveMatchingSurveys getSurveys onSessionId'.split(
+                    ' ',
+                  ),
+                n = 0;
+              n < o.length;
+              n++
+            )
+              g(u, o[n])
+            e._i.push([i, s, a])
+          }),
+          (e.__SV = 1))
+      })(document, window.posthog || [])
+      posthog.init('phc_Eb5TtlXxGYT5nesa65yyFhJ5GGrtWLGa1wDJRpzYrPx', { api_host: 'https://eu.i.posthog.com' })
+    </script>
+  </head>
+  <body>
+    <header
+      class="sticky top-0 z-100 flex w-full flex-wrap items-center bg-fme-black px-6 py-2 shadow-md lg:px-16 lg:py-0"
+    >
+      <div class="flex flex-1 items-center justify-between py-2">
+        <a href="/">
+          <picture>
+            <source srcset="images/logo-fme.avif" type="image/avif" />
+            <source srcset="images/logo-fme.webp" type="image/webp" />
+            <img src="images/logo-fme.png" alt="Logo Festa Major d'Entitats" loading="eager" width="102" height="40" />
+          </picture>
+        </a>
+      </div>
+      <button onclick="toggleMenu()" class="pointer-cursor block lg:hidden">
+        <svg
+          class="fill-current text-white"
+          xmlns="http://www.w3.org/2000/svg"
+          width="20"
+          height="20"
+          viewBox="0 0 20 20"
+        >
+          <title>menu</title>
+          <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+        </svg>
+      </button>
+      <div
+        class="fixed right-0 top-14 z-10 hidden w-full bg-fme-black px-6 lg:relative lg:right-auto lg:top-auto lg:flex lg:w-auto lg:items-center"
+        id="menu"
+      >
+        <nav>
+          <ul class="items-center justify-between pt-4 text-base text-white lg:flex lg:pt-0">
+            <li>
+              <a
+                class="block border-b-4 border-transparent px-0 py-3 hover:border-fme-red lg:p-4"
+                href="#projecte"
+                onclick="toggleMenu()"
+                >Que és la FME?</a
+              >
+            </li>
+            <li>
+              <a
+                class="block border-b-4 border-transparent px-0 py-3 hover:border-fme-green lg:p-4"
+                href="#programa"
+                onclick="toggleMenu()"
+                >Programa d'actes</a
+              >
+            </li>
+            <li>
+              <a
+                class="block border-b-4 border-transparent px-0 py-3 hover:border-fme-yellow lg:p-4"
+                href="#collaboradors"
+                onclick="toggleMenu()"
+                >Col·laboradors</a
+              >
+            </li>
+            <li class="dropdown relative inline-block w-full lg:w-auto">
+              <div class="dropdown-trigger block w-full px-0 py-3 lg:p-4">Edicions anteriors</div>
+              <div class="dropdown-content w-full bg-fme-black pl-3 lg:absolute lg:hidden lg:pl-0">
+                <a href="edicio-2023.html" class="block px-0 py-3 hover:bg-fme-red lg:p-4">2023</a>
+                <a href="edicio-2022.html" class="block px-0 py-3 hover:bg-fme-red lg:p-4">2022</a>
+              </div>
+            </li>
+            <li class="mb-4 flex flex-row lg:mb-0">
+              <a href="https://twitter.com/fmentitats" target="_blank" rel="noopener" class="block p-3 lg:py-4">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  class="fill-current text-white"
+                >
+                  <path
+                    d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6.066 9.645c.183 4.04-2.83 8.544-8.164 8.544-1.622 0-3.131-.476-4.402-1.291 1.524.18 3.045-.244 4.252-1.189-1.256-.023-2.317-.854-2.684-1.995.451.086.895.061 1.298-.049-1.381-.278-2.335-1.522-2.304-2.853.388.215.83.344 1.301.359-1.279-.855-1.641-2.544-.889-3.835 1.416 1.738 3.533 2.881 5.92 3.001-.419-1.796.944-3.527 2.799-3.527.825 0 1.572.349 2.096.907.654-.128 1.27-.368 1.824-.697-.215.671-.67 1.233-1.263 1.589.581-.07 1.135-.224 1.649-.453-.384.578-.87 1.084-1.433 1.489z"
+                  />
+                </svg>
+              </a>
+              <a href="https://www.instagram.com/fmentitats" target="_blank" rel="noopener" class="block p-3 lg:py-4">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  class="fill-current text-white"
+                >
+                  <path
+                    d="M14.829 6.302c-.738-.034-.96-.04-2.829-.04s-2.09.007-2.828.04c-1.899.087-2.783.986-2.87 2.87-.033.738-.041.959-.041 2.828s.008 2.09.041 2.829c.087 1.879.967 2.783 2.87 2.87.737.033.959.041 2.828.041 1.87 0 2.091-.007 2.829-.041 1.899-.086 2.782-.988 2.87-2.87.033-.738.04-.96.04-2.829s-.007-2.09-.04-2.828c-.088-1.883-.973-2.783-2.87-2.87zm-2.829 9.293c-1.985 0-3.595-1.609-3.595-3.595 0-1.985 1.61-3.594 3.595-3.594s3.595 1.609 3.595 3.594c0 1.985-1.61 3.595-3.595 3.595zm3.737-6.491c-.464 0-.84-.376-.84-.84 0-.464.376-.84.84-.84.464 0 .84.376.84.84 0 .463-.376.84-.84.84zm-1.404 2.896c0 1.289-1.045 2.333-2.333 2.333s-2.333-1.044-2.333-2.333c0-1.289 1.045-2.333 2.333-2.333s2.333 1.044 2.333 2.333zm-2.333-12c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6.958 14.886c-.115 2.545-1.532 3.955-4.071 4.072-.747.034-.986.042-2.887.042s-2.139-.008-2.886-.042c-2.544-.117-3.955-1.529-4.072-4.072-.034-.746-.042-.985-.042-2.886 0-1.901.008-2.139.042-2.886.117-2.544 1.529-3.955 4.072-4.071.747-.035.985-.043 2.886-.043s2.14.008 2.887.043c2.545.117 3.957 1.532 4.071 4.071.034.747.042.985.042 2.886 0 1.901-.008 2.14-.042 2.886z"
+                  />
+                </svg>
+              </a>
+              <!-- <a href="https://www.facebook.com/FMEntitatsVNG" target="_blank" rel="noopener" class="block p-3 lg:py-4">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  class="fill-current text-white"
+                >
+                  <path
+                    d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm3 8h-1.35c-.538 0-.65.221-.65.778v1.222h2l-.209 2h-1.791v7h-3v-7h-2v-2h2v-2.308c0-1.769.931-2.692 3.029-2.692h1.971v3z"
+                  />
+                </svg>
+              </a> -->
+              <a
+                href="https://open.spotify.com/user/cb44avwfmmjada7ccotzddckm?si=2b9ee626286e4dd4"
+                target="_blank"
+                rel="noopener"
+                class="block p-3 lg:py-4"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  class="fill-current text-white"
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                >
+                  <path
+                    d="M24 12c0 6.627-5.373 12-12 12s-12-5.373-12-12 5.373-12 12-12 12 5.373 12 12zm-12-7c-3.866 0-7 3.134-7 7s3.134 7 7 7 7-3.134 7-7-3.134-7-7-7zm3.21 10.096c-.125.207-.394.271-.6.146-1.643-1.005-3.712-1.232-6.149-.675-.235.053-.469-.094-.522-.328-.054-.235.092-.469.328-.523 2.666-.609 4.954-.347 6.799.78.205.126.27.395.144.6zm.857-1.906c-.158.257-.494.338-.751.18-1.881-1.156-4.75-1.491-6.975-.816-.289.088-.594-.075-.681-.363-.087-.289.076-.593.364-.681 2.542-.771 5.703-.398 7.863.93.257.158.338.494.18.75zm.074-1.984c-2.257-1.34-5.979-1.464-8.133-.81-.345.105-.711-.09-.816-.436-.105-.346.09-.712.436-.817 2.473-.75 6.583-.605 9.181.937.311.184.413.586.229.897-.185.311-.587.413-.897.229z"
+                  />
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!-- HERO SECTION -->
+    <section class="relative h-[50vh] bg-fme-black md:h-[66vh] lg:h-screen">
+      <div id="video-container"></div>
+      <video
+        width="720"
+        height="406"
+        autoplay
+        muted
+        playsinline
+        loop
+        class="z-1 absolute h-full w-full object-cover"
+        style="filter: blur(4px)"
+      >
+        <source src="/images/2023/video.mp4" srcset="/images/2023/video.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+
+      <div class="relative z-10 flex h-full flex-col items-center justify-center p-4">
+        <h1 class="text-center font-heading text-4xl text-white md:text-6xl lg:text-7xl">Festa Major d'Entitats</h1>
+        <p class="mb-4 text-center font-heading text-6xl text-white md:text-8xl lg:text-9xl">2023</p>
+        <p class="mb-10 text-center text-lg font-light uppercase text-white md:text-xl lg:text-2xl">
+          27 de juliol al 5 d'agost | Vilanova i la Geltrú
+        </p>
+        <a
+          href="#programa"
+          class="relative flex cursor-pointer flex-row items-center rounded-md bg-white px-6 py-4 text-base text-fme-black no-underline shadow-xl md:text-lg lg:text-xl"
+        >
+          PROGRAMA D'ACTES</a
+        >
+      </div>
+    </section>
+    <!-- PROJECT SECTION -->
+    <section id="projecte" class="m-auto my-10 max-w-5xl px-4" style="scroll-margin-top: 84px">
+      <h2 class="my-2 text-center font-heading text-3xl uppercase">Que és la FME?</h2>
+      <p class="my-4 text-center text-xl italic">
+        Coneix l'origen, el projecte i les entitats que hi ha darrere de la FME
+      </p>
+      <div class="mb-6 flex flex-col-reverse flex-wrap items-center gap-8 lg:flex-row lg:flex-nowrap">
+        <picture>
+          <source srcset="images/logo.avif" type="image/avif" />
+          <source srcset="images/logo.webp" type="image/webp" />
+          <img
+            src="images/logo.png"
+            loading="lazy"
+            class="m-auto max-w-xs flex-1 rounded-full"
+            alt="Logo Festa Major d'Entitats"
+            width="320"
+            height="320"
+          />
+        </picture>
+        <div>
+          <p class="flex-1 text-justify">
+            La Festa Major d'Entitats neix l'any 2017 després que un grup d'entitats vinculades al teixit associatiu
+            juvenil i cultural de la ciutat veiessin la necessitat d'implicar-se de forma més activa en la programació
+            de la Festa Major.
+          </p>
+          <p class="flex-1 text-justify">
+            A diferència del que passa en altres actes del cicle festiu de la ciutat, una part important de la gent viu
+            la Festa Major com a espectadora. D'aquesta anàlisi sorgeix l'objectiu general del nou projecte de la FME
+            2022:
+            <span class="italic"
+              >Oferir a la ciutat una programació cultural àmplia, popular i gratuïta emmarcada en la Festa Major a
+              través de la participació directa de les entitats i la seva massa social.</span
+            >
+          </p>
+          <p class="flex-1 text-justify">
+            La FME pretén promoure la transformació del model cultural de la ciutat i oferir una alternativa a la festa
+            major de Vilanova més participativa i accessible i alhora donar a conèixer el potencial i la riquesa de
+            l'associacionisme a la ciutat.
+          </p>
+          <p class="flex-1 text-justify">
+            A banda de les entitats que ja en formen part, la Festa Major d'Entitats pretén fer-se extensiva i
+            interpel·lar progressivament a més entitats del teixit associatiu de la ciutat.
+          </p>
+        </div>
+      </div>
+      <p class="mb-4 text-center font-bold">Entitats organitzadores</p>
+      <div class="flex flex-wrap justify-center gap-2 md:flex-nowrap lg:flex-nowrap lg:gap-8">
+        <a
+          href="https://www.instagram.com/launiovilanovina/"
+          target="_blank"
+          rel="noopener"
+          aria-label="Enllaç a l'Instagram de La Unió"
+        >
+          <picture>
+            <source srcset="images/entitats/launio.avif" type="image/avif" />
+            <source srcset="images/entitats/launio.webp" type="image/webp" />
+            <img
+              src="images/entitats/launio.jpg"
+              loading="lazy"
+              class="max-w-[75px] opacity-75 hover:opacity-100 lg:max-w-[120px]"
+              alt="La Unió"
+              width="240"
+              height="264"
+            />
+          </picture>
+        </a>
+        <a
+          href="https://www.instagram.com/diablesvng/"
+          target="_blank"
+          rel="noopener"
+          aria-label="Enllaç a l'Instagram dels Diables de Vilanova"
+        >
+          <picture>
+            <source srcset="images/entitats/diables.avif" type="image/avif" />
+            <source srcset="images/entitats/diables.webp" type="image/webp" />
+            <img
+              src="images/entitats/diables.jpg"
+              loading="lazy"
+              class="max-w-[75px] opacity-75 hover:opacity-100 lg:max-w-[120px]"
+              alt="Ball de Diables de Vilanova"
+              width="240"
+              height="264"
+            /> </picture
+        ></a>
+        <a
+          href="https://www.instagram.com/festuc_vng/"
+          target="_blank"
+          rel="noopener"
+          aria-label="Enllaç a l'Instagram de Festuc"
+        >
+          <picture>
+            <source srcset="images/entitats/festuc.avif" type="image/avif" />
+            <source srcset="images/entitats/festuc.webp" type="image/webp" />
+            <img
+              src="images/entitats/festuc.jpg"
+              loading="lazy"
+              class="max-w-[75px] opacity-75 hover:opacity-100 lg:max-w-[120px]"
+              alt="Festuc"
+              width="240"
+              height="264"
+            /> </picture
+        ></a>
+        <a
+          href="https://www.instagram.com/apollovng/"
+          target="_blank"
+          rel="noopener"
+          aria-label="Enllaç a l'Instagram d'Apol·lo"
+        >
+          <picture>
+            <source srcset="images/entitats/apollo.avif" type="image/avif" />
+            <source srcset="images/entitats/apollo.webp" type="image/webp" />
+            <img
+              src="images/entitats/apollo.jpg"
+              loading="lazy"
+              class="max-w-[75px] opacity-75 hover:opacity-100 lg:max-w-[120px]"
+              alt="Apol·lo"
+              width="240"
+              height="264"
+            /> </picture
+        ></a>
+        <a
+          href="https://www.instagram.com/bordegassosvilanova/"
+          target="_blank"
+          rel="noopener"
+          aria-label="Enllaç a l'Instagram dels Bordegassos de Vilanova"
+          class="flex flex-col items-center justify-center"
+        >
+          <picture>
+            <source srcset="images/entitats/bordegassos.avif" type="image/avif" />
+            <source srcset="images/entitats/bordegassos.webp" type="image/webp" />
+            <img
+              src="images/entitats/bordegassos.png"
+              loading="lazy"
+              class="max-w-[120px] opacity-75 hover:opacity-100 lg:max-w-[180px]"
+              alt="Bordegassos"
+              width="240"
+              height="264"
+            />
+          </picture>
+        </a>
+        <a
+          href="https://www.instagram.com/ateneuvilanovi/"
+          target="_blank"
+          rel="noopener"
+          aria-label="Enllaç a l'Instagram del Ateneu Vilanovi"
+          class="flex flex-col items-center justify-center"
+        >
+          <picture>
+            <source srcset="images/entitats/ateneu.avif" type="image/avif" />
+            <source srcset="images/entitats/ateneu.webp" type="image/webp" />
+            <img
+              src="images/entitats/ateneu.png"
+              loading="lazy"
+              class="max-w-[120px] opacity-75 hover:opacity-100 lg:max-w-[180px]"
+              alt="Ateneu Vilanovi"
+              width="790"
+              height="180"
+            />
+          </picture>
+        </a>
+      </div>
+    </section>
+    <div
+      class="relative h-[500px] bg-gray-400 bg-divider-2-2023 bg-cover bg-center bg-no-repeat bg-blend-multiply backdrop-opacity-30 lg:bg-scroll"
+    ></div>
+    <!-- PROGRAM SECTION -->
+    <section id="programa" class="m-auto my-10 max-w-5xl px-4" style="scroll-margin-top: 84px">
+      <h2 class="my-2 text-center font-heading text-3xl uppercase">Programa d'actes</h2>
+      <p class="my-4 text-center text-xl italic">Això és tot el que us hem preparat per a aquesta FME.</p>
+      <div class="mb-10 grid grid-cols-1 gap-4 lg:grid-cols-2">
+        <div class="flex flex-col items-center justify-center">
+          <div class="mt-4 text-lg font-semibold text-fme-yellow">Dijous 27 de juliol</div>
+          <p class="text-center font-bold">21:30h - Assaig especial de la Diada de les Neus</p>
+          <p class="text-center">Local de Bordegassos de Vilanova</p>
+          <p class="text-center">Organitza: Bordegassos de Vilanova</p>
+
+          <div class="mt-4 text-lg font-semibold text-fme-yellow">Divendres 28 de juliol</div>
+          <p class="text-center font-bold">17:00h - Ludoteca del Correfoc</p>
+          <p class="text-center">Plaça de les Casernes</p>
+          <p class="text-center">Organitza: Ball de Diables de Vilanova i el Drac de Vilanova i la Geltrú</p>
+
+          <p class="mt-2 text-center font-bold">20:00h - Sopar del Correfoc</p>
+          <p class="text-center">Plaça de les Casernes</p>
+          <p class="text-center">Organitza: Ball de Diables de Vilanova</p>
+
+          <p class="mt-2 text-center font-bold">22:30h - Ballem sota el foc del Correfoc</p>
+          <p class="text-center">Pels carrers de la vila</p>
+
+          <p class="mt-2 text-center font-bold">00:30h - Concerts amb Figa Flawas i DJ Casqui</p>
+          <p class="text-center">Plaça de les Casernes</p>
+          <p class="text-center">Organitza: FME</p>
+
+          <div class="mt-4 text-lg font-semibold text-fme-yellow">Dissabte 29 de juliol</div>
+          <p class="text-center font-bold">18:00h - Fem Pinya a la Diada de les Neus</p>
+          <p class="text-center">Plaça de la Vila</p>
+
+          <p class="mt-2 text-center font-bold">19:00h - Ruta Major d'Entitats</p>
+          <p class="text-center">Plaça del Mercat</p>
+          <p class="text-center">Organitza: Apol·lo</p>
+
+          <p class="mt-2 text-center font-bold">23:00h - Concerts amb Ketekalles, Awakate i Boom Boom Fighters</p>
+          <p class="text-center">Plaça de les Casernes</p>
+          <p class="text-center">Organitza: FME</p>
+
+          <div class="mt-4 text-lg font-semibold text-fme-yellow">Diumenge 30 de juliol</div>
+          <p class="text-center font-bold">19:00h - Vespre de Monòlegs amb Marc Sarrats, Gemma Ortis i Albert Roig.</p>
+          <p class="text-center">Plaça de les Casernes</p>
+          <p class="text-center">Organitza: Festuc</p>
+        </div>
+        <div class="flex flex-col items-center">
+          <div class="mt-4 text-lg font-semibold text-fme-yellow">Dilluns 31 de juliol</div>
+          <p class="text-center font-bold">18:30h - Escalabirres</p>
+          <p class="text-center">Plaça de les Casernes</p>
+          <p class="text-center">Organitza: Bordegassos de Vilanova</p>
+
+          <p class="mt-2 text-center font-bold">20:30h - Botifarrada popular</p>
+          <p class="text-center">Plaça de les Casernes</p>
+          <p class="text-center">Organitza: Bordegassos de Vilanova i La Unió Vilanovina</p>
+
+          <p class="mt-2 text-center font-bold">21:00h - Ball de Gralles amb l'Havana Xica i Canya d'Or</p>
+          <p class="text-center">Plaça de les Casernes</p>
+          <p class="text-center">Organitza: La Unió Vilanovina</p>
+
+          <div class="mt-4 text-lg font-semibold text-fme-yellow">Dimarts 1 d'agost</div>
+          <p class="text-center font-bold">
+            19:00h - Jornada antirrepresiva, xerrada i música en directe “Cultura i Carrer: A la reconquesta de l'espai
+            públic”
+          </p>
+          <p class="text-center">Plaça de les Casernes</p>
+          <p class="text-center">Organitza: Ateneu Vilanoví</p>
+
+          <div class="mt-4 text-lg font-semibold text-fme-yellow">Dimecres 2 d'agost</div>
+          <p class="text-center font-bold">18:00h - La petita FME: Tarda de jocs</p>
+          <p class="text-center">Plaça de les Casernes</p>
+          <p class="text-center">Organitza: FME</p>
+
+          <div class="mt-4 text-lg font-semibold text-fme-yellow">Divendres 4 d'agost</div>
+          <p class="text-center font-bold">13:30h - Vermut i dinar de la FME i sobretaula musical</p>
+          <p class="text-center">Plaça de les Casernes</p>
+          <p class="text-center">Organitza: FME</p>
+
+          <div class="mt-4 text-lg font-semibold text-fme-yellow">Dissabte 5 d'agost</div>
+          <p class="text-center font-bold">00:00h - Ball del Vot del Poble</p>
+          <p class="text-center">Plaça de la Peixeteria</p>
+          <p class="text-center">Organitza: Ateneu Vilanoví</p>
+        </div>
+      </div>
+
+      <div class="mb-6 flex flex-row flex-wrap justify-center gap-4 lg:flex-nowrap">
+        <div class="flex-1">
+          <h3 class="my-2 font-heading text-xl">Descobreix la música de la FME</h3>
+          <p class="prose mb-4 text-justify">
+            Us hem preparat una llista de reproducció amb els millors èxits de tots els artistes que actuaran a la Festa
+            Major d'Entitats d'aquest any.
+          </p>
+          <a
+            href="https://open.spotify.com/playlist/76ogOCN8Er0CTryn939UZ2?si=88c43e16805a445e"
+            target="_blank"
+            rel="noopener"
+            class="mx-auto mb-8 flex w-[fit-content] flex-row items-center rounded-md bg-fme-green px-4 py-3 text-white"
+          >
+            <svg
+              width="24"
+              height="24"
+              xmlns="http://www.w3.org/2000/svg"
+              class="mr-2 fill-current text-white"
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+            >
+              <path
+                d="M19.098 10.638c-3.868-2.297-10.248-2.508-13.941-1.387-.593.18-1.22-.155-1.399-.748-.18-.593.154-1.22.748-1.4 4.239-1.287 11.285-1.038 15.738 1.605.533.317.708 1.005.392 1.538-.316.533-1.005.709-1.538.392zm-.126 3.403c-.272.44-.847.578-1.287.308-3.225-1.982-8.142-2.557-11.958-1.399-.494.15-1.017-.129-1.167-.623-.149-.495.13-1.016.624-1.167 4.358-1.322 9.776-.682 13.48 1.595.44.27.578.847.308 1.286zm-1.469 3.267c-.215.354-.676.465-1.028.249-2.818-1.722-6.365-2.111-10.542-1.157-.402.092-.803-.16-.895-.562-.092-.403.159-.804.562-.896 4.571-1.045 8.492-.595 11.655 1.338.353.215.464.676.248 1.028zm-5.503-17.308c-6.627 0-12 5.373-12 12 0 6.628 5.373 12 12 12 6.628 0 12-5.372 12-12 0-6.627-5.372-12-12-12z"
+              />
+            </svg>
+            Llista FME 2023</a
+          >
+          <div class="grid grid-cols-2 gap-4 lg:grid-cols-3 lg:gap-6">
+            <a
+              href="https://open.spotify.com/artist/2enhM5DK9oTxWiCVpFIDv3?si=OXNaQ68nTNOdBIO10tj_YQ"
+              target="_blank"
+              rel="noopener"
+              class="transform transition-transform duration-300 hover:scale-110"
+              aria-label="Enllaç a la pagina de Spotify de Figa Flawas"
+              ><picture>
+                <source srcset="images/2023/grups/figaflawas.avif" type="image/avif" />
+                <source srcset="images/2023/grups/figaflawas.webp" type="image/webp" />
+                <img
+                  src="images/2023/grups/figaflawas.png"
+                  loading="lazy"
+                  alt="Figa Flawas"
+                  width="450"
+                  height="450"
+                /> </picture
+            ></a>
+            <a
+              href="https://instagram.com/la.casqui"
+              target="_blank"
+              rel="noopener"
+              class="transform transition-transform duration-300 hover:scale-110"
+              aria-label="Enllaç a la pagina de Spotify de Djs Casqui"
+              ><picture>
+                <source srcset="images/2023/grups/casqui.avif" type="image/avif" />
+                <source srcset="images/2023/grups/casqui.webp" type="image/webp" />
+                <img
+                  src="images/2023/grups/casqui.png"
+                  loading="lazy"
+                  alt="Dj Casqui"
+                  width="450"
+                  height="450"
+                /> </picture
+            ></a>
+            <a
+              href="https://open.spotify.com/artist/32opeIbCeLG1LiAkmwiiof?si=ARIeUjZfQhi_f1AheV459Q"
+              target="_blank"
+              rel="noopener"
+              class="transform transition-transform duration-300 hover:scale-110"
+              aria-label="Enllaç a la pagina de Spotify de Ketekalles"
+              ><picture>
+                <source srcset="images/2023/grups/ketekalles.avif" type="image/avif" />
+                <source srcset="images/2023/grups/ketekalles.webp" type="image/webp" />
+                <img
+                  src="images/2023/grups/ketekalles.png"
+                  loading="lazy"
+                  alt="Ketekalles"
+                  width="450"
+                  height="450"
+                /> </picture
+            ></a>
+            <a
+              href="https://open.spotify.com/artist/48nizYtwPgaiGgp7rMmNCX?si=CFOxHujvTSqxfmvUEuEnAA"
+              target="_blank"
+              rel="noopener"
+              class="transform transition-transform duration-300 hover:scale-110"
+              aria-label="Enllaç a la pagina de Spotify de Awakate"
+              ><picture>
+                <source srcset="images/2023/grups/awakate.avif" type="image/avif" />
+                <source srcset="images/2023/grups/awakate.webp" type="image/webp" />
+                <img
+                  src="images/2023/grups/awakate.jpeg"
+                  loading="lazy"
+                  alt="Awakate"
+                  width="450"
+                  height="450"
+                /> </picture
+            ></a>
+            <a
+              href="https://open.spotify.com/artist/2bNKVXUVgZPjFR9VNYJNj6?si=onuJwHD8SIS2Exq5LqBCxQ"
+              target="_blank"
+              rel="noopener"
+              class="transform transition-transform duration-300 hover:scale-110"
+              aria-label="Enllaç a la pagina de Spotify de Boom Boom Fighters"
+              ><picture>
+                <source srcset="images/2023/grups/boomboom.avif" type="image/avif" />
+                <source srcset="images/2023/grups/boomboom.webp" type="image/webp" />
+                <img
+                  src="images/2023/grups/boomboom.png"
+                  loading="lazy"
+                  alt="Boom Boom Fighters"
+                  width="450"
+                  height="450"
+                /> </picture
+            ></a>
+          </div>
+        </div>
+        <picture>
+          <source srcset="images/2023/cartell2023.avif" type="image/avif" />
+          <source srcset="images/2023/cartell2023.webp" type="image/webp" />
+          <img
+            src="images/2023/cartell2023.jpg"
+            loading="lazy"
+            alt="Cartell dels concerts de l'edició 2023"
+            width="420"
+            height="525"
+          />
+        </picture>
+      </div>
+      <div class="'flex">
+        <button
+          onclick="toggleOldPosters()"
+          class="m-auto block cursor-pointer rounded-md border border-solid border-fme-black px-6 py-4 text-base hover:bg-fme-black hover:text-white"
+        >
+          CARTELLS ANTERIORS
+        </button>
+      </div>
+      <div
+        class="flex h-0 w-full flex-wrap justify-center gap-6 py-6 opacity-0 transition-opacity duration-500 ease-in-out"
+        id="oldPosters"
+      >
+        <picture>
+          <source srcset="images/cartell2017.avif" type="image/avif" />
+          <source srcset="images/cartell2017.webp" type="image/webp" />
+          <img src="images/cartell2017.jpg" width="320" height="452" loading="lazy" alt="Cartell de l'edició 2017" />
+        </picture>
+        <picture>
+          <source srcset="images/cartell2018.avif" type="image/avif" />
+          <source srcset="images/cartell2018.webp" type="image/webp" />
+          <img src="images/cartell2018.jpg" width="320" height="452" loading="lazy" alt="Cartell de l'edició 2018" />
+        </picture>
+        <picture>
+          <source srcset="images/cartell2019.avif" type="image/avif" />
+          <source srcset="images/cartell2019.webp" type="image/webp" />
+          <img src="images/cartell2019.jpg" width="320" height="452" loading="lazy" alt="Cartell de l'edició 2019" />
+        </picture>
+        <picture>
+          <source srcset="images/cartell2021.avif" type="image/avif" />
+          <source srcset="images/cartell2021.webp" type="image/webp" />
+          <img src="images/cartell2021.jpg" width="320" height="452" loading="lazy" alt="Cartell de l'edició 2021" />
+        </picture>
+        <picture>
+          <source srcset="images/cartell2022.avif" type="image/avif" />
+          <source srcset="images/cartell2022.webp" type="image/webp" />
+          <img
+            src="images/cartell2022.jpg"
+            width="320"
+            height="452"
+            loading="lazy"
+            alt="Cartell dels concerts de l'edició 2022"
+          />
+        </picture>
+      </div>
+    </section>
+    <div
+      class="relative h-[500px] bg-gray-400 bg-divider-3-2023 bg-cover bg-center bg-no-repeat bg-blend-multiply lg:bg-scroll"
+    ></div>
+    <section id="collaboradors" class="prose m-auto my-10 max-w-5xl px-4" style="scroll-margin-top: 84px">
+      <h2 class="my-2 text-center font-heading text-3xl uppercase">Col·laboradors</h2>
+      <p class="mb-4 text-justify">
+        La Festa Major d'Entitats no seria possible sense el suport dels establiments i empreses locals que col·laboren
+        amb el projecte.
+      </p>
+      <div class="grid grid-cols-2 items-center justify-items-center gap-2 md:grid-cols-4">
+        <picture>
+          <source srcset="images/2023/esponsors/aperitius_tafaner.webp" type="image/webp" />
+          <img
+            src="images/2023/esponsors/aperitius_tafaner.png"
+            loading="lazy"
+            alt="Aperitius Tafaner"
+            width="200"
+            height="200"
+          />
+        </picture>
+        <picture>
+          <source srcset="images/2023/esponsors/estrella_galicia.webp" type="image/webp" />
+          <img
+            src="images/2023/esponsors/estrella_galicia.png"
+            loading="lazy"
+            alt="Estrella Galicia"
+            width="200"
+            height="200"
+          />
+        </picture>
+        <picture>
+          <source srcset="images/2023/esponsors/dvp.webp" type="image/webp" />
+          <img
+            src="images/2023/esponsors/dvp.png"
+            loading="lazy"
+            alt="Distribucio i vending Penedes"
+            width="200"
+            height="200"
+          />
+        </picture>
+        <picture>
+          <source srcset="images/2023/esponsors/gin_mg.webp" type="image/webp" />
+          <img src="images/2023/esponsors/gin_mg.png" loading="lazy" alt="Gin MG" width="200" height="200" />
+        </picture>
+        <picture>
+          <source srcset="images/2023/esponsors/aican.webp" type="image/webp" />
+          <img src="images/2023/esponsors/aican.jpg" loading="lazy" alt="Aican" width="200" height="200" />
+        </picture>
+        <picture>
+          <source srcset="images/2023/esponsors/paradistes_mercatt.webp" type="image/webp" />
+          <img
+            src="images/2023/esponsors/paradistes_mercatt.jpg"
+            loading="lazy"
+            alt="Associacio Paradistes del Mercat"
+            width="200"
+            height="200"
+          />
+        </picture>
+        <picture>
+          <source srcset="images/2023/esponsors/arcon_de_alba.webp" type="image/webp" />
+          <img
+            src="images/2023/esponsors/arcon_de_alba.jpg"
+            loading="lazy"
+            alt="Arcon de Alba"
+            width="200"
+            height="200"
+          />
+        </picture>
+        <picture>
+          <source srcset="images/2023/esponsors/bacallaneria_toni.webp" type="image/webp" />
+          <img
+            src="images/2023/esponsors/bacallaneria_toni.png"
+            loading="lazy"
+            alt="Bacallaneria Toni"
+            width="200"
+            height="200"
+          />
+        </picture>
+        <picture>
+          <source srcset="images/2023/esponsors/bar_del_mercat.webp" type="image/webp" />
+          <img
+            src="images/2023/esponsors/bar_del_mercat.jpg"
+            loading="lazy"
+            alt="Bar del Mercat"
+            width="200"
+            height="200"
+          />
+        </picture>
+        <picture>
+          <source srcset="images/2023/esponsors/cal_trajo.webp" type="image/webp" />
+          <img src="images/2023/esponsors/cal_trajo.png" loading="lazy" alt="Cal Trajo" width="200" height="200" />
+        </picture>
+        <picture>
+          <source srcset="images/2023/esponsors/can_batadet.webp" type="image/webp" />
+          <img src="images/2023/esponsors/can_batadet.png" loading="lazy" alt="Can Batadet" width="200" height="200" />
+        </picture>
+        <picture>
+          <source srcset="images/2023/esponsors/carpeta_moderna.webp" type="image/webp" />
+          <img
+            src="images/2023/esponsors/carpeta_moderna.jpg"
+            loading="lazy"
+            alt="Carpeta Moderna"
+            width="200"
+            height="200"
+          />
+        </picture>
+        <picture>
+          <source srcset="images/2023/esponsors/congelats_cadi.webp" type="image/webp" />
+          <img
+            src="images/2023/esponsors/congelats_cadi.jpeg"
+            loading="lazy"
+            alt="Congelats Cadi"
+            width="200"
+            height="200"
+          />
+        </picture>
+        <picture>
+          <source srcset="images/2023/esponsors/ferreteria_daumar.webp" type="image/webp" />
+          <img
+            src="images/2023/esponsors/ferreteria_daumar.png"
+            loading="lazy"
+            alt="Ferreteria Daumar"
+            width="200"
+            height="200"
+          />
+        </picture>
+        <picture>
+          <source srcset="images/2023/esponsors/fisio_lab.webp" type="image/webp" />
+          <img src="images/2023/esponsors/fisio_lab.png" loading="lazy" alt="Fisio Lab" width="200" height="200" />
+        </picture>
+        <picture>
+          <source srcset="images/2023/esponsors/freilka.webp" type="image/webp" />
+          <img src="images/2023/esponsors/freilka.png" loading="lazy" alt="Freilka" width="200" height="200" />
+        </picture>
+        <picture>
+          <source srcset="images/2023/esponsors/gelats_llorens.webp" type="image/webp" />
+          <img
+            src="images/2023/esponsors/gelats_llorens.jpeg"
+            loading="lazy"
+            alt="Gelats Llorens"
+            width="200"
+            height="200"
+          />
+        </picture>
+        <picture>
+          <source srcset="images/2023/esponsors/la_cava.webp" type="image/webp" />
+          <img src="images/2023/esponsors/la_cava.png" loading="lazy" alt="La Cava" width="200" height="200" />
+        </picture>
+        <picture>
+          <source srcset="images/2023/esponsors/lotus.webp" type="image/webp" />
+          <img src="images/2023/esponsors/lotus.png" loading="lazy" alt="Lotus" width="200" height="200" />
+        </picture>
+        <picture>
+          <source srcset="images/2023/esponsors/marta_carnisseria.webp" type="image/webp" />
+          <img
+            src="images/2023/esponsors/marta_carnisseria.jpg"
+            loading="lazy"
+            alt="Marta Carnisseria"
+            width="200"
+            height="200"
+          />
+        </picture>
+        <picture>
+          <source srcset="images/2023/esponsors/mon_petito.webp" type="image/webp" />
+          <img src="images/2023/esponsors/mon_petito.jpg" loading="lazy" alt="Mon Petito" width="200" height="200" />
+        </picture>
+        <picture>
+          <source srcset="images/2023/esponsors/padisgraf.webp" type="image/webp" />
+          <img src="images/2023/esponsors/padisgraf.png" loading="lazy" alt="Padisgraf" width="200" height="200" />
+        </picture>
+        <picture>
+          <source srcset="images/2023/esponsors/peixosdolors.webp" type="image/webp" />
+          <img
+            src="images/2023/esponsors/peixosdolors.jpg"
+            loading="lazy"
+            alt="Peixos Dolors"
+            width="200"
+            height="200"
+          />
+        </picture>
+        <picture>
+          <source srcset="images/2023/esponsors/solfico.webp" type="image/webp" />
+          <img src="images/2023/esponsors/solfico.png" loading="lazy" alt="Solfico" width="200" height="200" />
+        </picture>
+        <picture>
+          <source srcset="images/2023/esponsors/temps_de_recovery.webp" type="image/webp" />
+          <img
+            src="images/2023/esponsors/temps_de_recovery.png"
+            loading="lazy"
+            alt="Temps de Recovery"
+            width="200"
+            height="200"
+          />
+        </picture>
+        <picture>
+          <source srcset="images/2023/esponsors/el_rostit.webp" type="image/webp" />
+          <img src="images/2023/esponsors/el_rostit.png" loading="lazy" alt="El Rostit" width="200" height="200" />
+        </picture>
+        <picture>
+          <source srcset="images/2023/esponsors/ganiveteria_rodriguez.webp" type="image/webp" />
+          <img
+            src="images/2023/esponsors/ganiveteria_rodriguez.png"
+            loading="lazy"
+            alt="Ganiveteria Rodriguez"
+            width="200"
+            height="200"
+          />
+        </picture>
+        <picture>
+          <source srcset="images/2023/esponsors/bar_italia.webp" type="image/webp" />
+          <img src="images/2023/esponsors/bar_italia.png" loading="lazy" alt="Bar Italia" width="200" height="200" />
+        </picture>
+        <picture>
+          <source srcset="images/2023/esponsors/camanes.webp" type="image/webp" />
+          <img src="images/2023/esponsors/camanes.jpg" loading="lazy" alt="Camañes" width="200" height="200" />
+        </picture>
+        <picture>
+          <source srcset="images/2023/esponsors/el_celler.webp" type="image/webp" />
+          <img src="images/2023/esponsors/el_celler.png" loading="lazy" alt="El Celler " width="200" height="200" />
+        </picture>
+        <picture>
+          <source srcset="images/2023/esponsors/la_gralla.webp" type="image/webp" />
+          <img src="images/2023/esponsors/la_gralla.png" loading="lazy" alt="La Gralla" width="200" height="200" />
+        </picture>
+        <picture>
+          <source srcset="images/2023/esponsors/la_lluna.webp" type="image/webp" />
+          <img src="images/2023/esponsors/la_lluna.png" loading="lazy" alt="La Lluna" width="200" height="200" />
+        </picture>
+        <picture>
+          <source srcset="images/2023/esponsors/la_tasca.webp" type="image/webp" />
+          <img src="images/2023/esponsors/la_tasca.png" loading="lazy" alt="La Tasca " width="200" height="200" />
+        </picture>
+        <picture>
+          <source srcset="images/2023/esponsors/supermercats_jr.webp" type="image/webp" />
+          <img
+            src="images/2023/esponsors/supermercats_jr.png"
+            loading="lazy"
+            alt="Supermercats JR "
+            width="200"
+            height="200"
+          />
+        </picture>
+      </div>
+    </section>
+    <div
+      class="relative h-[500px] bg-gray-400 bg-divider-1-2023 bg-cover bg-center bg-no-repeat bg-blend-multiply lg:bg-scroll"
+    ></div>
+  </body>
+  <style>
+    #video-container {
+      height: 100%;
+      width: 100%;
+      background-image: url('/images/2023/video.mp4');
+      background-color: transparent;
+      position: absolute;
+      background-size: cover;
+      filter: blur(4px);
+      z-index: 1;
+    }
+  </style>
+  <script>
+    function toggleMenu() {
+      const element = document.getElementById('menu')
+      element.classList.toggle('hidden')
+    }
+
+    function toggleOldPosters() {
+      const container = document.getElementById('oldPosters')
+
+      const isHidden = container.classList.contains('h-0')
+      if (isHidden) {
+        container.classList.add('opacity-100')
+        container.classList.remove('opacity-0')
+        container.classList.remove('h-0')
+      } else {
+        container.classList.remove('opacity-100')
+        container.classList.add('opacity-0')
+        setTimeout(() => container.classList.add('h-0'), 250)
+      }
+    }
+  </script>
+</html>

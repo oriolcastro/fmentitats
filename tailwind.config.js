@@ -1,18 +1,18 @@
-const defaultTheme = require('tailwindcss/defaultTheme');
+const defaultTheme = require('tailwindcss/defaultTheme')
 
 module.exports = {
-  content: ['./public/**/*.html'],
+  content: ['./index.html', './src/**/*.{js,jsx,ts,tsx}'],
   theme: {
     extend: {
-      backgroundImage: (theme) => ({
-        'divider-1-2023': "url('/images/2023/background_1.webp')",
-        'divider-2-2023': "url('/images/2023/background_2.webp')",
-        'divider-3-2023': "url('/images/2023/background_3.webp')",
-        'divider-4-2023': "url('/images/2023/background_4.webp')",
-        'divider-1': "url('/images/background_1.webp')",
-        'divider-2': "url('/images/background_2.webp')",
-        'divider-3': "url('/images/background_3.webp')",
-        'divider-4': "url('/images/background_4.webp')",
+      backgroundImage: theme => ({
+        'divider-1-2023': "url('/static/images//2023/background_1.webp')",
+        'divider-2-2023': "url('/static/images//2023/background_2.webp')",
+        'divider-3-2023': "url('/static/images//2023/background_3.webp')",
+        'divider-4-2023': "url('/static/images//2023/background_4.webp')",
+        'divider-1': "url('/static/images//background_1.webp')",
+        'divider-2': "url('/static/images//background_2.webp')",
+        'divider-3': "url('/static/images//background_3.webp')",
+        'divider-4': "url('/static/images//background_4.webp')",
       }),
       fontFamily: {
         heading: ['Buchery', ...defaultTheme.fontFamily.sans],
@@ -31,4 +31,4 @@ module.exports = {
     },
   },
   plugins: [require('@tailwindcss/typography')],
-};
+}
