@@ -21,21 +21,20 @@ export const TheProject = () => {
           />
         </picture>
         <div>
-          <p class="flex-1 text-justify">
+          <p class="mb-4 flex-1 text-justify">
             La Festa Major d'Entitats neix l'any 2017 després que un grup d'entitats vinculades al teixit associatiu
             juvenil i cultural de la ciutat veiessin la necessitat d'implicar-se de forma més activa en la programació
             de la Festa Major.
           </p>
-          <p class="flex-1 text-justify">
+          <p class="mb-4 flex-1 text-justify">
             A diferència del que passa en altres actes del cicle festiu de la ciutat, una part important de la gent viu
-            la Festa Major com a espectadora. D'aquesta anàlisi sorgeix l'objectiu general del nou projecte de la FME
-            2022:
+            la Festa Major com a espectadora. D'aquesta anàlisi sorgeix l'objectiu general del nou projecte de la FME:
             <span class="italic"
               >Oferir a la ciutat una programació cultural àmplia, popular i gratuïta emmarcada en la Festa Major a
               través de la participació directa de les entitats i la seva massa social.</span
             >
           </p>
-          <p class="flex-1 text-justify">
+          <p class="mb-4 flex-1 text-justify">
             La FME pretén promoure la transformació del model cultural de la ciutat i oferir una alternativa a la festa
             major de Vilanova més participativa i accessible i alhora donar a conèixer el potencial i la riquesa de
             l'associacionisme a la ciutat.
