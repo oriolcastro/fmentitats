@@ -58,26 +58,142 @@ export const Agenda = () => {
       <h2 class="my-2 text-center font-heading text-3xl uppercase">Programa d'actes</h2>
       <p class="my-4 text-center text-xl italic">Això és tot el que us hem preparat per a aquesta FME.</p>
       <div class="mb-10 grid grid-cols-1 gap-4 lg:grid-cols-2">
-        <div class="flex flex-col items-center justify-center">
-          <div class="mt-4 bg-fme-red px-2 pb-0 pt-1 font-artega text-base uppercase text-white">
-            Dimarts 30 de juliol
+        <div class="flex flex-col items-start gap-12">
+          <div class="flex flex-col gap-4">
+            <div class="w-fit bg-fme-red px-2 pb-0 pt-1 font-artega text-base uppercase text-white">
+              Dimarts 30 de juliol
+            </div>
+            <div>
+              <p class="font-sm text-sm">18:00h</p>
+              <p class="text-lg font-bold">Estibacaixes i berenar popular</p>
+              <p>Plaça de les Casernes</p>
+              <p>Organitza: Bordegassos de Vilanova</p>
+            </div>
+            <div>
+              <p class="font-sm text-sm">20:30h</p>
+              <p class="text-lg font-bold">Jornada antirrepresiva i Combat de Glosa</p>
+              <p>Plaça de les Casernes</p>
+              <p>Organitza: Ateneu Vilanoví</p>
+            </div>
           </div>
-          <div class="mt-4 bg-fme-red px-2 pb-0 pt-1 font-artega text-base uppercase text-white">
-            Dimecres 31 de juliol
+          <div class="flex flex-col gap-4">
+            <div class="w-fit bg-fme-red px-2 pb-0 pt-1 font-artega text-base uppercase text-white">
+              Dimecres 31 de juliol
+            </div>
+            <div>
+              <p class="font-sm text-sm">18:30h</p>
+              <p class="text-lg font-bold">
+                La petita FME: Tarda de jocs de carrer en família amb la companyia La Gralla
+              </p>
+              <p>Plaça de les Casernes</p>
+              <p>Organitza: FME</p>
+            </div>
+            <div>
+              <p class="font-sm text-sm">20:30h</p>
+              <p class="text-lg font-bold">Botifarrada popular</p>
+              <p>Plaça de les Casernes</p>
+              <p>Organitza: La Unió Vilanovina</p>
+            </div>
+            <div>
+              <p class="font-sm text-sm">21:30h</p>
+              <p class="text-lg font-bold">Ball de Gralles amb Les Antines i Grallers de l'Havana Xica</p>
+              <p>Plaça de les Casernes</p>
+              <p>Organitza: La Unió Vilanovina</p>
+            </div>
           </div>
-          <div class="mt-4 bg-fme-red px-2 pb-0 pt-1 font-artega text-base uppercase text-white">Dijous 1 d'agost</div>
-          <div class="mt-4 bg-fme-red px-2 pb-0 pt-1 font-artega text-base uppercase text-white">
-            Divendres 2 d'agost
+          <div class="flex flex-col gap-4">
+            <div class="w-fit bg-fme-red px-2 pb-0 pt-1 font-artega text-base uppercase text-white">
+              Dijous 1 d'agost
+            </div>
+            <div>
+              <p class="font-sm text-sm">19:00h</p>
+              <p class="text-lg font-bold">Vespre de Monòlegs</p>
+              <p>Plaça de les Casernes</p>
+              <p>Organitza: Festuc</p>
+            </div>
+            <div>
+              <p class="font-sm text-sm">21:00h</p>
+              <p class="text-lg font-bold">Assaig especial de la Diada de les Neus</p>
+              <p>Local de Bordegassos de Vilanova</p>
+              <p>Organitza: Bordegassos de Vilanova</p>
+            </div>
+          </div>
+          <div class="flex flex-col gap-4">
+            <div class="w-fit bg-fme-red px-2 pb-0 pt-1 font-artega text-base uppercase text-white">
+              Divendres 2 d'agost
+            </div>
+            <div>
+              <p class="font-sm text-sm">17:30h</p>
+              <p class="text-lg font-bold">Ludoteca del Correfoc</p>
+              <p>Plaça de les Casernes</p>
+              <p>Organitza: Ball de Diables de Vilanova i el Drac de Vilanova i la Geltrú</p>
+            </div>
+            <div>
+              <p class="font-sm text-sm">22:30h</p>
+              <p class="text-lg font-bold">Ballem sota el foc del Correfoc</p>
+              <p>Pels carrers de la vila</p>
+            </div>
+            <div>
+              <p class="font-sm text-sm">En acabar el sostre de foc</p>
+              <p class="text-lg font-bold">Ball del Correfoc amb DJs locals</p>
+              <p>Plaça de la Vila</p>
+              <p>Organitza: Ball de Diables de Vilanova</p>
+            </div>
           </div>
         </div>
-        <div class="flex flex-col items-center">
-          <div class="mt-4 bg-fme-red px-2 pb-0 pt-1 font-artega text-base uppercase text-white">
-            Dissabte 3 d'agost
+        <div class="flex flex-col items-start gap-12">
+          <div class="flex flex-col gap-4">
+            <div class="w-fit bg-fme-red px-2 pb-0 pt-1 font-artega text-base uppercase text-white">
+              Dissabte 3 d'agost
+            </div>
+            <div>
+              <p class="font-sm text-sm">18:00h</p>
+              <p class="text-lg font-bold">Fem Pinya a la Diada de les Neus</p>
+              <p>Plaça de la Vila</p>
+            </div>
+            <div>
+              <p class="font-sm text-sm">En acabar la Diada de les Neus</p>
+              <p class="text-lg font-bold">Cercavila d'Entitats</p>
+              <p>Plaça dels Cotxes</p>
+              <p>Organitza: Apol·lo</p>
+            </div>
+            <div>
+              <p class="font-sm text-sm">21:30h</p>
+              <p class="text-lg font-bold">Concerts: Vic Mirallas, Queralt Lahoz, Las Bajas Pasiones i Cham</p>
+              <p>Plaça de les Casernes</p>
+              <p>Organitza: FME</p>
+            </div>
           </div>
-          <div class="mt-4 bg-fme-red px-2 pb-0 pt-1 font-artega text-base uppercase text-white">
-            Diumenge 4 d'agost
+          <div class="flex flex-col gap-4">
+            <div class="w-fit bg-fme-red px-2 pb-0 pt-1 font-artega text-base uppercase text-white">
+              Diumenge 4 d'agost
+            </div>
+            <div>
+              <p class="font-sm text-sm">13:00h</p>
+              <p class="text-lg font-bold">Vermut i dinar de la FME amb sobretaula musical</p>
+              <p>Plaça de les Casernes</p>
+              <p>Organitza: FME</p>
+            </div>
+            <div>
+              <p class="font-sm text-sm">23:30h</p>
+              <p class="text-lg font-bold">
+                Concerts: El Paio de Gràcia & Las Malas Lenguas, La Cosina i DJ Kötxambrosa
+              </p>
+              <p>Plaça de les Casernes</p>
+              <p>Organitza: FME</p>
+            </div>
           </div>
-          <div class="mt-4 bg-fme-red px-2 pb-0 pt-1 font-artega text-base uppercase text-white">Dilluns 5 d'agost</div>
+          <div class="flex flex-col gap-4">
+            <div class="w-fit bg-fme-red px-2 pb-0 pt-1 font-artega text-base uppercase text-white">
+              Dilluns 5 d'agost
+            </div>
+            <div>
+              <p class="font-sm text-sm">00:00h</p>
+              <p class="text-lg font-bold">Ball del Vot del Poble</p>
+              <p>Plaça de Sant Antoni</p>
+              <p>Organitza: Ateneu Vilanoví</p>
+            </div>
+          </div>
         </div>
       </div>
 
