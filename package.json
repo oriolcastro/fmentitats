@@ -4,9 +4,9 @@
   "description": "Website for the FME 2024",
   "type": "module",
   "scripts": {
-    "build": "concurrently \"pnpm build:tailwind\" \"pnpm build:hono\"",
+    "build": "concurrently \"pnpm build:hono\" \"pnpm build:tailwind\"",
     "build:hono": "vite build",
-    "build:tailwind": "NODE_ENV=production pnpm dlx tailwindcss -i ./src/styles.css -o ./public/static/styles.css --minify",
+    "build:tailwind": "NODE_ENV=production pnpm dlx tailwindcss -i ./src/styles.css -o ./dist/static/styles.css --minify",
     "dev": "concurrently --kill-others \"pnpm dev:tailwind\" \"pnpm dev:hono\"",
     "dev:hono": "vite",
     "dev:tailwind": "NODE_ENV=development pnpm dlx tailwindcss -i ./src/styles.css -o ./public/static/styles.css --watch",
