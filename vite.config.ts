@@ -6,7 +6,7 @@ import ssg from '@hono/vite-ssg'
 
 export default defineConfig({
   plugins: [
-    ssg({}),
+    // ssg({}),
     build({ emptyOutDir: true }),
     devServer({
       adapter,
