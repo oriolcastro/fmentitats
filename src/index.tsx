@@ -4,6 +4,7 @@ import { cache } from 'hono/cache'
 import { Homepage } from './pages/Homepage'
 import { FME2023 } from './pages/FME2023'
 import { PageProps } from './types'
+import { FME2022 } from './pages/FME2022'
 
 const app = new Hono()
 
@@ -28,5 +29,14 @@ app.get('/edicio-2023', c => {
 
   return c.html(<FME2023 {...props} />)
 })
+app.get('/edicio-2022', c => {
+  const props = {
+    meta: {
+      title: "Festa Major d'Entitats 2022",
+      description: "Descobreix tota la programació de l'edició 2022",
+    },
+  } satisfies PageProps
 
+  return c.html(<FME2022 {...props} />)
+})
 export default app
