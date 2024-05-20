@@ -5,7 +5,7 @@ import { defineConfig } from 'vite'
 
 export default defineConfig({
   plugins: [
-    build(),
+    build({ emptyOutDir: true }),
     devServer({
       adapter,
       entry: 'src/index.tsx',
