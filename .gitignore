@@ -3,5 +3,5 @@
 .vscode/snipsnap.code-snippets
 .DS_Store
 public/styles.css
-/dist
 dist
+
