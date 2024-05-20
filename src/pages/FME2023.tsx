@@ -4,10 +4,11 @@ import { Agenda } from '../components/2023/Agenda'
 import { Sponsors } from '../components/2023/Sponsors'
 import { Layout } from '../components/Layout'
 import { TheProject } from '../components/TheProject'
+import type { PageProps } from '../types'
 
-export const FME2023 = () => {
+export const FME2023 = (props: PageProps) => {
   return (
-    <Layout title="Festa Major d'Entitats 2023" description="Descobreix tota la programació de l'edició 2023">
+    <Layout {...props.meta}>
       <section class="relative h-[50vh] bg-fme-black md:h-[66vh] lg:h-screen">
         <div id="video-container"></div>
         <video

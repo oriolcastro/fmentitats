@@ -14,6 +14,45 @@ export const Agenda = () => {
     }
   }
 
+  {
+    /* <div
+        class="flex h-0 w-full flex-wrap justify-center gap-6 py-6 opacity-0 transition-opacity duration-500 ease-in-out"
+        id="oldPosters"
+      >
+        <picture>
+          <source srcset="images/cartell2017.avif" type="image/avif" />
+          <source srcset="images/cartell2017.webp" type="image/webp" />
+          <img src="images/cartell2017.jpg" width="320" height="452" loading="lazy" alt="Cartell de l'edició 2017" />
+        </picture>
+        <picture>
+          <source srcset="images/cartell2018.avif" type="image/avif" />
+          <source srcset="images/cartell2018.webp" type="image/webp" />
+          <img src="images/cartell2018.jpg" width="320" height="452" loading="lazy" alt="Cartell de l'edició 2018" />
+        </picture>
+        <picture>
+          <source srcset="images/cartell2019.avif" type="image/avif" />
+          <source srcset="images/cartell2019.webp" type="image/webp" />
+          <img src="images/cartell2019.jpg" width="320" height="452" loading="lazy" alt="Cartell de l'edició 2019" />
+        </picture>
+        <picture>
+          <source srcset="images/cartell2021.avif" type="image/avif" />
+          <source srcset="images/cartell2021.webp" type="image/webp" />
+          <img src="images/cartell2021.jpg" width="320" height="452" loading="lazy" alt="Cartell de l'edició 2021" />
+        </picture>
+        <picture>
+          <source srcset="images/cartell2022.avif" type="image/avif" />
+          <source srcset="images/cartell2022.webp" type="image/webp" />
+          <img
+            src="images/cartell2022.jpg"
+            width="320"
+            height="452"
+            loading="lazy"
+            alt="Cartell dels concerts de l'edició 2022"
+          />
+        </picture>
+      </div> */
+  }
+
   return (
     <section id="programa" class="m-auto my-10 max-w-5xl px-4" style="scroll-margin-top: 84px">
       <h2 class="my-2 text-center font-heading text-3xl uppercase">Programa d'actes</h2>

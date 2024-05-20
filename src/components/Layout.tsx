@@ -1,6 +1,9 @@
 import { html } from 'hono/html'
+import type { PropsWithChildren } from 'hono/jsx'
 
-export const Layout = (props: { title: string; description: string; children?: any }) => {
+import type { PageProps } from '../types'
+
+export const Layout = (props: PropsWithChildren<PageProps['meta']>) => {
   return html`<!doctype html>
     <html lang="ca">
       <head>

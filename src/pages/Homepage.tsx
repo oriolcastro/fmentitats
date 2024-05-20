@@ -1,12 +1,14 @@
 import { html } from 'hono/html'
+
 import { Agenda } from '../components/2024/Agenda'
 import { Sponsors } from '../components/2024/Sponsors'
 import { Layout } from '../components/Layout'
 import { TheProject } from '../components/TheProject'
+import type { PageProps } from '../types'
 
-export const Homepage = () => {
+export const Homepage = (props: PageProps) => {
   return (
-    <Layout title="Festa Major d'Entitats 2024" description="Descobreix tota la programació de l'edició 2024">
+    <Layout {...props.meta}>
       <section class="relative h-[50vh] bg-fme-black md:h-[66vh] lg:h-screen">
         <div id="video-container"></div>
         <video
