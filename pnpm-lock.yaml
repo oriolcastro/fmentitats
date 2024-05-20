@@ -24,6 +24,9 @@ importers:
       '@hono/vite-dev-server':
         specifier: ^0.12.1
         version: 0.12.1(hono@4.3.7)
+      '@hono/vite-ssg':
+        specifier: ^0.1.0
+        version: 0.1.0(hono@4.3.7)
       concurrently:
         specifier: ^8.2.2
         version: 8.2.2
@@ -396,6 +399,12 @@ packages:
     engines: {node: '>=18.14.1'}
     peerDependencies:
       hono: '*'
+
+  '@hono/vite-ssg@0.1.0':
+    resolution: {integrity: sha512-tnkBilZ2/+y8w/X+R2Pf4Heu+Xyk4wO2KiBiEOvqqiXQC2yT8WAdiB17qk87og3ZuRCC/721ZZ736TpB6fGkWQ==}
+    engines: {node: '>=18.14.1'}
+    peerDependencies:
+      hono: '>=4.0.0'
 
   '@jridgewell/gen-mapping@0.3.3':
     resolution: {integrity: sha512-HLhSWOLRi875zjjMG/r+Nv0oCW8umGb0BgEhyX3dDX3egwZtB8PqLnjz3yedt8R5StBrzcg4aBpnh8UA9D1BoQ==}
@@ -1699,6 +1708,10 @@ snapshots:
       - bufferutil
       - supports-color
       - utf-8-validate
+
+  '@hono/vite-ssg@0.1.0(hono@4.3.7)':
+    dependencies:
+      hono: 4.3.7
 
   '@jridgewell/gen-mapping@0.3.3':
     dependencies:
