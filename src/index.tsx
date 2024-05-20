@@ -1,4 +1,5 @@
 import { Hono } from 'hono'
+import { cache } from 'hono/cache'
 
 import { Homepage } from './pages/Homepage'
 import { FME2023 } from './pages/FME2023'
@@ -6,6 +7,7 @@ import { PageProps } from './types'
 
 const app = new Hono()
 
+app.get('/static/*', cache({ cacheName: 'assets', cacheControl: 'public, max-age=604800, must-revalidate' }))
 app.get('/', c => {
   const props = {
     meta: {
