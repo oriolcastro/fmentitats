@@ -53,7 +53,7 @@ export const Homepage = (props: PageProps) => {
         #video-container {
           height: 100%;
           width: 100%;
-          background-image: url('/static/images/2023/video.mp4');
+          background-image: url('https://media.fme.cat/video_fme_2023.mp4');
           background-color: transparent;
           position: absolute;
           background-size: cover;
