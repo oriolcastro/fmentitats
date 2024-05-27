@@ -261,9 +261,7 @@ export const Layout = (props: PropsWithChildren<PageProps['meta']>) => {
           </div>
         </header>
         ${props.children}
-        <footer>
-          <p>Built with <a href="https://github.com/honojs/hono">Hono</a></p>
-        </footer>
+        <footer class="bg-fme-black p-2 text-center text-white"><p>Fet amb ❤️ a Vilanova i la Geltrú</p></footer>
       </body>
       <script>
         function toggleMenu() {
