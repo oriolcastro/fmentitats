@@ -12,21 +12,21 @@ importers:
         specifier: 0.5.13
         version: 0.5.13(tailwindcss@3.4.3)
       hono:
-        specifier: 4.3.8
-        version: 4.3.8
+        specifier: 4.4.0
+        version: 4.4.0
     devDependencies:
       '@cloudflare/workers-types':
         specifier: 4.20240512.0
         version: 4.20240512.0
       '@hono/vite-cloudflare-pages':
         specifier: 0.4.0
-        version: 0.4.0(hono@4.3.8)
+        version: 0.4.0(hono@4.4.0)
       '@hono/vite-dev-server':
         specifier: 0.12.1
-        version: 0.12.1(hono@4.3.8)
+        version: 0.12.1(hono@4.4.0)
       '@hono/vite-ssg':
         specifier: 0.1.0
-        version: 0.1.0(hono@4.3.8)
+        version: 0.1.0(hono@4.4.0)
       concurrently:
         specifier: 8.2.2
         version: 8.2.2
@@ -46,8 +46,8 @@ importers:
         specifier: 5.2.11
         version: 5.2.11(@types/node@20.12.12)
       wrangler:
-        specifier: 3.57.0
-        version: 3.57.0(@cloudflare/workers-types@4.20240512.0)
+        specifier: 3.57.1
+        version: 3.57.1(@cloudflare/workers-types@4.20240512.0)
 
 packages:
 
@@ -846,8 +846,8 @@ packages:
     resolution: {integrity: sha512-0hJU9SCPvmMzIBdZFqNPXWa6dqh7WdH0cII9y+CyS8rG3nL48Bclra9HmKhVVUHyPWNH5Y7xDwAB7bfgSjkUMQ==}
     engines: {node: '>= 0.4'}
 
-  hono@4.3.8:
-    resolution: {integrity: sha512-IepU1cWz7oWY/os4Dbgq8dAjQh+APbS0LvLf85bL3cnh4sqMZ1MSBCYFkpm+MIpGoRUMmX8v9CeQh+TmBX3RUA==}
+  hono@4.4.0:
+    resolution: {integrity: sha512-Bb2GHk8jmlLIuxc3U+7UBGOoA5lByJTAFnRdH2N2fqEVy9TEQzJ9saIJUQ/ZqBvEvgEFe7UjPFNSFi8cyeU+3Q==}
     engines: {node: '>=16.0.0'}
 
   human-signals@2.1.0:
@@ -1449,8 +1449,8 @@ packages:
     engines: {node: '>=16'}
     hasBin: true
 
-  wrangler@3.57.0:
-    resolution: {integrity: sha512-izK3AZtlFoTq8N0EZjLOQ7hqwsjaXCc1cbNKuhsLJjDX1jB1YZBDPhIhtXL4VVzkJAcH+0Zw2gguOePFCHNaxw==}
+  wrangler@3.57.1:
+    resolution: {integrity: sha512-M8YnWUwdrb8AFiRePtVnzlDn02OX4osWvdl8oVh6eyZqqkqXYg7lwlYBr14Qj92pMN4JvMBmDZoukkYHvwpJRg==}
     engines: {node: '>=16.17.0'}
     hasBin: true
     peerDependencies:
@@ -1689,14 +1689,14 @@ snapshots:
 
   '@hono/node-server@1.11.1': {}
 
-  '@hono/vite-cloudflare-pages@0.4.0(hono@4.3.8)':
+  '@hono/vite-cloudflare-pages@0.4.0(hono@4.4.0)':
     dependencies:
-      hono: 4.3.8
+      hono: 4.4.0
 
-  '@hono/vite-dev-server@0.12.1(hono@4.3.8)':
+  '@hono/vite-dev-server@0.12.1(hono@4.4.0)':
     dependencies:
       '@hono/node-server': 1.11.1
-      hono: 4.3.8
+      hono: 4.4.0
       miniflare: 3.20240512.0
       minimatch: 9.0.4
     transitivePeerDependencies:
@@ -1704,9 +1704,9 @@ snapshots:
       - supports-color
       - utf-8-validate
 
-  '@hono/vite-ssg@0.1.0(hono@4.3.8)':
+  '@hono/vite-ssg@0.1.0(hono@4.4.0)':
     dependencies:
-      hono: 4.3.8
+      hono: 4.4.0
 
   '@jridgewell/gen-mapping@0.3.3':
     dependencies:
@@ -2156,7 +2156,7 @@ snapshots:
     dependencies:
       function-bind: 1.1.2
 
-  hono@4.3.8: {}
+  hono@4.4.0: {}
 
   human-signals@2.1.0: {}
 
@@ -2679,7 +2679,7 @@ snapshots:
       '@cloudflare/workerd-linux-arm64': 1.20240512.0
       '@cloudflare/workerd-windows-64': 1.20240512.0
 
-  wrangler@3.57.0(@cloudflare/workers-types@4.20240512.0):
+  wrangler@3.57.1(@cloudflare/workers-types@4.20240512.0):
     dependencies:
       '@cloudflare/kv-asset-handler': 0.3.2
       '@esbuild-plugins/node-globals-polyfill': 0.2.3(esbuild@0.17.19)
