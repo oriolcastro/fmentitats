@@ -61,7 +61,6 @@ export const FME2023 = (props: PageProps) => {
       </style>`}
       {html`<script>
         function openVideo(e) {
-          console.log(e)
           if (e.target.id === 'cta-button') {
             const element = document.getElementById('video-backdrop')
             element.classList.remove('hidden')
@@ -69,7 +68,6 @@ export const FME2023 = (props: PageProps) => {
           }
         }
         function closeVideo(e) {
-          console.log(e)
           if (e.target.id === 'video-backdrop' || e.target.id === 'close-modal-button') {
             console.log('closing')
             const backdrop = document.getElementById('video-backdrop')
