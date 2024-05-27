@@ -31,12 +31,14 @@ export const FME2023 = (props: PageProps) => {
           <p class="mb-10 text-center text-lg font-light uppercase text-white md:text-xl lg:text-2xl">
             27 de juliol al 5 d'agost | Vilanova i la Geltrú
           </p>
-          <a
-            href="#programa"
+
+          <button
+            id="cta-button"
+            onclick="openVideo(event)"
             class="relative flex cursor-pointer flex-row items-center rounded-md bg-white px-6 py-4 text-base text-fme-black no-underline shadow-xl md:text-lg lg:text-xl"
           >
-            PROGRAMA D'ACTES
-          </a>
+            Resum FME 2023
+          </button>
         </div>
       </section>
       <TheProject />
@@ -57,6 +59,50 @@ export const FME2023 = (props: PageProps) => {
           z-index: 1;
         }
       </style>`}
+      {html`<script>
+        function openVideo(e) {
+          console.log(e)
+          if (e.target.id === 'cta-button') {
+            const element = document.getElementById('video-backdrop')
+            element.classList.remove('hidden')
+            element.classList.add('flex')
+          }
+        }
+        function closeVideo(e) {
+          console.log(e)
+          if (e.target.id === 'video-backdrop' || e.target.id === 'close-modal-button') {
+            console.log('closing')
+            const backdrop = document.getElementById('video-backdrop')
+            const video = document.getElementById('video')
+            video.pause()
+            backdrop.classList.remove('flex')
+            backdrop.classList.add('hidden')
+          }
+        }
+      </script>`}
+      <div
+        id="video-backdrop"
+        class="absolute top-0 z-100 hidden h-[100vh] w-[100vw] items-center justify-center bg-fme-black"
+        onclick="closeVideo(event)"
+      >
+        <div class="relative z-500  w-4/5">
+          <button
+            id="close-modal-button"
+            onclick="closeVideo(event)"
+            class="absolute -right-3 -top-3 z-[1000] flex h-8 w-8 items-center justify-center rounded-full bg-white p-2 text-fme-black"
+          >
+            X
+          </button>
+          <video id="video" controls controlslist="nodownload" class="z-500 aspect-video">
+            <source
+              src="https://media.fme.cat/video_fme_2023.mp4"
+              srcset="https://media.fme.cat/video_fme_2023.mp4"
+              type="video/mp4"
+            />
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </div>
     </Layout>
   )
 }
