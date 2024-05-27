@@ -58,7 +58,7 @@ export const Agenda = () => {
       <h2 class="my-2 text-center font-heading text-3xl uppercase">Programa d'actes</h2>
       <p class="my-4 text-center text-xl italic">Això és tot el que us hem preparat per a aquesta FME.</p>
       <div class="mb-10 grid grid-cols-1 gap-4 lg:grid-cols-2">
-        <div class="flex flex-col items-start gap-12">
+        {/* <div class="flex flex-col items-start gap-12">
           <div class="flex flex-col gap-4">
             <div class="w-fit bg-fme-red px-2 pb-0 pt-1 font-artega text-base uppercase text-white">
               Dimarts 30 de juliol
@@ -70,8 +70,8 @@ export const Agenda = () => {
               <p>Organitza: Bordegassos de Vilanova</p>
             </div>
             <div>
-              <p class="font-sm text-sm">20:30h</p>
-              <p class="text-lg font-bold">Jornada antirrepresiva i Combat de Glosa</p>
+              <p class="font-sm text-sm">19:00h</p>
+              <p class="text-lg font-bold">Vesprada de Glosa</p>
               <p>Plaça de les Casernes</p>
               <p>Organitza: Ateneu Vilanoví</p>
             </div>
@@ -107,7 +107,7 @@ export const Agenda = () => {
             </div>
             <div>
               <p class="font-sm text-sm">19:00h</p>
-              <p class="text-lg font-bold">Vespre de Monòlegs</p>
+              <p class="text-lg font-bold">Pòdcast en viu: L’Arrabassada</p>
               <p>Plaça de les Casernes</p>
               <p>Organitza: Festuc</p>
             </div>
@@ -194,17 +194,17 @@ export const Agenda = () => {
               <p>Organitza: Ateneu Vilanoví</p>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
 
-      <div class="mb-6 flex flex-row flex-wrap justify-center gap-4 lg:flex-nowrap">
+      {/* <div class="mb-6 flex flex-row flex-wrap justify-center gap-4 lg:flex-nowrap">
         <div class="flex-1">
           <h3 class="my-2 font-heading text-xl">La música de la FME</h3>
           <p class="prose mb-4 text-justify">
             Teniu una llista de reproducció amb els èxits de tots els artistes que actuaran a la Festa Major d'Entitats
             d'aquest any.
           </p>
-          {/* <!-- TODO: update spotify link --> */}
+          TODO: update spotify link
           <a
             href=""
             target="_blank"
@@ -224,17 +224,19 @@ export const Agenda = () => {
             Llista FME 2024
           </a>
           <div class="grid grid-cols-2 gap-4 lg:grid-cols-3 lg:gap-6">
-            {/* <!-- <a
-                href="https://open.spotify.com/artist/2enhM5DK9oTxWiCVpFIDv3?si=OXNaQ68nTNOdBIO10tj_YQ"
-                target="_blank"
-                rel="noopener"
-                class="transform transition-transform duration-300 hover:scale-110"
-                aria-label="Enllaç a la pagina de Spotify de Figa Flawas"
-                ><picture>
-                  <source srcset="images/figaflawas.avif" type="image/avif" />
-                  <source srcset="images/figaflawas.webp" type="image/webp" />
-                  <img src="images/figaflawas.png" loading="lazy" alt="Figa Flawas" width="450" height="450" /> </picture
-              ></a> --> */}
+            <a
+              href="https://open.spotify.com/artist/2enhM5DK9oTxWiCVpFIDv3?si=OXNaQ68nTNOdBIO10tj_YQ"
+              target="_blank"
+              rel="noopener"
+              class="transform transition-transform duration-300 hover:scale-110"
+              aria-label="Enllaç a la pagina de Spotify de Figa Flawas"
+            >
+              <picture>
+                <source srcset="images/figaflawas.avif" type="image/avif" />
+                <source srcset="images/figaflawas.webp" type="image/webp" />
+                <img src="images/figaflawas.png" loading="lazy" alt="Figa Flawas" width="450" height="450" />{' '}
+              </picture>
+            </a>
           </div>
         </div>
         <picture>
@@ -248,7 +250,7 @@ export const Agenda = () => {
             height="525"
           />
         </picture>
-      </div>
+      </div> */}
     </section>
   )
 }
