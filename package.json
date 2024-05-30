@@ -4,10 +4,10 @@
   "description": "Website for the FME 2024",
   "type": "module",
   "scripts": {
-    "build": "concurrently \"pnpm build:hono\" \"pnpm build:tailwind\"",
+    "build": "vite build --mode client && vite build",
     "build:hono": "vite build",
     "build:tailwind": "NODE_ENV=production pnpm dlx tailwindcss -i ./src/styles.css -o ./dist/static/styles.css --minify",
-    "dev": "concurrently --kill-others \"pnpm dev:tailwind\" \"pnpm dev:hono\"",
+    "dev": "vite",
     "dev:hono": "vite",
     "dev:tailwind": "NODE_ENV=development pnpm dlx tailwindcss -i ./src/styles.css -o ./public/static/styles.css --watch",
     "serve": "serve public",
@@ -45,6 +45,10 @@
   },
   "dependencies": {
     "@tailwindcss/typography": "0.5.13",
-    "hono": "4.4.0"
+    "autoprefixer": "^10.4.19",
+    "clsx": "^2.1.1",
+    "hono": "4.4.0",
+    "honox": "^0.1.18",
+    "postcss": "^8.4.38"
   }
 }

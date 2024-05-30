@@ -1,7 +1,5 @@
-import { html } from 'hono/html'
-
 export const Sponsors = () => {
-  return html`
+  return (
     <section id="collaboradors" class="prose m-auto my-10 max-w-5xl px-4" style="scroll-margin-top: 84px">
       <h2 class="my-2 text-center font-heading text-3xl uppercase">Col·laboradors</h2>
       <p class="mb-4 text-justify">
@@ -9,7 +7,7 @@ export const Sponsors = () => {
         amb el projecte.
       </p>
       <div class="grid grid-cols-2 items-center justify-items-center gap-2 md:grid-cols-4">
-        <!-- <picture>
+        {/* <!-- <picture>
           <source srcset="/static/images/esponsors/aperitius_tafaner.webp" type="image/webp" />
           <img
             src="/static/images/esponsors/aperitius_tafaner.png"
@@ -18,8 +16,8 @@ export const Sponsors = () => {
             width="200"
             height="200"
           />
-        </picture> -->
+        </picture> --> */}
       </div>
     </section>
-  `
+  )
 }

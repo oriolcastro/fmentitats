@@ -1,19 +1,4 @@
 export const Agenda = () => {
-  function toggleOldPosters() {
-    const container = document.getElementById('oldPosters')
-
-    const isHidden = container.classList.contains('h-0')
-    if (isHidden) {
-      container.classList.add('opacity-100')
-      container.classList.remove('opacity-0')
-      container.classList.remove('h-0')
-    } else {
-      container.classList.remove('opacity-100')
-      container.classList.add('opacity-0')
-      setTimeout(() => container.classList.add('h-0'), 250)
-    }
-  }
-
   {
     /* <div
         class="flex h-0 w-full flex-wrap justify-center gap-6 py-6 opacity-0 transition-opacity duration-500 ease-in-out"

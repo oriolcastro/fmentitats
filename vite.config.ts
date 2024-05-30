@@ -1,16 +1,40 @@
 import { defineConfig } from 'vite'
-import build from '@hono/vite-cloudflare-pages'
-import devServer from '@hono/vite-dev-server'
+
 import adapter from '@hono/vite-dev-server/cloudflare'
 import ssg from '@hono/vite-ssg'
+import honox from 'honox/vite'
+import pages from '@hono/vite-cloudflare-pages'
+import client from 'honox/vite/client'
 
-export default defineConfig({
-  plugins: [
-    ssg({}),
-    build({ emptyOutDir: true }),
-    devServer({
-      adapter,
-      entry: 'src/index.tsx',
-    }),
-  ],
+const entry = './app/server.ts'
+
+export default defineConfig(({ mode }) => {
+  if (mode === 'client') {
+    return {
+      build: {
+        rollupOptions: {
+          input: ['/app/style.css'],
+          output: {
+            assetFileNames: 'static/assets/[name].[ext]',
+          },
+        },
+      },
+      plugins: [client()],
+    }
+  } else {
+    return {
+      build: {
+        emptyOutDir: false,
+      },
+      plugins: [
+        honox({
+          devServer: {
+            adapter,
+          },
+        }),
+        pages({ emptyOutDir: true }),
+        ssg({ entry }),
+      ],
+    }
+  }
 })

@@ -1,7 +1,5 @@
-import { html } from 'hono/html'
-
 export const Sponsors = () => {
-  return html`
+  return (
     <section id="collaboradors" class="prose m-auto my-10 max-w-5xl px-4" style="scroll-margin-top: 84px">
       <h2 class="my-2 text-center font-heading text-3xl uppercase">Col·laboradors</h2>
       <p class="mb-4 text-justify">
@@ -309,5 +307,5 @@ export const Sponsors = () => {
         </picture>
       </div>
     </section>
-  `
+  )
 }

@@ -1,7 +1,7 @@
 import { html } from 'hono/html'
 
-import { Agenda } from '../components/2023/Agenda'
-import { Sponsors } from '../components/2023/Sponsors'
+import { Agenda } from '../../app/islands/2023/Agenda'
+import { Sponsors } from '../../app/islands/2023/Sponsors'
 import { Layout } from '../components/Layout'
 import { TheProject } from '../components/TheProject'
 import type { PageProps } from '../types'

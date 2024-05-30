@@ -1,13 +1,13 @@
-import { Agenda } from '../../app/islands/2024/Agenda'
-import { Sponsors } from '../../app/islands/2024/Sponsors'
-import { Layout } from '../components/Layout'
-import { TheProject } from '../components/TheProject'
-import { HeroImagesFader } from '../components/HeroImageFader'
-import type { PageProps } from '../types'
+import { createRoute } from 'honox/factory'
 
-export const Homepage = (props: PageProps) => {
-  return (
-    <Layout {...props.meta}>
+import HeroImagesFader from '../islands/HeroImageFader'
+import TheProject from '../islands/TheProject'
+import { Agenda } from '../islands/2024/Agenda'
+import { Sponsors } from '../islands/2024/Sponsors'
+
+export default createRoute(c => {
+  return c.render(
+    <>
       <section class="relative h-[50vh] bg-fme-black md:h-[66vh] lg:h-screen">
         <div id="video-container"></div>
         <HeroImagesFader />
@@ -32,6 +32,7 @@ export const Homepage = (props: PageProps) => {
       <div class="relative h-[500px] bg-gray-400 bg-divider-3 bg-cover bg-center bg-no-repeat bg-blend-multiply lg:bg-scroll"></div>
       <Sponsors />
       <div class="relative h-[500px] bg-gray-400 bg-divider-1 bg-cover bg-center bg-no-repeat bg-blend-multiply lg:bg-scroll"></div>
-    </Layout>
+    </>,
+    { title: "Festa Major d'Entitats 2024", description: "Descobreix tota la programació de l'edició 2024" },
   )
-}
+})

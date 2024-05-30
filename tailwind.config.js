@@ -1,7 +1,6 @@
-const { keyframes } = require('hono/css')
-
-module.exports = {
-  content: ['./index.html', './src/**/*.{js,jsx,ts,tsx}'],
+/** @type {import('tailwindcss').Config} */
+export default {
+  content: ['./app/**/*.tsx'],
   theme: {
     extend: {
       backgroundImage: theme => ({

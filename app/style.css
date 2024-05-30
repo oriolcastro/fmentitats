@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+@layer utilities {
+  .animation-delay-2000 {
+    animation-delay: 2s;
+  }
+
+  .animation-delay-4000 {
+    animation-delay: 4s;
+  }
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.dropdown:hover .dropdown-trigger {
+  background-color: hsl(2 63 55 / 100);
+}
