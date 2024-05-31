@@ -2,7 +2,7 @@ import { jsxRenderer } from 'hono/jsx-renderer'
 import { HasIslands } from 'honox/server'
 import { html } from 'hono/html'
 
-import { Header } from '../islands/Header'
+import Header from '../islands/Header'
 
 export default jsxRenderer(({ children, title, description }) => {
   return (

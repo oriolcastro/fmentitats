@@ -1,14 +1,17 @@
 import { createRoute } from 'honox/factory'
 
-import TheProject from '../islands/TheProject'
-import { Agenda } from '../islands/2023/Agenda'
-import { Sponsors } from '../islands/2023/Sponsors'
-import { Hero } from '../islands/2023/Hero'
+import { TheProject } from '../components/TheProject'
+import { Agenda } from '../components/2023/Agenda'
+import { Sponsors } from '../components/2023/Sponsors'
+import { Hero } from '../components/2023/Hero'
+import VideoModal from '../islands/VideoModal'
 
 export default createRoute(c => {
   return c.render(
     <>
-      <Hero />
+      <Hero>
+        <VideoModal />
+      </Hero>
       <TheProject />
       <div class="relative h-[500px] bg-gray-400 bg-divider-2-2023 bg-cover bg-center bg-no-repeat bg-blend-multiply backdrop-opacity-30 lg:bg-scroll"></div>
       <Agenda />

@@ -1,4 +1,6 @@
-export const HeroImagesFader = () => {
+import type { FC } from 'hono/jsx'
+
+export const HeroImagesFader: FC = () => {
   return (
     <div class="absolute z-10 h-full w-full object-cover">
       <div

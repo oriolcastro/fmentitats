@@ -1,4 +1,6 @@
-export const Agenda = () => {
+import type { FC } from 'hono/jsx'
+
+export const Agenda: FC = () => {
   {
     /* <div
         class="flex h-0 w-full flex-wrap justify-center gap-6 py-6 opacity-0 transition-opacity duration-500 ease-in-out"

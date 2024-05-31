@@ -1,4 +1,6 @@
-export const Agenda = () => {
+import type { FC } from 'hono/jsx'
+
+export const Agenda: FC = () => {
   return (
     <section id="programa" class="m-auto my-10 max-w-5xl px-4" style="scroll-margin-top: 84px">
       <h2 class="my-2 text-center font-heading text-3xl uppercase">Programa d'actes</h2>

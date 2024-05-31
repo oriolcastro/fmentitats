@@ -1,9 +1,9 @@
 import { createRoute } from 'honox/factory'
 
-import HeroImagesFader from '../islands/HeroImageFader'
-import TheProject from '../islands/TheProject'
-import { Agenda } from '../islands/2024/Agenda'
-import { Sponsors } from '../islands/2024/Sponsors'
+import { TheProject } from '../components/TheProject'
+import { Agenda } from '../components/2024/Agenda'
+import { Sponsors } from '../components/2024/Sponsors'
+import { HeroImagesFader } from '../components/HeroImageFader'
 
 export default createRoute(c => {
   return c.render(

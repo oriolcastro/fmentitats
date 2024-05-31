@@ -1,4 +1,6 @@
-export const Sponsors = () => {
+import type { FC } from 'hono/jsx'
+
+export const Sponsors: FC = () => {
   return (
     <section id="collaboradors" class="prose m-auto my-10 max-w-5xl px-4" style="scroll-margin-top: 84px">
       <h2 class="my-2 text-center font-heading text-3xl uppercase">Col·laboradors</h2>

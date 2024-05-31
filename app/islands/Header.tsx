@@ -1,7 +1,8 @@
-import { useState } from 'hono/jsx'
 import { clsx } from 'clsx'
+import { useState } from 'hono/jsx'
+import type { FC } from 'hono/jsx'
 
-export const Header = () => {
+const Header: FC = () => {
   const [isOpen, setIsOpen] = useState(false)
 
   function toggleMenu() {
@@ -145,3 +146,5 @@ export const Header = () => {
     </header>
   )
 }
+
+export default Header

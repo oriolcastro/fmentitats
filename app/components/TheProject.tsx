@@ -1,4 +1,6 @@
-export default function TheProject() {
+import type { FC } from 'hono/jsx'
+
+export const TheProject: FC = () => {
   return (
     <section id="projecte" class="m-auto my-10 max-w-5xl px-4" style="scroll-margin-top: 84px">
       <h2 class="my-2 text-center font-heading text-3xl uppercase">Que és la FME?</h2>

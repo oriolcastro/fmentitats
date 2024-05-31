@@ -1,22 +1,18 @@
-import { Agenda } from '../../app/islands/2024/Agenda'
-import { Sponsors } from '../../app/islands/2024/Sponsors'
-import { Layout } from '../components/Layout'
+import { createRoute } from 'honox/factory'
+
 import { TheProject } from '../components/TheProject'
-import { HeroImagesFader } from '../components/HeroImageFader'
-import type { PageProps } from '../types'
+import { Agenda } from '../components/2022/Agenda'
+import { Sponsors } from '../components/2022/Sponsors'
 
-export const Homepage = (props: PageProps) => {
-  return (
-    <Layout {...props.meta}>
+export default createRoute(c => {
+  return c.render(
+    <>
       <section class="relative h-[50vh] bg-fme-black md:h-[66vh] lg:h-screen">
-        <div id="video-container"></div>
-        <HeroImagesFader />
-
-        <div class="relative z-10 flex h-full flex-col items-center justify-center bg-transparent p-4">
+        <div class="relative z-10 flex h-full flex-col items-center justify-center p-4">
           <h1 class="text-center font-heading text-4xl text-white md:text-6xl lg:text-7xl">Festa Major d'Entitats</h1>
-          <p class="mb-4 text-center font-heading text-6xl text-white md:text-8xl lg:text-9xl">2024</p>
+          <p class="mb-4 text-center font-heading text-6xl text-white md:text-8xl lg:text-9xl">2022</p>
           <p class="mb-10 text-center text-lg font-light uppercase text-white md:text-xl lg:text-2xl">
-            30 de juliol al 5 d'agost | Vilanova i la Geltrú
+            28 de juliol al 5 d'agost | Vilanova i la Geltrú
           </p>
           <a
             href="#programa"
@@ -32,6 +28,7 @@ export const Homepage = (props: PageProps) => {
       <div class="relative h-[500px] bg-gray-400 bg-divider-3 bg-cover bg-center bg-no-repeat bg-blend-multiply lg:bg-scroll"></div>
       <Sponsors />
       <div class="relative h-[500px] bg-gray-400 bg-divider-1 bg-cover bg-center bg-no-repeat bg-blend-multiply lg:bg-scroll"></div>
-    </Layout>
+    </>,
+    { title: "Festa Major d'Entitats 2022", description: "Descobreix tota la programació de l'edició 2022" },
   )
-}
+})
