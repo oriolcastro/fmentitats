@@ -1,5 +1,5 @@
 import { jsxRenderer } from 'hono/jsx-renderer'
-import { HasIslands } from 'honox/server'
+import { Script } from 'honox/server'
 import { html } from 'hono/html'
 
 import Header from '../islands/Header'
@@ -76,13 +76,7 @@ export default jsxRenderer(({ children, title, description }) => {
         <meta name="twitter:creator" content="@fmentitats" />
         {/* <!-- TODO: update social images --> */}
         <meta name="twitter:image" content="/static/images/social_twitter.webp" />
-        {import.meta.env.PROD ? (
-          <HasIslands>
-            <script type="module" src="/static/client.js"></script>
-          </HasIslands>
-        ) : (
-          <script type="module" src="/app/client.ts"></script>
-        )}
+        <Script src="/app/client.ts" />
         {html`<script>
           !(function (t, e) {
             var o, n, p, r
