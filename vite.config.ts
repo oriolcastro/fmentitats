@@ -32,7 +32,7 @@ export default defineConfig(({ mode }) => {
             adapter,
           },
         }),
-        pages({ emptyOutDir: true }),
+        pages(),
         ssg({ entry }),
       ],
     }
