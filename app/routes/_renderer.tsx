@@ -4,7 +4,7 @@ import { html } from 'hono/html'
 
 import Header from '../islands/Header'
 
-export default jsxRenderer(({ children, title, description }) => {
+export default jsxRenderer(({ children, title, description, socialImage }) => {
   return (
     <html lang="ca">
       <head>
@@ -44,25 +44,15 @@ export default jsxRenderer(({ children, title, description }) => {
         ) : (
           <link href="/app/style.css" rel="stylesheet" />
         )}
-        <title>{title}</title>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="description" content={description} />
         <meta itemprop="name" content="{props.title}" />
-        <meta itemprop="description" content={description} />
-        {/* <!-- TODO: update social images --> */}
-        <meta itemprop="image" content="/static/images/social_facebook.png" />
         <link rel="icon" type="image/png" sizes="32x32" href="/static/images/favicon-32x32.png" />
         <link rel="icon" type="image/png" sizes="96x96" href="/static/images/favicon-96x96.png" />
         <link rel="icon" type="image/png" sizes="16x16" href="/static/images/favicon-16x16.png" />
-        {/* <!-- TODO: update social images --> */}
         <link rel="icon" href="favicon.ico" type="image/x-icon" />
-        <meta property="og:title" content={title} />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://fme.cat" />
-        <meta property="og:description" content={description} />
-        {/* <!-- TODO: update social images --> */}
-        <meta property="og:image" content="/static/images/social_facebook.webp" itemprop="image" />
         <meta property="og:image:type" content="image/png" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="1692" />
@@ -70,12 +60,30 @@ export default jsxRenderer(({ children, title, description }) => {
         <meta property="og:locale" content="ca" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta property="twitter:url" content="https://fme.cat/" />
-        <meta property="twitter:title" content={title} />
-        <meta property="twitter:description" content={description} />
         <meta name="twitter:site" content="@fmentitats" />
         <meta name="twitter:creator" content="@fmentitats" />
-        {/* <!-- TODO: update social images --> */}
-        <meta name="twitter:image" content="/static/images/social_twitter.webp" />
+        {title && (
+          <>
+            <title>{title}</title>
+            <meta property="og:title" content={title} />
+            <meta property="twitter:title" content={title} />
+          </>
+        )}
+        {description && (
+          <>
+            <meta name="description" content={description} />
+            <meta itemprop="description" content={description} />
+            <meta property="og:description" content={description} />
+            <meta property="twitter:description" content={description} />
+          </>
+        )}
+        {socialImage && (
+          <>
+            <meta itemprop="image" content={socialImage} />
+            <meta property="og:image" content={socialImage} itemprop="image" />
+            <meta name="twitter:image" content={socialImage} />
+          </>
+        )}
         <Script src="/app/client.ts" />
         {html`<script>
           !(function (t, e) {

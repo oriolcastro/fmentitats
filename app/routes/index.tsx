@@ -33,6 +33,10 @@ export default createRoute(c => {
       <Sponsors />
       <div class="relative h-[500px] bg-gray-400 bg-divider-1 bg-cover bg-center bg-no-repeat bg-blend-multiply lg:bg-scroll"></div>
     </>,
-    { title: "Festa Major d'Entitats 2024", description: "Descobreix tota la programació de l'edició 2024" },
+    {
+      title: "Festa Major d'Entitats 2024",
+      description: "Descobreix tota la programació de l'edició 2024",
+      socialImage: '',
+    },
   )
 })

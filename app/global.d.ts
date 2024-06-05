@@ -3,6 +3,7 @@ import type {} from 'hono'
 type Head = {
   title?: string
   description?: string
+  socialImage?: string
 }
 
 declare module 'hono' {

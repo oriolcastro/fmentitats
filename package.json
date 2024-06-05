@@ -41,8 +41,8 @@
     "@tailwindcss/typography": "0.5.13",
     "autoprefixer": "10.4.19",
     "clsx": "2.1.1",
-    "hono": "4.4.3",
-    "honox": "0.1.19",
+    "hono": "4.4.2",
+    "honox": "0.1.18",
     "postcss": "8.4.38"
   }
 }
