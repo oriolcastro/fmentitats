@@ -18,36 +18,36 @@ importers:
         specifier: 2.1.1
         version: 2.1.1
       hono:
-        specifier: 4.4.2
-        version: 4.4.2
+        specifier: 4.4.3
+        version: 4.4.3
       honox:
-        specifier: 0.1.18
-        version: 0.1.18(hono@4.4.2)
+        specifier: 0.1.19
+        version: 0.1.19(hono@4.4.3)
       postcss:
         specifier: 8.4.38
         version: 8.4.38
     devDependencies:
       '@cloudflare/workers-types':
-        specifier: 4.20240529.0
-        version: 4.20240529.0
+        specifier: 4.20240603.0
+        version: 4.20240603.0
       '@hono/vite-cloudflare-pages':
         specifier: 0.4.0
-        version: 0.4.0(hono@4.4.2)
+        version: 0.4.0(hono@4.4.3)
       '@hono/vite-dev-server':
         specifier: 0.12.1
-        version: 0.12.1(hono@4.4.2)
+        version: 0.12.1(hono@4.4.3)
       '@hono/vite-ssg':
         specifier: 0.1.0
-        version: 0.1.0(hono@4.4.2)
+        version: 0.1.0(hono@4.4.3)
       concurrently:
         specifier: 8.2.2
         version: 8.2.2
       prettier:
-        specifier: 3.2.5
-        version: 3.2.5
+        specifier: 3.3.1
+        version: 3.3.1
       prettier-plugin-tailwindcss:
-        specifier: 0.6.0
-        version: 0.6.0(prettier@3.2.5)
+        specifier: 0.6.1
+        version: 0.6.1(prettier@3.3.1)
       tailwindcss:
         specifier: 3.4.3
         version: 3.4.3
@@ -55,8 +55,8 @@ importers:
         specifier: 5.2.12
         version: 5.2.12(@types/node@20.12.12)
       wrangler:
-        specifier: 3.57.2
-        version: 3.57.2(@cloudflare/workers-types@4.20240529.0)
+        specifier: 3.59.0
+        version: 3.59.0(@cloudflare/workers-types@4.20240603.0)
 
 packages:
 
@@ -185,8 +185,8 @@ packages:
     cpu: [x64]
     os: [win32]
 
-  '@cloudflare/workers-types@4.20240529.0':
-    resolution: {integrity: sha512-W5obfjAwCNdYk3feUHtDfUxtTU6WIq83k6gmrLLJv+HkgCkOTwwrDNs+3w1Qln0tMj+FQx/fbwxw3ZuHIoyzGg==}
+  '@cloudflare/workers-types@4.20240603.0':
+    resolution: {integrity: sha512-KmsjZcd/dPWM51FoT08cvUGCq9l3nFEriloQ12mcdJPoW911Gi5S/9Cq4xeFvTrtk9TJ2krvxP23IeobecRmOQ==}
 
   '@cspotcode/source-map-support@0.8.1':
     resolution: {integrity: sha512-IchNf6dN4tHoMFIn/7OE8LWZ19Y6q/67Bmf6vnGREv8RSbBVb9LPJxEcnwrcwX6ixSvaiGoomAUvu4YSxXrVgw==}
@@ -1037,12 +1037,12 @@ packages:
     resolution: {integrity: sha512-0hJU9SCPvmMzIBdZFqNPXWa6dqh7WdH0cII9y+CyS8rG3nL48Bclra9HmKhVVUHyPWNH5Y7xDwAB7bfgSjkUMQ==}
     engines: {node: '>= 0.4'}
 
-  hono@4.4.2:
-    resolution: {integrity: sha512-bRhZ+BM9r04lRN2i9wiZ18yQNbZxHsmmRIItoAb43nRkHnIDsFhFh4mJ0seEs06FvenibpAgSVNHQ8ZzcDQx2A==}
+  hono@4.4.3:
+    resolution: {integrity: sha512-G7rTruKzrHXPz1KB4B50deKydPA9+aeei+WC1hikP0abN9N+a6yORuweageaqWocYfYNkpoqA5ezGV2mzQasvw==}
     engines: {node: '>=16.0.0'}
 
-  honox@0.1.18:
-    resolution: {integrity: sha512-4PjVcTVFqYwLHMJPPkalztRYPOYZY4f9dnWwpUouJAj3w4CQrppljPMpFafaYjHQgD+fP96mmnv02txakxXGmA==}
+  honox@0.1.19:
+    resolution: {integrity: sha512-778ySF+7GMsnKBnnkbmQ7wkYLP/p9Oe8cWt0FNg5JVYkhCPpBQWJUAPdBgTO00I5HHP78hjwBtzBJ2wwCJwXIw==}
     engines: {node: '>=18.14.1'}
     peerDependencies:
       hono: '>=4.*'
@@ -1148,8 +1148,8 @@ packages:
     engines: {node: '>=16.13'}
     hasBin: true
 
-  miniflare@3.20240524.0:
-    resolution: {integrity: sha512-RQAfpz7spI6gWlczeUYvJBgGyt0gNR2pYoCydgukCYZ+0bGfJl0yAiNFW62uH7uMZli/4juWPpQOBI5m7URoyA==}
+  miniflare@3.20240524.2:
+    resolution: {integrity: sha512-Js+8cB61KJG0z2HuQTPLT9S6FwTBuMZfjtml3azUarLYsCF91N+PhIkvNpbkwCXcfRvscdjJ0RlT6lBQYEuIwA==}
     engines: {node: '>=16.13'}
     hasBin: true
 
@@ -1301,8 +1301,8 @@ packages:
     engines: {node: '>=18'}
     hasBin: true
 
-  prettier-plugin-tailwindcss@0.6.0:
-    resolution: {integrity: sha512-l5F3iG54XbOq/2DOPP/YA+c6VE3/qXrcBccntq2v7PSxtEc+J6SwsuTyDHxoFK1+jAlcU/hECBfzn6MON6ENBg==}
+  prettier-plugin-tailwindcss@0.6.1:
+    resolution: {integrity: sha512-AnbeYZu0WGj+QgKciUgdMnRxrqcxltleZPgdwfA5104BHM3siBLONN/HLW1yS2HvzSNkzpQ/JAj+LN0jcJO+0w==}
     engines: {node: '>=14.21.3'}
     peerDependencies:
       '@ianvs/prettier-plugin-sort-imports': '*'
@@ -1353,8 +1353,8 @@ packages:
       prettier-plugin-svelte:
         optional: true
 
-  prettier@3.2.5:
-    resolution: {integrity: sha512-3/GWa9aOC0YeD7LUfvOG2NiDyhOWRvt1k+rcKhOuYnMY24iiCphgneUfJDyFXd6rZCAnuLBv6UeAULtrhT/F4A==}
+  prettier@3.3.1:
+    resolution: {integrity: sha512-7CAwy5dRsxs8PHXT3twixW9/OEll8MLE0VRPCJyl7CkS6VHGPSlsVaWTiASPTyGyYRyApxlaWTzwUxVNrhcwDg==}
     engines: {node: '>=14'}
     hasBin: true
 
@@ -1580,8 +1580,8 @@ packages:
     engines: {node: '>=16'}
     hasBin: true
 
-  wrangler@3.57.2:
-    resolution: {integrity: sha512-QegYf0FW+4prlFKE9iHr1EGrCo8ejcGL9gaqEXrzQ0vbTdazykYbY0I5UpHFLNq2dIF9I/ifEoLRKr636tyHEw==}
+  wrangler@3.59.0:
+    resolution: {integrity: sha512-MLKejazUJrekbD8EnQfN6d7fei+IGnq2aVXeILFDy0aTktVNXKvO+eC+mND1zOr+k0KvQN4sJo8vGwqYoY7btw==}
     engines: {node: '>=16.17.0'}
     hasBin: true
     peerDependencies:
@@ -1745,7 +1745,7 @@ snapshots:
   '@cloudflare/workerd-windows-64@1.20240524.0':
     optional: true
 
-  '@cloudflare/workers-types@4.20240529.0': {}
+  '@cloudflare/workers-types@4.20240603.0': {}
 
   '@cspotcode/source-map-support@0.8.1':
     dependencies:
@@ -1905,14 +1905,14 @@ snapshots:
 
   '@hono/node-server@1.11.1': {}
 
-  '@hono/vite-cloudflare-pages@0.4.0(hono@4.4.2)':
+  '@hono/vite-cloudflare-pages@0.4.0(hono@4.4.3)':
     dependencies:
-      hono: 4.4.2
+      hono: 4.4.3
 
-  '@hono/vite-dev-server@0.12.1(hono@4.4.2)':
+  '@hono/vite-dev-server@0.12.1(hono@4.4.3)':
     dependencies:
       '@hono/node-server': 1.11.1
-      hono: 4.4.2
+      hono: 4.4.3
       miniflare: 3.20240512.0
       minimatch: 9.0.4
     transitivePeerDependencies:
@@ -1920,9 +1920,9 @@ snapshots:
       - supports-color
       - utf-8-validate
 
-  '@hono/vite-ssg@0.1.0(hono@4.4.2)':
+  '@hono/vite-ssg@0.1.0(hono@4.4.3)':
     dependencies:
-      hono: 4.4.2
+      hono: 4.4.3
 
   '@jridgewell/gen-mapping@0.3.3':
     dependencies:
@@ -2482,16 +2482,16 @@ snapshots:
     dependencies:
       function-bind: 1.1.2
 
-  hono@4.4.2: {}
+  hono@4.4.3: {}
 
-  honox@0.1.18(hono@4.4.2):
+  honox@0.1.19(hono@4.4.3):
     dependencies:
       '@babel/generator': 7.24.6
       '@babel/parser': 7.24.6
       '@babel/traverse': 7.24.6
       '@babel/types': 7.24.6
-      '@hono/vite-dev-server': 0.12.1(hono@4.4.2)
-      hono: 4.4.2
+      '@hono/vite-dev-server': 0.12.1(hono@4.4.3)
+      hono: 4.4.3
       jsonc-parser: 3.2.1
       precinct: 12.1.1
     optionalDependencies:
@@ -2592,7 +2592,7 @@ snapshots:
       - supports-color
       - utf-8-validate
 
-  miniflare@3.20240524.0:
+  miniflare@3.20240524.2:
     dependencies:
       '@cspotcode/source-map-support': 0.8.1
       acorn: 8.11.3
@@ -2745,11 +2745,11 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  prettier-plugin-tailwindcss@0.6.0(prettier@3.2.5):
+  prettier-plugin-tailwindcss@0.6.1(prettier@3.3.1):
     dependencies:
-      prettier: 3.2.5
+      prettier: 3.3.1
 
-  prettier@3.2.5: {}
+  prettier@3.3.1: {}
 
   printable-characters@1.0.42: {}
 
@@ -2981,7 +2981,7 @@ snapshots:
       '@cloudflare/workerd-linux-arm64': 1.20240524.0
       '@cloudflare/workerd-windows-64': 1.20240524.0
 
-  wrangler@3.57.2(@cloudflare/workers-types@4.20240529.0):
+  wrangler@3.59.0(@cloudflare/workers-types@4.20240603.0):
     dependencies:
       '@cloudflare/kv-asset-handler': 0.3.2
       '@esbuild-plugins/node-globals-polyfill': 0.2.3(esbuild@0.17.19)
@@ -2989,7 +2989,7 @@ snapshots:
       blake3-wasm: 2.1.5
       chokidar: 3.5.3
       esbuild: 0.17.19
-      miniflare: 3.20240524.0
+      miniflare: 3.20240524.2
       nanoid: 3.3.7
       path-to-regexp: 6.2.2
       resolve: 1.22.8
@@ -2998,7 +2998,7 @@ snapshots:
       source-map: 0.6.1
       xxhash-wasm: 1.0.2
     optionalDependencies:
-      '@cloudflare/workers-types': 4.20240529.0
+      '@cloudflare/workers-types': 4.20240603.0
       fsevents: 2.3.3
     transitivePeerDependencies:
       - bufferutil
