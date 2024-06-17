@@ -23,10 +23,10 @@ export default {
         artega: ['Artega'],
       },
       colors: {
-        'fme-red': 'hsl(2  63  55 / 100)',
-        'fme-green': 'hsl(155 57 36 / 100)',
-        'fme-yellow': 'hsl(38 94 62 / 100)',
-        'fme-black': 'rgb(35,35,35)',
+        'fme-red': 'rgb(213, 73, 68)',
+        'fme-green': 'rgb(39, 144, 101)',
+        'fme-yellow': 'rgb(249, 182, 67)',
+        'fme-black': 'rgb(35, 35, 35)',
       },
       zIndex: {
         100: '100',

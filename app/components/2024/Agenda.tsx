@@ -184,19 +184,15 @@ export const Agenda: FC = () => {
         </div>
       </div>
 
-      <div class="mb-6 flex flex-row flex-wrap justify-center gap-4 lg:flex-nowrap">
+      <div class="mb-6 flex flex-col flex-wrap justify-center gap-4 lg:flex-nowrap">
         <div class="flex-1">
           <h3 class="my-2 font-heading text-xl">La música de la FME</h3>
-          <p class="prose mb-4 text-justify">
-            Descobreix la música de tots els grups que actuaran a la Festa Major d'Entitats d'aquest any.
-          </p>
-
-          <div class="grid grid-cols-2 gap-4 lg:grid-cols-3 lg:gap-6">
+          <div class="grid grid-cols-2 items-center justify-center gap-4 lg:grid-cols-4 lg:gap-6">
             <a
               href="https://open.spotify.com/artist/08VkVB0giqumfUMl4Ea922?si=tkjBVsbTR8-Tfd-QtZX6nA"
               target="_blank"
               rel="noopener"
-              class="aspect-square transform transition-transform duration-300 hover:scale-110"
+              class="transform justify-self-center transition-transform duration-300 hover:scale-110"
               aria-label="Enllaç a la pagina de Spotify de Vic Mirallas"
             >
               <picture>
@@ -206,7 +202,7 @@ export const Agenda: FC = () => {
                   src="static/images/2024/grups/vic_mirallas.jpg"
                   loading="lazy"
                   alt="Vic Mirallas"
-                  class="block h-0 min-h-full w-0 min-w-full object-cover"
+                  class="max-h-72"
                 />
               </picture>
             </a>
@@ -214,7 +210,7 @@ export const Agenda: FC = () => {
               href="https://open.spotify.com/artist/5njCmi440o0ft013pOw9W5?si=eMt6YVXgStayZ2PWNsZCdQ"
               target="_blank"
               rel="noopener"
-              class="aspect-square transform transition-transform duration-300 hover:scale-110"
+              class="transform justify-self-center transition-transform duration-300 hover:scale-110"
               aria-label="Enllaç a la pagina de Spotify de Queralt Lahoz"
             >
               <picture>
@@ -224,7 +220,7 @@ export const Agenda: FC = () => {
                   src="static/images/2024/grups/queralt_lahoz.jpg"
                   loading="lazy"
                   alt="Queralt Lahoz"
-                  class="block h-0 min-h-full w-0 min-w-full object-cover"
+                  class="max-h-72"
                 />
               </picture>
             </a>
@@ -232,7 +228,7 @@ export const Agenda: FC = () => {
               href="https://open.spotify.com/artist/4D7AeNXrmYzKf4DENKqyeP?si=zYlUWwCcRwy-jz9N0IJFBA"
               target="_blank"
               rel="noopener"
-              class="aspect-square transform transition-transform duration-300 hover:scale-110"
+              class="transform justify-self-center transition-transform duration-300 hover:scale-110"
               aria-label="Enllaç a la pagina de Spotify de Las Bajas Pasiones"
             >
               <picture>
@@ -242,33 +238,41 @@ export const Agenda: FC = () => {
                   src="static/images/2024/grups/las_bajas_pasiones.jpg"
                   loading="lazy"
                   alt="Las Bajas Pasiones"
-                  class="block h-0 min-h-full w-0 min-w-full object-cover"
+                  class="max-h-72"
                 />
+              </picture>
+            </a>
+            <a
+              href="https://instagram.com/6chamorro"
+              target="_blank"
+              rel="noopener"
+              class="transform justify-self-center transition-transform duration-300 hover:scale-110"
+              aria-label="Enllaç a la pagina d'Instagram de Dj Cham"
+            >
+              <picture>
+                <source srcset="static/images/2024/grups/cham.avif" type="image/avif" />
+                <source srcset="static/images/2024/grups/cham.webp" type="image/webp" />
+                <img src="static/images/2024/grups/cham.jpg" loading="lazy" alt="Dj Cham" class="max-h-72" />
               </picture>
             </a>
             <a
               href="https://open.spotify.com/artist/2X2BpGXqfZ2lRz9b4ZNw8T?si=xC-KONAgRb-EjRh-UiPP2A"
               target="_blank"
               rel="noopener"
-              class="aspect-square transform transition-transform duration-300 hover:scale-110"
+              class="transform justify-self-center transition-transform duration-300 hover:scale-110"
               aria-label="Enllaç a la pagina de Spotify de La Cosina"
             >
               <picture>
                 <source srcset="static/images/2024/grups/la_cosina.avif" type="image/avif" />
                 <source srcset="static/images/2024/grups/la_cosina.webp" type="image/webp" />
-                <img
-                  src="static/images/2024/grups/la_cosina.jpg"
-                  loading="lazy"
-                  alt="La Cosina"
-                  class="block h-0 min-h-full w-0 min-w-full object-cover"
-                />
+                <img src="static/images/2024/grups/la_cosina.jpg" loading="lazy" alt="La Cosina" class="max-h-72" />
               </picture>
             </a>
             <a
               href="https://open.spotify.com/artist/67xTdg4iA5sZanqrdiE9mp?si=Oiqt3lvfTbaZcN4jh_2dIA"
               target="_blank"
               rel="noopener"
-              class="aspect-square transform transition-transform duration-300 hover:scale-110"
+              class="transform justify-self-center transition-transform duration-300 hover:scale-110"
               aria-label="Enllaç a la pagina de Spotify de El Paio de Gracia & Las Malas Lenguas"
             >
               <picture>
@@ -278,13 +282,55 @@ export const Agenda: FC = () => {
                   src="static/images/2024/grups/las_malas_lenguas.jpg"
                   loading="lazy"
                   alt="El Paio de Gracia & Las Malas Lenguas"
-                  class="block h-0 min-h-full w-0 min-w-full object-cover"
+                  class="max-h-72"
+                />
+              </picture>
+            </a>
+            <a
+              href="https://instagram.com/dj.kotxambrosa"
+              target="_blank"
+              rel="noopener"
+              class="transform justify-self-center transition-transform duration-300 hover:scale-110"
+              aria-label="Enllaç a la pagina d'Instagram de Dj Kotxambrosa"
+            >
+              <picture>
+                <source srcset="static/images/2024/grups/dj_kotxambrosa.avif" type="image/avif" />
+                <source srcset="static/images/2024/grups/dj_kotxambrosa.webp" type="image/webp" />
+                <img
+                  src="static/images/2024/grups/dj_kotxambrosa.jpg"
+                  loading="lazy"
+                  alt="Dj Kotxambrosa"
+                  class="max-h-72"
                 />
               </picture>
             </a>
           </div>
         </div>
-        <div class="flex flex-col items-center gap-4">
+        <div class="mt-6 flex flex-col-reverse gap-4 lg:flex-row">
+          <div>
+            <p class="prose mb-4 text-justify">
+              Descobreix la música de tots els grups que actuaran a la Festa Major d'Entitats d'aquest any.
+            </p>
+            <a
+              href="https://open.spotify.com/playlist/2VRhbvrgsyKc33vDc4PoCw?si=50e3a2485f2a4ebf"
+              target="_blank"
+              rel="noopener"
+              class="mx-auto mb-8 flex w-[fit-content] flex-row items-center rounded-md bg-fme-green px-4 py-3 text-white"
+            >
+              <svg
+                width="24"
+                height="24"
+                xmlns="http://www.w3.org/2000/svg"
+                class="mr-2 fill-current text-white"
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+              >
+                <path d="M19.098 10.638c-3.868-2.297-10.248-2.508-13.941-1.387-.593.18-1.22-.155-1.399-.748-.18-.593.154-1.22.748-1.4 4.239-1.287 11.285-1.038 15.738 1.605.533.317.708 1.005.392 1.538-.316.533-1.005.709-1.538.392zm-.126 3.403c-.272.44-.847.578-1.287.308-3.225-1.982-8.142-2.557-11.958-1.399-.494.15-1.017-.129-1.167-.623-.149-.495.13-1.016.624-1.167 4.358-1.322 9.776-.682 13.48 1.595.44.27.578.847.308 1.286zm-1.469 3.267c-.215.354-.676.465-1.028.249-2.818-1.722-6.365-2.111-10.542-1.157-.402.092-.803-.16-.895-.562-.092-.403.159-.804.562-.896 4.571-1.045 8.492-.595 11.655 1.338.353.215.464.676.248 1.028zm-5.503-17.308c-6.627 0-12 5.373-12 12 0 6.628 5.373 12 12 12 6.628 0 12-5.372 12-12 0-6.627-5.372-12-12-12z" />
+              </svg>
+              Llista FME 2024
+            </a>
+          </div>
+
           <picture>
             <source srcset="static/images/2024/cartell2024.avif" type="image/avif" />
             <source srcset="static/images/2024/cartell2024.webp" type="image/webp" />
@@ -294,27 +340,8 @@ export const Agenda: FC = () => {
               alt="Cartell dels concerts de l'edició 2024"
               width="420"
               height="525"
-              class="mt-12"
             />
           </picture>
-          <a
-            href="https://open.spotify.com/playlist/2VRhbvrgsyKc33vDc4PoCw?si=50e3a2485f2a4ebf"
-            target="_blank"
-            rel="noopener"
-            class="mx-auto mb-8 flex w-[fit-content] flex-row items-center rounded-md bg-fme-green px-4 py-3 text-white"
-          >
-            <svg
-              width="24"
-              height="24"
-              xmlns="http://www.w3.org/2000/svg"
-              class="mr-2 fill-current text-white"
-              fill-rule="evenodd"
-              clip-rule="evenodd"
-            >
-              <path d="M19.098 10.638c-3.868-2.297-10.248-2.508-13.941-1.387-.593.18-1.22-.155-1.399-.748-.18-.593.154-1.22.748-1.4 4.239-1.287 11.285-1.038 15.738 1.605.533.317.708 1.005.392 1.538-.316.533-1.005.709-1.538.392zm-.126 3.403c-.272.44-.847.578-1.287.308-3.225-1.982-8.142-2.557-11.958-1.399-.494.15-1.017-.129-1.167-.623-.149-.495.13-1.016.624-1.167 4.358-1.322 9.776-.682 13.48 1.595.44.27.578.847.308 1.286zm-1.469 3.267c-.215.354-.676.465-1.028.249-2.818-1.722-6.365-2.111-10.542-1.157-.402.092-.803-.16-.895-.562-.092-.403.159-.804.562-.896 4.571-1.045 8.492-.595 11.655 1.338.353.215.464.676.248 1.028zm-5.503-17.308c-6.627 0-12 5.373-12 12 0 6.628 5.373 12 12 12 6.628 0 12-5.372 12-12 0-6.627-5.372-12-12-12z" />
-            </svg>
-            Llista FME 2024
-          </a>
         </div>
       </div>
     </section>
