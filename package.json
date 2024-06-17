@@ -26,9 +26,9 @@
   },
   "homepage": "https://fme.cat",
   "devDependencies": {
-    "@cloudflare/workers-types": "4.20240605.0",
-    "@hono/vite-cloudflare-pages": "0.4.0",
-    "@hono/vite-dev-server": "0.12.1",
+    "@cloudflare/workers-types": "4.20240614.0",
+    "@hono/vite-cloudflare-pages": "0.4.1",
+    "@hono/vite-dev-server": "0.12.2",
     "@hono/vite-ssg": "0.1.0",
     "concurrently": "8.2.2",
     "prettier": "3.3.2",
@@ -42,7 +42,7 @@
     "autoprefixer": "10.4.19",
     "clsx": "2.1.1",
     "hono": "4.4.6",
-    "honox": "0.1.21",
+    "honox": "0.1.23",
     "postcss": "8.4.38"
   }
 }
