@@ -24,19 +24,33 @@ const VideoModal: FC = () => {
       <button
         id="cta-button"
         onClick={openVideo}
-        class="relative flex cursor-pointer flex-row items-center rounded-md bg-white px-6 py-4 text-base text-fme-black no-underline shadow-xl md:text-lg lg:text-xl"
+        class="relative flex cursor-pointer flex-row items-center gap-3 rounded-md bg-white px-6 py-4 text-base text-fme-black no-underline shadow-xl md:text-lg lg:text-xl"
       >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="lucide lucide-play"
+        >
+          <polygon points="6 3 20 12 6 21 6 3" />
+        </svg>
         Resum FME 2023
       </button>
       <div
         id="video-backdrop"
         class={clsx(
-          'fixed left-0 top-0 z-500  h-[100vh] w-[100vw] items-center justify-center bg-fme-black',
+          'fixed left-0 top-0 z-500 h-[100vh] w-[100vw] items-center justify-center bg-fme-black',
           isVideoOpen ? 'flex' : 'hidden',
         )}
         onClick={closeVideo}
       >
-        <div class="relative z-500  w-4/5">
+        <div class="relative z-500 w-4/5">
           <button
             id="close-modal-button"
             onClick={closeVideo}

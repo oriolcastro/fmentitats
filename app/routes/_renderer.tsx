@@ -1,5 +1,5 @@
 import { jsxRenderer } from 'hono/jsx-renderer'
-import { Script } from 'honox/server'
+import { Link, Script } from 'honox/server'
 import { html } from 'hono/html'
 
 import Header from '../islands/Header'
@@ -39,11 +39,7 @@ export default jsxRenderer(({ children, title, description, socialImage }) => {
             font-display: 'swap';
           }
         </style>`}
-        {import.meta.env.PROD ? (
-          <link href="/static/assets/style.css" rel="stylesheet" />
-        ) : (
-          <link href="/app/style.css" rel="stylesheet" />
-        )}
+        <Link href="/app/style.css" rel="stylesheet" />
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta itemprop="name" content="{props.title}" />

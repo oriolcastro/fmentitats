@@ -45,7 +45,7 @@ export const Agenda: FC = () => {
       <h2 class="my-2 text-center font-heading text-3xl uppercase">Programa d'actes</h2>
       <p class="my-4 text-center text-xl italic">Això és tot el que us hem preparat per a aquesta FME.</p>
       <div class="mb-10 grid grid-cols-1 gap-4 lg:grid-cols-2">
-        {/* <div class="flex flex-col items-start gap-12">
+        <div class="flex flex-col items-start gap-12">
           <div class="flex flex-col gap-4">
             <div class="w-fit bg-fme-red px-2 pb-0 pt-1 font-artega text-base uppercase text-white">
               Dimarts 30 de juliol
@@ -177,23 +177,128 @@ export const Agenda: FC = () => {
             <div>
               <p class="font-sm text-sm">00:00h</p>
               <p class="text-lg font-bold">Ball del Vot del Poble</p>
-              <p>Plaça de Sant Antoni</p>
+              <p>Plaça de la Pexeteria</p>
               <p>Organitza: Ateneu Vilanoví</p>
             </div>
           </div>
-        </div> */}
+        </div>
       </div>
 
-      {/* <div class="mb-6 flex flex-row flex-wrap justify-center gap-4 lg:flex-nowrap">
+      <div class="mb-6 flex flex-row flex-wrap justify-center gap-4 lg:flex-nowrap">
         <div class="flex-1">
           <h3 class="my-2 font-heading text-xl">La música de la FME</h3>
           <p class="prose mb-4 text-justify">
-            Teniu una llista de reproducció amb els èxits de tots els artistes que actuaran a la Festa Major d'Entitats
-            d'aquest any.
+            Descobreix la música de tots els grups que actuaran a la Festa Major d'Entitats d'aquest any.
           </p>
-          TODO: update spotify link
+
+          <div class="grid grid-cols-2 gap-4 lg:grid-cols-3 lg:gap-6">
+            <a
+              href="https://open.spotify.com/artist/08VkVB0giqumfUMl4Ea922?si=tkjBVsbTR8-Tfd-QtZX6nA"
+              target="_blank"
+              rel="noopener"
+              class="aspect-square transform transition-transform duration-300 hover:scale-110"
+              aria-label="Enllaç a la pagina de Spotify de Vic Mirallas"
+            >
+              <picture>
+                <source srcset="static/images/2024/grups/vic_mirallas.avif" type="image/avif" />
+                <source srcset="static/images/2024/grups/vic_mirallas.webp" type="image/webp" />
+                <img
+                  src="static/images/2024/grups/vic_mirallas.jpg"
+                  loading="lazy"
+                  alt="Vic Mirallas"
+                  class="block h-0 min-h-full w-0 min-w-full object-cover"
+                />
+              </picture>
+            </a>
+            <a
+              href="https://open.spotify.com/artist/5njCmi440o0ft013pOw9W5?si=eMt6YVXgStayZ2PWNsZCdQ"
+              target="_blank"
+              rel="noopener"
+              class="aspect-square transform transition-transform duration-300 hover:scale-110"
+              aria-label="Enllaç a la pagina de Spotify de Queralt Lahoz"
+            >
+              <picture>
+                <source srcset="static/images/2024/grups/queralt_lahoz.avif" type="image/avif" />
+                <source srcset="static/images/2024/grups/queralt_lahoz.webp" type="image/webp" />
+                <img
+                  src="static/images/2024/grups/queralt_lahoz.jpg"
+                  loading="lazy"
+                  alt="Queralt Lahoz"
+                  class="block h-0 min-h-full w-0 min-w-full object-cover"
+                />
+              </picture>
+            </a>
+            <a
+              href="https://open.spotify.com/artist/4D7AeNXrmYzKf4DENKqyeP?si=zYlUWwCcRwy-jz9N0IJFBA"
+              target="_blank"
+              rel="noopener"
+              class="aspect-square transform transition-transform duration-300 hover:scale-110"
+              aria-label="Enllaç a la pagina de Spotify de Las Bajas Pasiones"
+            >
+              <picture>
+                <source srcset="static/images/2024/grups/las_bajas_pasiones.avif" type="image/avif" />
+                <source srcset="static/images/2024/grups/las_bajas_pasiones.webp" type="image/webp" />
+                <img
+                  src="static/images/2024/grups/las_bajas_pasiones.jpg"
+                  loading="lazy"
+                  alt="Las Bajas Pasiones"
+                  class="block h-0 min-h-full w-0 min-w-full object-cover"
+                />
+              </picture>
+            </a>
+            <a
+              href="https://open.spotify.com/artist/2X2BpGXqfZ2lRz9b4ZNw8T?si=xC-KONAgRb-EjRh-UiPP2A"
+              target="_blank"
+              rel="noopener"
+              class="aspect-square transform transition-transform duration-300 hover:scale-110"
+              aria-label="Enllaç a la pagina de Spotify de La Cosina"
+            >
+              <picture>
+                <source srcset="static/images/2024/grups/la_cosina.avif" type="image/avif" />
+                <source srcset="static/images/2024/grups/la_cosina.webp" type="image/webp" />
+                <img
+                  src="static/images/2024/grups/la_cosina.jpg"
+                  loading="lazy"
+                  alt="La Cosina"
+                  class="block h-0 min-h-full w-0 min-w-full object-cover"
+                />
+              </picture>
+            </a>
+            <a
+              href="https://open.spotify.com/artist/67xTdg4iA5sZanqrdiE9mp?si=Oiqt3lvfTbaZcN4jh_2dIA"
+              target="_blank"
+              rel="noopener"
+              class="aspect-square transform transition-transform duration-300 hover:scale-110"
+              aria-label="Enllaç a la pagina de Spotify de El Paio de Gracia & Las Malas Lenguas"
+            >
+              <picture>
+                <source srcset="static/images/2024/grups/las_malas_lenguas.avif" type="image/avif" />
+                <source srcset="static/images/2024/grups/las_malas_lenguas.webp" type="image/webp" />
+                <img
+                  src="static/images/2024/grups/las_malas_lenguas.jpg"
+                  loading="lazy"
+                  alt="El Paio de Gracia & Las Malas Lenguas"
+                  class="block h-0 min-h-full w-0 min-w-full object-cover"
+                />
+              </picture>
+            </a>
+          </div>
+        </div>
+        <div class="flex flex-col items-center gap-4">
+          <picture>
+            <source srcset="static/images/2024/cartell2024.avif" type="image/avif" />
+            <source srcset="static/images/2024/cartell2024.webp" type="image/webp" />
+            <img
+              src="static/images/2024/cartell2024.jpg"
+              loading="lazy"
+              alt="Cartell dels concerts de l'edició 2024"
+              width="420"
+              height="525"
+              class="mt-12"
+            />
+          </picture>
           <a
-            href=""
+            href="https://open.spotify.com/playlist/2VRhbvrgsyKc33vDc4PoCw?si=50e3a2485f2a4ebf"
             target="_blank"
             rel="noopener"
             class="mx-auto mb-8 flex w-[fit-content] flex-row items-center rounded-md bg-fme-green px-4 py-3 text-white"
@@ -210,34 +315,8 @@ export const Agenda: FC = () => {
             </svg>
             Llista FME 2024
           </a>
-          <div class="grid grid-cols-2 gap-4 lg:grid-cols-3 lg:gap-6">
-            <a
-              href="https://open.spotify.com/artist/2enhM5DK9oTxWiCVpFIDv3?si=OXNaQ68nTNOdBIO10tj_YQ"
-              target="_blank"
-              rel="noopener"
-              class="transform transition-transform duration-300 hover:scale-110"
-              aria-label="Enllaç a la pagina de Spotify de Figa Flawas"
-            >
-              <picture>
-                <source srcset="images/figaflawas.avif" type="image/avif" />
-                <source srcset="images/figaflawas.webp" type="image/webp" />
-                <img src="images/figaflawas.png" loading="lazy" alt="Figa Flawas" width="450" height="450" />{' '}
-              </picture>
-            </a>
-          </div>
         </div>
-        <picture>
-          <source srcset="images/cartell2024.avif" type="image/avif" />
-          <source srcset="images/cartell2024.webp" type="image/webp" />
-          <img
-            src="images/cartell2024.jpg"
-            loading="lazy"
-            alt="Cartell dels concerts de l'edició 2024"
-            width="420"
-            height="525"
-          />
-        </picture>
-      </div> */}
+      </div>
     </section>
   )
 }
