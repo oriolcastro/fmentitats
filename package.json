@@ -26,23 +26,23 @@
   },
   "homepage": "https://fme.cat",
   "devDependencies": {
-    "@cloudflare/workers-types": "4.20240614.0",
-    "@hono/vite-cloudflare-pages": "0.4.1",
-    "@hono/vite-dev-server": "0.12.2",
+    "@cloudflare/workers-types": "4.20240718.0",
+    "@hono/vite-cloudflare-pages": "0.4.2",
+    "@hono/vite-dev-server": "0.13.1",
     "@hono/vite-ssg": "0.1.0",
     "concurrently": "8.2.2",
-    "prettier": "3.3.2",
-    "prettier-plugin-tailwindcss": "0.6.4",
-    "tailwindcss": "3.4.4",
-    "vite": "5.3.1",
-    "wrangler": "3.60.3"
+    "prettier": "3.3.3",
+    "prettier-plugin-tailwindcss": "0.6.5",
+    "tailwindcss": "3.4.6",
+    "vite": "5.3.4",
+    "wrangler": "3.65.1"
   },
   "dependencies": {
     "@tailwindcss/typography": "0.5.13",
     "autoprefixer": "10.4.19",
     "clsx": "2.1.1",
-    "hono": "4.4.6",
+    "hono": "4.5.1",
     "honox": "0.1.23",
-    "postcss": "8.4.38"
+    "postcss": "8.4.39"
   }
 }
