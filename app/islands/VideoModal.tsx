@@ -54,7 +54,7 @@ const VideoModal: FC = () => {
           <button
             id="close-modal-button"
             onClick={closeVideo}
-            class="absolute -right-3 -top-3 z-[1000] flex h-8 w-8 items-center justify-center rounded-full bg-white p-2 text-fme-black"
+            class="absolute -right-3 -top-3 z-1000 flex h-8 w-8 items-center justify-center rounded-full bg-white p-2 text-fme-black"
           >
             X
           </button>
