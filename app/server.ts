@@ -4,9 +4,7 @@ import { showRoutes } from 'hono/dev'
 const app = createApp()
 
 app.get('/esponsors', c => {
-  return c.json({
-    'your name is': 'FMEntitats',
-  })
+  return c.redirect('https://media.fme.cat/llibret_esponsors.pdf')
 })
 
 showRoutes(app)
