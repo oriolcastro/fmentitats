@@ -10,7 +10,7 @@ const Header: FC = () => {
   }
 
   return (
-    <header class="sticky top-0 z-100 flex w-full flex-wrap items-center bg-fme-black px-6 py-2 shadow-md lg:px-16 lg:py-0">
+    <header class="bg-fme-black sticky top-0 z-100 flex w-full flex-wrap items-center px-6 py-2 shadow-md lg:px-16 lg:py-0">
       <div class="flex flex-1 items-center justify-between py-2">
         <a href="/">
           <picture>
@@ -40,7 +40,7 @@ const Header: FC = () => {
       </button>
       <div
         class={clsx(
-          'fixed right-0 top-20 z-10 w-full bg-fme-black px-6  lg:relative lg:right-auto lg:top-auto lg:flex lg:w-auto lg:items-center',
+          'bg-fme-black fixed top-20 right-0 z-10 w-full px-6 lg:relative lg:top-auto lg:right-auto lg:flex lg:w-auto lg:items-center',
           isOpen ? 'block' : 'hidden',
         )}
         id="menu"
@@ -49,7 +49,7 @@ const Header: FC = () => {
           <ul class="items-center justify-between pt-4 text-base text-white lg:flex lg:pt-0">
             <li>
               <a
-                class="block border-b-4 border-transparent px-0 py-3 hover:border-fme-red lg:p-4"
+                class="hover:border-fme-red block border-b-4 border-transparent px-0 py-3 lg:p-4"
                 href="#projecte"
                 onClick={() => toggleMenu()}
               >
@@ -58,7 +58,7 @@ const Header: FC = () => {
             </li>
             <li>
               <a
-                class="block border-b-4 border-transparent px-0 py-3 hover:border-fme-green lg:p-4"
+                class="hover:border-fme-green block border-b-4 border-transparent px-0 py-3 lg:p-4"
                 href="#programa"
                 onClick={() => toggleMenu()}
               >
@@ -67,7 +67,7 @@ const Header: FC = () => {
             </li>
             <li>
               <a
-                class="block border-b-4 border-transparent px-0 py-3 hover:border-fme-yellow lg:p-4"
+                class="hover:border-fme-yellow block border-b-4 border-transparent px-0 py-3 lg:p-4"
                 href="#collaboradors"
                 onClick={() => toggleMenu()}
               >
@@ -76,11 +76,14 @@ const Header: FC = () => {
             </li>
             <li class="dropdown relative inline-block w-full lg:w-auto">
               <div class="dropdown-trigger block w-full px-0 py-3 lg:p-4">Edicions anteriors</div>
-              <div class="dropdown-content w-full bg-fme-black pl-3 lg:absolute lg:hidden lg:pl-0">
-                <a href="edicio-2023" class="block px-0 py-3 hover:bg-fme-red lg:p-4">
+              <div class="dropdown-content bg-fme-black w-full pl-3 lg:absolute lg:hidden lg:pl-0">
+                <a href="edicio-2024" class="hover:bg-fme-red block px-0 py-3 lg:p-4">
+                  2024
+                </a>
+                <a href="edicio-2023" class="hover:bg-fme-red block px-0 py-3 lg:p-4">
                   2023
                 </a>
-                <a href="edicio-2022" class="block px-0 py-3 hover:bg-fme-red lg:p-4">
+                <a href="edicio-2022" class="hover:bg-fme-red block px-0 py-3 lg:p-4">
                   2022
                 </a>
               </div>
@@ -108,19 +111,6 @@ const Header: FC = () => {
                   <path d="M14.829 6.302c-.738-.034-.96-.04-2.829-.04s-2.09.007-2.828.04c-1.899.087-2.783.986-2.87 2.87-.033.738-.041.959-.041 2.828s.008 2.09.041 2.829c.087 1.879.967 2.783 2.87 2.87.737.033.959.041 2.828.041 1.87 0 2.091-.007 2.829-.041 1.899-.086 2.782-.988 2.87-2.87.033-.738.04-.96.04-2.829s-.007-2.09-.04-2.828c-.088-1.883-.973-2.783-2.87-2.87zm-2.829 9.293c-1.985 0-3.595-1.609-3.595-3.595 0-1.985 1.61-3.594 3.595-3.594s3.595 1.609 3.595 3.594c0 1.985-1.61 3.595-3.595 3.595zm3.737-6.491c-.464 0-.84-.376-.84-.84 0-.464.376-.84.84-.84.464 0 .84.376.84.84 0 .463-.376.84-.84.84zm-1.404 2.896c0 1.289-1.045 2.333-2.333 2.333s-2.333-1.044-2.333-2.333c0-1.289 1.045-2.333 2.333-2.333s2.333 1.044 2.333 2.333zm-2.333-12c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6.958 14.886c-.115 2.545-1.532 3.955-4.071 4.072-.747.034-.986.042-2.887.042s-2.139-.008-2.886-.042c-2.544-.117-3.955-1.529-4.072-4.072-.034-.746-.042-.985-.042-2.886 0-1.901.008-2.139.042-2.886.117-2.544 1.529-3.955 4.072-4.071.747-.035.985-.043 2.886-.043s2.14.008 2.887.043c2.545.117 3.957 1.532 4.071 4.071.034.747.042.985.042 2.886 0 1.901-.008 2.14-.042 2.886z" />
                 </svg>
               </a>
-              {/* <!-- <a href="https://www.facebook.com/FMEntitatsVNG" target="_blank" rel="noopener" class="block p-3 lg:py-4">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                class="fill-current text-white"
-              >
-                <path
-                  d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm3 8h-1.35c-.538 0-.65.221-.65.778v1.222h2l-.209 2h-1.791v7h-3v-7h-2v-2h2v-2.308c0-1.769.931-2.692 3.029-2.692h1.971v3z"
-                />
-              </svg>
-            </a> --> */}
               <a
                 href="https://open.spotify.com/user/cb44avwfmmjada7ccotzddckm?si=2b9ee626286e4dd4"
                 target="_blank"

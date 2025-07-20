@@ -42,7 +42,6 @@ export default jsxRenderer(({ children, title, description, socialImage }) => {
         <Link href="/app/style.css" rel="stylesheet" />
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta itemprop="name" content="{props.title}" />
         <link rel="icon" type="image/png" sizes="32x32" href="/static/images/favicon-32x32.png" />
         <link rel="icon" type="image/png" sizes="96x96" href="/static/images/favicon-96x96.png" />
         <link rel="icon" type="image/png" sizes="16x16" href="/static/images/favicon-16x16.png" />
@@ -63,6 +62,7 @@ export default jsxRenderer(({ children, title, description, socialImage }) => {
             <title>{title}</title>
             <meta property="og:title" content={title} />
             <meta property="twitter:title" content={title} />
+            <meta itemprop="name" content={title} />
           </>
         )}
         {description && (
@@ -90,22 +90,22 @@ export default jsxRenderer(({ children, title, description, socialImage }) => {
               (e.init = function (i, s, a) {
                 function g(t, e) {
                   var o = e.split('.')
-                  2 == o.length && ((t = t[o[0]]), (e = o[1])),
+                  ;(2 == o.length && ((t = t[o[0]]), (e = o[1])),
                     (t[e] = function () {
                       t.push([e].concat(Array.prototype.slice.call(arguments, 0)))
-                    })
+                    }))
                 }
-                ;((p = t.createElement('script')).type = 'text/javascript'),
+                ;(((p = t.createElement('script')).type = 'text/javascript'),
                   (p.async = !0),
                   (p.src = s.api_host.replace('.i.posthog.com', '-assets.i.posthog.com') + '/static/array.js'),
-                  (r = t.getElementsByTagName('script')[0]).parentNode.insertBefore(p, r)
+                  (r = t.getElementsByTagName('script')[0]).parentNode.insertBefore(p, r))
                 var u = e
                 for (
                   void 0 !== a ? (u = e[a] = []) : (a = 'posthog'),
                     u.people = u.people || [],
                     u.toString = function (t) {
                       var e = 'posthog'
-                      return 'posthog' !== a && (e += '.' + a), t || (e += ' (stub)'), e
+                      return ('posthog' !== a && (e += '.' + a), t || (e += ' (stub)'), e)
                     },
                     u.people.toString = function () {
                       return u.toString(1) + '.people (stub)'

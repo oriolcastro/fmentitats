@@ -3,7 +3,7 @@ import type { FC } from 'hono/jsx'
 export const TheProject: FC = () => {
   return (
     <section id="projecte" class="m-auto my-10 max-w-5xl px-4" style="scroll-margin-top: 84px">
-      <h2 class="my-2 text-center font-heading text-3xl uppercase">Que és la FME?</h2>
+      <h2 class="font-heading my-2 text-center text-3xl uppercase">Que és la FME?</h2>
       <p class="my-4 text-center text-xl italic">
         Coneix l'origen, el projecte i les entitats que hi ha darrere de la FME
       </p>
@@ -22,26 +22,26 @@ export const TheProject: FC = () => {
         </picture>
         <div>
           <p class="mb-4 flex-1 text-justify">
-            La Festa Major d'Entitats neix l'any 2017 després que un grup d'entitats vinculades al teixit associatiu
-            juvenil i cultural de la ciutat veiessin la necessitat d'implicar-se de forma més activa en la programació
-            de la Festa Major.
+            La Festa Major d'Entitats neix l’any 2017 fruit de la inquietud d’un grup d’entitats vinculades al teixit
+            associatiu juvenil i cultural de la ciutat, que van detectar la necessitat d’implicar-se més activament en
+            la programació de la Festa Major. A diferència d’altres actes del calendari festiu, una part important de la
+            població viu la Festa Major des d’un paper espectador.
           </p>
           <p class="mb-4 flex-1 text-justify">
-            A diferència del que passa en altres actes del cicle festiu de la ciutat, una part important de la gent viu
-            la Festa Major com a espectadora. D'aquesta anàlisi sorgeix l'objectiu general del nou projecte de la FME:
+            D’aquesta reflexió sorgeix l’objectiu de la FME:{' '}
             <span class="italic">
-              Oferir a la ciutat una programació cultural àmplia, popular i gratuïta emmarcada en la Festa Major a
-              través de la participació directa de les entitats i la seva massa social.
+              oferir a la ciutat una proposta cultural àmplia, popular i gratuïta, inserida dins la Festa Major, i
+              basada en la participació directa de les entitats i la seva base social.
             </span>
           </p>
           <p class="mb-4 flex-1 text-justify">
-            La FME pretén promoure la transformació del model cultural de la ciutat i oferir una alternativa a la festa
-            major de Vilanova més participativa i accessible i alhora donar a conèixer el potencial i la riquesa de
-            l'associacionisme a la ciutat.
+            Amb aquesta premissa La FME vol impulsar una transformació en el model cultural de la ciutat, proposant una
+            alternativa més participativa i accessible dins la Festa Major de Vilanova i la Geltrú, alhora que posa en
+            valor el potencial i la riquesa de l’associacionisme local.
           </p>
           <p class="flex-1 text-justify">
-            A banda de les entitats que ja en formen part, la Festa Major d'Entitats pretén fer-se extensiva i
-            interpel·lar progressivament a més entitats del teixit associatiu de la ciutat.
+            Any rere any, la Festa Major d’Entitats aspira a estendre’s i a interpel·lar progressivament un nombre
+            creixent d’organitzacions del teixit associatiu vilanoví.
           </p>
         </div>
       </div>
@@ -160,6 +160,26 @@ export const TheProject: FC = () => {
               alt="Ateneu Vilanovi"
               width="790"
               height="180"
+            />
+          </picture>
+        </a>
+        <a
+          href="https://www.instagram.com/endimari_vng/"
+          target="_blank"
+          rel="noopener"
+          aria-label="Enllaç a l'Instagram d'Endimari"
+          class="flex flex-col items-center justify-center"
+        >
+          <picture>
+            <source srcset="/static/images/entitats/endimari.avif" type="image/avif" />
+            <source srcset="/static/images/entitats/endimari.webp" type="image/webp" />
+            <img
+              src="/static/images/entitats/endimari.png"
+              loading="lazy"
+              class="max-w-[120px] opacity-75 hover:opacity-100 lg:max-w-[180px]"
+              alt="Endimari"
+              width="250"
+              height="177"
             />
           </picture>
         </a>
