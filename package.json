@@ -26,7 +26,7 @@
   },
   "homepage": "https://fme.cat",
   "devDependencies": {
-    "@cloudflare/workers-types": "4.20250715.0",
+    "@cloudflare/workers-types": "4.20250719.0",
     "@hono/vite-cloudflare-pages": "0.4.2",
     "@hono/vite-dev-server": "0.20.0",
     "@hono/vite-ssg": "0.1.2",
