@@ -4,5 +4,6 @@
 .DS_Store
 public/static/styles.css
 dist
+.wrangler
 
 .DS_Store
