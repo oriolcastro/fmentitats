@@ -65,25 +65,6 @@ export const Agenda: FC = () => {
               Dissabte 1 d'agost
             </div>
             <div>
-              <p class="font-sm text-sm">21:30h</p>
-              <p class="text-lg font-bold">Sopar popular</p>
-              <p>Plaça de les Casernes</p>
-              <p>Organitza: Borregos</p>
-            </div>
-            <div>
-              <p class="font-sm text-sm">22:30h</p>
-              <p class="text-lg font-bold">Concerts amb Jara Mago, Gavina.mp3, BALMA i ByoungC</p>
-              <p>Plaça de les Casernes</p>
-              <p>Organitza: FME</p>
-            </div>
-          </div>
-        </div>
-        <div class="flex flex-col items-start gap-12">
-          <div class="flex flex-col gap-4">
-            <div class="bg-fme-blue font-artega w-fit px-2 pt-1 pb-0 text-base text-white uppercase">
-              Dissabte 1 d'agost
-            </div>
-            <div>
               <p class="font-sm text-sm">11:00h</p>
               <p class="text-lg font-bold">Baixada d'andròmines</p>
               <p>Tot seguit, vermut musical</p>
@@ -99,6 +80,25 @@ export const Agenda: FC = () => {
               <p class="font-sm text-sm">20:30h</p>
               <p class="text-lg font-bold">De faixa a plaça amb This-Tracció xaranga</p>
               <p>Inici des de la plaça dels Cotxes fins a la plaça de les Casernes</p>
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-col items-start gap-12">
+          <div class="flex flex-col gap-4">
+            <div class="bg-fme-blue font-artega w-fit px-2 pt-1 pb-0 text-base text-white uppercase">
+              Dissabte 1 d'agost
+            </div>
+            <div>
+              <p class="font-sm text-sm">21:30h</p>
+              <p class="text-lg font-bold">Sopar popular</p>
+              <p>Plaça de les Casernes</p>
+              <p>Organitza: Borregos</p>
+            </div>
+            <div>
+              <p class="font-sm text-sm">22:30h</p>
+              <p class="text-lg font-bold">Concerts amb Jara Mago, Gavina.mp3, BALMA i ByoungC</p>
+              <p>Plaça de les Casernes</p>
+              <p>Organitza: FME</p>
             </div>
           </div>
           <div class="flex flex-col gap-4">
@@ -285,8 +285,8 @@ export const Agenda: FC = () => {
               src="static/images/2026/cartell2026.jpg"
               loading="lazy"
               alt="Cartell dels concerts de l'edició 2026"
-              width="1200"
-              height="1500"
+              width="420"
+              height="525"
             />
           </picture>
         </div>
