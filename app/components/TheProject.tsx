@@ -45,7 +45,7 @@ export const TheProject: FC = () => {
           </p>
         </div>
       </div>
-      <p class="mb-4 text-center font-bold">Entitats organitzadores</p>
+      <p class="mb-4 text-center font-bold">Entitats col·laboradores</p>
       <div class="flex flex-wrap justify-center gap-2 md:flex-nowrap lg:flex-nowrap lg:gap-8">
         <a
           href="https://www.instagram.com/launiovilanovina/"

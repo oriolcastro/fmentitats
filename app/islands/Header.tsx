@@ -77,6 +77,9 @@ const Header: FC = () => {
             <li class="dropdown relative inline-block w-full lg:w-auto">
               <div class="dropdown-trigger block w-full px-0 py-3 lg:p-4">Edicions anteriors</div>
               <div class="dropdown-content bg-fme-black w-full pl-3 lg:absolute lg:hidden lg:pl-0">
+                <a href="edicio-2025" class="hover:bg-fme-red block px-0 py-3 lg:p-4">
+                  2025
+                </a>
                 <a href="edicio-2024" class="hover:bg-fme-red block px-0 py-3 lg:p-4">
                   2024
                 </a>

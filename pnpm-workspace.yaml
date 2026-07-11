@@ -1,0 +1,9 @@
+allowBuilds:
+  '@tailwindcss/oxide': true
+  esbuild: true
+  sharp: true
+  workerd: true
+minimumReleaseAgeExclude:
+  - '@cloudflare/workers-types@5.20260711.1'
+  - '@hono/vite-dev-server@0.26.1'
+  - honox@0.1.59
